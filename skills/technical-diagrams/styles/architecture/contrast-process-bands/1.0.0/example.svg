@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="ar04-title ar04-desc">
+<title id="ar04-title">内容检索服务架构示例</title>
+<desc id="ar04-desc">独立构造的内容检索示例，展示深绿分区、浅色辅助区域和存储侧栏。</desc>
+<metadata>{"profile":"architecture/contrast-process-bands@1.0.0","number":"AR-04","sample_kind":"synthetic","line_style":{"id":"orthogonal","version":"1.0.0"},"interaction_standard":{"id":"single-direction","version":"1.0.0"},"model":{"groups":["内容来源","索引处理","检索服务","数据存储"],"nodes":["编辑工具","采集接口","索引构建","查询界面","检索引擎","结果展示","检索索引"],"edges":[["编辑工具","采集接口"],["采集接口","索引构建"],["索引构建","检索索引"],["查询界面","检索引擎"],["检索引擎","结果展示"],["检索引擎","检索索引"],["索引构建","采集接口"]],"edge_conditions":{"索引构建→采集接口":"失败重试"}}}</metadata>
+<defs>
+  <marker id="ar04-arrow-main" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L9 5 L1 9 Z" fill="#43544B"/></marker>
+  <marker id="ar04-arrow-data" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L9 5 L1 9 Z" fill="#147C77"/></marker>
+  <marker id="ar04-arrow-light" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L9 5 L1 9 Z" fill="#FFF9E8"/></marker>
+  <marker id="ar04-arrow-retry" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L9 5 L1 9 Z" fill="#B8AEFF"/></marker>
+</defs>
+<rect width="1600" height="1000" fill="#F8F7F2"/>
+<g font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" fill="#202D27">
+  <text x="60" y="70" font-size="38" font-weight="600">内容检索服务架构</text>
+  <path d="M900 61 H955" stroke="#43544B" stroke-width="2.4"/><text x="970" y="69" font-size="19">调用</text>
+  <path d="M1070 61 H1125" stroke="#147C77" stroke-width="2.4"/><text x="1140" y="69" font-size="19">索引访问</text>
+  <path d="M1300 61 H1355" stroke="#6256C9" stroke-width="2.4"/><text x="1370" y="69" font-size="19">重试</text>
+  <rect x="60" y="125" width="1100" height="185" rx="22" fill="#F5EFE4" stroke="#A7B8AD" stroke-width="1.8"/>
+  <text x="90" y="171" font-size="26" font-weight="600">内容来源</text>
+  <rect x="60" y="350" width="1100" height="220" rx="22" fill="#20372D"/>
+  <text x="90" y="399" font-size="26" font-weight="600" fill="#FFF9E8">索引处理</text>
+  <rect x="60" y="620" width="1100" height="220" rx="22" fill="#E7F4F1" stroke="#78AFA6" stroke-width="1.8"/>
+  <text x="90" y="669" font-size="26" font-weight="600">检索服务</text>
+  <rect x="1250" y="125" width="290" height="715" rx="22" fill="#EBEFF0" stroke="#A7B8AD" stroke-width="1.8"/>
+  <text x="1280" y="171" font-size="26" font-weight="600">数据存储</text>
+  <path id="ar04-e1" data-diagram-role="connector" d="M210 275 V350" fill="none" stroke="#43544B" stroke-width="2.4"/>
+  <path id="ar04-e1-tail" data-diagram-role="connector" d="M210 350 V450" fill="none" stroke="#FFF9E8" stroke-width="2.4" marker-end="url(#ar04-arrow-light)"/>
+  <path id="ar04-e2" data-diagram-role="connector" d="M320 480 H400" fill="none" stroke="#FFF9E8" stroke-width="2.4" marker-end="url(#ar04-arrow-light)"/>
+  <path id="ar04-e3" data-diagram-role="connector" d="M620 480 H1160" fill="none" stroke="#82D7CA" stroke-width="2.4"/>
+  <path id="ar04-e3-tail" data-diagram-role="connector" d="M1160 480 H1280" fill="none" stroke="#147C77" stroke-width="2.4" marker-end="url(#ar04-arrow-data)"/>
+  <path id="ar04-e4" data-diagram-role="connector" d="M320 760 H400" fill="none" stroke="#43544B" stroke-width="2.4" marker-end="url(#ar04-arrow-main)"/>
+  <path id="ar04-e5" data-diagram-role="connector" d="M620 760 H710" fill="none" stroke="#43544B" stroke-width="2.4" marker-end="url(#ar04-arrow-main)"/>
+  <path id="ar04-e6" data-diagram-role="connector" d="M510 790 V890 H1395 V530" fill="none" stroke="#147C77" stroke-width="2.4" marker-end="url(#ar04-arrow-data)"/>
+  <path id="ar04-e7" data-diagram-role="connector" d="M510 510 V540 H210 V510" fill="none" stroke="#B8AEFF" stroke-width="2.4" marker-end="url(#ar04-arrow-retry)"/>
+  <g font-size="19" text-anchor="middle">
+    <text x="235" y="338">①</text><text x="360" y="464" fill="#FFF9E8">②</text>
+    <text x="900" y="460" fill="#82D7CA">③</text><text x="360" y="745">④</text>
+    <text x="1080" y="875" fill="#147C77">⑤</text><text x="665" y="745">⑥</text>
+    <text x="360" y="560" fill="#B8AEFF">⑦ 失败重试</text>
+  </g>
+  <g font-size="22" text-anchor="middle">
+    <rect x="100" y="205" width="220" height="70" rx="12" fill="#FFFFFF" stroke="#A7B8AD"/><text x="210" y="249">编辑工具</text>
+    <rect x="100" y="450" width="220" height="60" rx="12" fill="#3A5044" stroke="#728477"/><text x="210" y="488" fill="#FFF9E8">采集接口</text>
+    <rect x="400" y="450" width="220" height="60" rx="12" fill="#3A5044" stroke="#728477"/><text x="510" y="488" fill="#FFF9E8">索引构建</text>
+    <rect x="100" y="730" width="220" height="60" rx="12" fill="#FFFFFF" stroke="#A7B8AD"/><text x="210" y="768">查询界面</text>
+    <rect x="400" y="730" width="220" height="60" rx="12" fill="#FFFFFF" stroke="#A7B8AD"/><text x="510" y="768">检索引擎</text>
+    <rect x="710" y="730" width="220" height="60" rx="12" fill="#FFFFFF" stroke="#A7B8AD"/><text x="820" y="768">结果展示</text>
+    <rect x="1280" y="430" width="230" height="100" rx="12" fill="#FFFFFF" stroke="#A7B8AD"/><text x="1395" y="488">检索索引</text>
+  </g>
+</g>
+</svg>

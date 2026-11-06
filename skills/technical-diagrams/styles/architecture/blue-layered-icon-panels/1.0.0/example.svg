@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1400" viewBox="0 0 1800 1400" role="img" aria-labelledby="ar12-title ar12-desc">
+  <title id="ar12-title">知识资源服务能力架构（通用示例）</title>
+  <desc id="ar12-desc">四层浅蓝面板包括图文卡、处理矩阵和来源矩阵；四枚带文字的粗箭头从资源采集层指向资源整理层，其他层不补造连接。</desc>
+  <metadata>{&quot;sample_kind&quot;: &quot;synthetic&quot;, &quot;profile&quot;: &quot;architecture/blue-layered-icon-panels@1.0.0&quot;, &quot;number&quot;: &quot;AR-12&quot;, &quot;semantic_version&quot;: &quot;1.0.0&quot;, &quot;line_style&quot;: {&quot;id&quot;: &quot;orthogonal&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;source&quot;: &quot;default&quot;}, &quot;interaction_standard&quot;: {&quot;id&quot;: &quot;single-direction&quot;, &quot;version&quot;: &quot;1.0.0&quot;}, &quot;overrides&quot;: {&quot;connectors&quot;: {&quot;layer_data_arrows&quot;: &quot;wide-up-labeled&quot;}}, &quot;features&quot;: [&quot;四层浅蓝面板&quot;, &quot;竖排层名&quot;, &quot;三张与六张图文卡&quot;, &quot;九种独立矢量插图&quot;, &quot;三组处理矩阵&quot;, &quot;两组来源矩阵&quot;, &quot;四枚带字上行粗箭头&quot;], &quot;model&quot;: {&quot;nodes&quot;: [&quot;应用呈现&quot;, &quot;分析视图&quot;, &quot;资源整理&quot;, &quot;资源采集&quot;], &quot;edges&quot;: [{&quot;id&quot;: &quot;ar12-e1&quot;, &quot;source&quot;: &quot;资源采集&quot;, &quot;target&quot;: &quot;资源整理&quot;, &quot;label&quot;: &quot;馆藏资料&quot;}, {&quot;id&quot;: &quot;ar12-e2&quot;, &quot;source&quot;: &quot;资源采集&quot;, &quot;target&quot;: &quot;资源整理&quot;, &quot;label&quot;: &quot;读者数据&quot;}, {&quot;id&quot;: &quot;ar12-e3&quot;, &quot;source&quot;: &quot;资源采集&quot;, &quot;target&quot;: &quot;资源整理&quot;, &quot;label&quot;: &quot;使用数据&quot;}, {&quot;id&quot;: &quot;ar12-e4&quot;, &quot;source&quot;: &quot;资源采集&quot;, &quot;target&quot;: &quot;资源整理&quot;, &quot;label&quot;: &quot;访问数据&quot;}]}, &quot;dependencies&quot;: {&quot;SKILL.md&quot;: &quot;b1f057694d3d12e460da0056a18359237fff1910daedfb04f247bbe9e8ee5bcb&quot;, &quot;scripts/catalog.py&quot;: &quot;b2200a4fbb8a4616af769cba12863d8ca46f4bc7ec046241c504a8ad312297aa&quot;, &quot;scripts/render_svg.mjs&quot;: &quot;31f643602bc936f33c63426e42ec241d4529c129ebc393a2bc5c138d98596c60&quot;, &quot;agents/openai.yaml&quot;: &quot;fc24ee90982ccaf42b0b2e99ed1a3e2b4d4f9c4eb9851c1c9c7cc8f607118809&quot;, &quot;references/extensions-v1.md&quot;: &quot;5fef312b67549fbfd42e460406b8453629972067df3a7d2b85ac5a29ebfd3bb8&quot;, &quot;references/html-integration-v1.md&quot;: &quot;436eebd17a48688f68d526e887f7715c3c6f1d1008b5079a5185d5593b901ff9&quot;, &quot;references/style-numbering-v1.md&quot;: &quot;5415f0f7be85bc663db202f27b5ea1eef01550032c3f214126dee95d7a0e9322&quot;, &quot;references/common/1.0.0.md&quot;: &quot;5c4dc08bca97270b400fb29418381bd2978ae1fab14a51c321824cce543a55ba&quot;, &quot;types/architecture/1.0.0.md&quot;: &quot;03000a660dc55bc385726e69afbe1ebc9709d202133bdd89c34ccd10848dd536&quot;, &quot;styles/architecture/blue-layered-icon-panels/1.0.0/SPEC.md&quot;: &quot;fcc6731c0b6c65cbfd9a1cbd2db28d0293b3714bc2f959e42e6b64e94e181130&quot;, &quot;styles/architecture/blue-layered-icon-panels/1.0.0/tokens.json&quot;: &quot;4b5a5f4280ef601d55420fc7a58fee0c9bd1270e899aebb5f99399d724127562&quot;, &quot;references/line-styles-v1.md&quot;: &quot;623aac6e6721b001ce878ad4dc864e0ff4654b66bf8e2c17550d264955b445d0&quot;, &quot;references/interaction-standards/1.0.0.md&quot;: &quot;f2e2a466ad741b65d9df72a451201e9eceebdc9ef760e200b25e543e3846d56c&quot;, &quot;references/interaction-standards/1.0.0.svg&quot;: &quot;f492bbc9e401aeb90febb30f941ab959a0d34b893193e9f59b921cb45118e12b&quot;}, &quot;example_digest_source&quot;: &quot;catalog.lock.json 的 files（避免自引用）&quot;}</metadata>
+  <defs>
+    <linearGradient id="ar12-arrow-gradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4162CC"/><stop offset="1" stop-color="#7295FF"/></linearGradient>
+  </defs>
+  <rect width="1800" height="1400" fill="#FFFFFF"/>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+    <text x="900" y="96" text-anchor="middle" font-size="38" font-weight="700" fill="#004C99">知识资源服务能力架构</text>
+    <rect data-layer="applications" x="42" y="145" width="1710" height="180" rx="5" fill="#D1E8FF"/>
+    <rect data-layer="analytics" x="42" y="347" width="1710" height="208" rx="5" fill="#D1E8FF"/>
+    <rect data-layer="processing" x="42" y="577" width="1710" height="394" rx="5" fill="#D1E8FF"/>
+    <rect data-layer="sources" x="42" y="1005" width="1710" height="350" rx="5" fill="#D1E8FF"/>
+    <g fill="#689ACC" font-size="29" font-weight="700" text-anchor="middle">
+      <text data-layer-label="applications" x="88" y="193"><tspan x="88">应</tspan><tspan x="88" dy="35">用</tspan><tspan x="88" dy="35">呈</tspan><tspan x="88" dy="35">现</tspan></text>
+      <text data-layer-label="analytics" x="88" y="397"><tspan x="88">分</tspan><tspan x="88" dy="35">析</tspan><tspan x="88" dy="35">视</tspan><tspan x="88" dy="35">图</tspan></text>
+      <text data-layer-label="processing" x="84" y="742"><tspan x="84">资</tspan><tspan x="84" dy="35">源</tspan><tspan x="84" dy="35">整</tspan><tspan x="84" dy="35">理</tspan></text>
+      <text data-layer-label="sources" x="84" y="1148"><tspan x="84">资</tspan><tspan x="84" dy="35">源</tspan><tspan x="84" dy="35">采</tspan><tspan x="84" dy="35">集</tspan></text>
+    </g>
+    <g fill="#FFFFFF">
+      <rect data-card="decision-card" x="158" y="165" width="520" height="140" rx="7"/><rect data-card="decision-card" x="715" y="165" width="503" height="140" rx="7"/><rect data-card="decision-card" x="1248" y="165" width="487" height="140" rx="7"/>
+      <rect data-card="analysis-card" x="158" y="375" width="240" height="158" rx="7"/><rect data-card="analysis-card" x="438" y="375" width="240" height="158" rx="7"/><rect data-card="analysis-card" x="709" y="375" width="248" height="158" rx="7"/><rect data-card="analysis-card" x="979" y="375" width="245" height="158" rx="7"/><rect data-card="analysis-card" x="1245" y="375" width="224" height="158" rx="7"/><rect data-card="analysis-card" x="1484" y="375" width="250" height="158" rx="7"/>
+      <rect data-card="process-panel" x="132" y="616" width="696" height="320" rx="7"/><rect data-card="process-panel" x="856" y="616" width="286" height="320" rx="7"/><rect data-card="process-panel" x="1162" y="616" width="578" height="320" rx="7"/>
+      <rect data-card="source-panel" x="118" y="1062" width="1045" height="250" rx="7"/><rect data-card="source-panel" x="1198" y="1062" width="542" height="250" rx="7"/>
+    </g>
+    <g fill="#004C99" font-weight="700">
+      <g font-size="26"><text x="425" y="248">主题画像</text><text x="995" y="248">内容推荐</text><text x="1518" y="248">社区传播</text></g>
+      <g font-size="23"><text x="263" y="465">分类统计</text><text x="545" y="465">地域分布</text><text x="812" y="465">阅读留存</text><text x="1084" y="465">访问路径</text><text x="1334" y="465">来源分析</text><text x="1580" y="465">概览面板</text></g>
+      <g font-size="26" text-anchor="middle"><text x="480" y="662">资料整理</text><text x="999" y="662">身份整合</text><text x="1451" y="662">权限与保护</text><text x="640" y="1106">内部资源</text><text x="1469" y="1106">外部资源</text></g>
+    </g>
+    <g fill="none" stroke="#3672AF" stroke-width="1.8">
+      <rect data-cell="c01" x="150" y="688" width="204" height="43" rx="6"/><rect data-cell="c02" x="370" y="688" width="204" height="43" rx="6"/><rect data-cell="c03" x="594" y="688" width="204" height="43" rx="6"/>
+      <rect data-cell="c04" x="150" y="752" width="204" height="43" rx="6"/><rect data-cell="c05" x="370" y="752" width="204" height="43" rx="6"/><rect data-cell="c06" x="594" y="752" width="204" height="43" rx="6"/>
+      <rect data-cell="c07" x="150" y="816" width="204" height="43" rx="6"/><rect data-cell="c08" x="370" y="816" width="204" height="43" rx="6"/><rect data-cell="c09" x="594" y="816" width="204" height="43" rx="6"/>
+      <rect data-cell="c10" x="896" y="688" width="204" height="43" rx="6"/><rect data-cell="c11" x="896" y="752" width="204" height="43" rx="6"/><rect data-cell="c12" x="896" y="816" width="204" height="43" rx="6"/>
+      <rect data-cell="c13" x="1186" y="688" width="230" height="43" rx="6"/><rect data-cell="c14" x="1475" y="688" width="230" height="43" rx="6"/><rect data-cell="c15" x="1186" y="752" width="230" height="43" rx="6"/><rect data-cell="c16" x="1475" y="752" width="230" height="43" rx="6"/><rect data-cell="c17" x="1186" y="816" width="230" height="43" rx="6"/><rect data-cell="c18" x="1475" y="816" width="230" height="43" rx="6"/>
+      <rect data-cell="s01" x="153" y="1126" width="218" height="66" rx="6"/><rect data-cell="s02" x="402" y="1126" width="218" height="66" rx="6"/><rect data-cell="s03" x="658" y="1126" width="218" height="66" rx="6"/><rect data-cell="s04" x="908" y="1126" width="218" height="66" rx="6"/>
+      <rect data-cell="s05" x="153" y="1222" width="218" height="66" rx="6"/><rect data-cell="s06" x="402" y="1222" width="218" height="66" rx="6"/><rect data-cell="s07" x="658" y="1222" width="218" height="66" rx="6"/><rect data-cell="s08" x="908" y="1222" width="218" height="66" rx="6"/>
+      <rect data-cell="s09" x="1233" y="1126" width="217" height="66" rx="6"/><rect data-cell="s10" x="1482" y="1126" width="217" height="66" rx="6"/><rect data-cell="s11" x="1233" y="1222" width="217" height="66" rx="6"/><rect data-cell="s12" x="1482" y="1222" width="217" height="66" rx="6"/>
+    </g>
+    <g fill="#3672AF" font-size="21" text-anchor="middle">
+      <text x="252" y="717">资料去重</text><text x="472" y="717">格式转换</text><text x="696" y="717">内容合并</text><text x="252" y="781">内容拆分</text><text x="472" y="781">异常校验</text><text x="696" y="781">主题分类</text><text x="252" y="845">缺项补全</text><text x="472" y="845">内容计算</text><text x="696" y="845">条件过滤</text>
+      <text x="998" y="717">读者映射</text><text x="998" y="781">身份归并</text><text x="998" y="845">来源关联</text>
+      <text x="1301" y="717">资料脱敏</text><text x="1590" y="717">授权审核</text><text x="1301" y="781">内容加密</text><text x="1590" y="781">备份恢复</text><text x="1301" y="845">访问授权</text><text x="1590" y="845">操作记录</text>
+      <text x="262" y="1168">馆藏目录</text><text x="511" y="1168">线上站点</text><text x="767" y="1168">社区投稿</text><text x="1017" y="1168">档案目录</text><text x="262" y="1264">线下活动</text><text x="511" y="1264">资源管理</text><text x="767" y="1264">阅读记录</text><text x="1017" y="1264">授权资料</text>
+      <text x="1341" y="1168">合作机构</text><text x="1590" y="1168">公共目录</text><text x="1341" y="1264">社区网站</text><text x="1590" y="1264">开放数据</text>
+    </g>
+    <g data-icon="portrait" transform="translate(250 235)" stroke-linejoin="round">
+      <rect x="-46" y="-40" width="92" height="76" rx="6" fill="#E0F2FE" stroke="#0CA5E9" stroke-width="3"/><circle cx="-16" cy="-12" r="11" fill="#FFB86B"/><path d="M-34 20 Q-16 -4 2 20" fill="#7C3AED"/><path d="M10 -20 H32 M10 -5 H32 M10 10 H32" stroke="#2463EB" stroke-width="4"/><circle cx="38" cy="-34" r="8" fill="#EC4899"/>
+    </g>
+    <g data-icon="recommend" transform="translate(865 235)" stroke-linecap="round" stroke-linejoin="round">
+      <circle r="46" fill="#F1F5F9" stroke="#64748B" stroke-width="3"/><rect x="-23" y="-30" width="46" height="62" rx="4" fill="#FFFFFF" stroke="#64748B" stroke-width="3"/><path d="M-13 -12 H13 M-13 0 H13 M-13 12 H5" stroke="#0CA5E9" stroke-width="4"/><circle cx="0" cy="-43" r="8" fill="#FBBF24"/><path d="M-37 31 H-5 M-12 23 L-4 31 L-12 39" stroke="#F59E0B" stroke-width="5"/>
+    </g>
+    <g data-icon="outreach" transform="translate(1390 235)" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-40 -12 L15 -35 V30 L-40 10 Z" fill="#FDE68A" stroke="#F97316" stroke-width="4"/><path d="M-28 10 L-16 39 H2 L-4 21" fill="#60A5FA" stroke="#2463EB" stroke-width="4"/><path d="M30 -20 Q48 0 30 20 M40 -32 Q66 0 40 32" fill="none" stroke="#EC4899" stroke-width="4"/>
+    </g>
+    <g data-icon="funnel" transform="translate(223 454)"><path d="M-32 -24 H32 L23 -9 H-23 Z" fill="#7C3AED"/><path d="M-23 -4 H23 L15 9 H-15 Z" fill="#FBBF24"/><path d="M-15 14 H15 L0 31 Z" fill="#10B981"/></g>
+    <g data-icon="map" transform="translate(505 454)" fill="none" stroke="#0CA5E9" stroke-width="4"><path d="M0 31 Q-26 6 -26 -10 A26 26 0 0 1 26 -10 Q26 6 0 31 Z"/><circle cx="0" cy="-10" r="8" stroke="#F59E0B"/><path d="M-30 35 H30"/></g>
+    <g data-icon="reader" transform="translate(772 454)" stroke-linecap="round"><circle cx="0" cy="-17" r="14" fill="#FDE68A" stroke="#64748B" stroke-width="3"/><path d="M-28 25 Q0 -1 28 25" fill="#E0F2FE" stroke="#64748B" stroke-width="4"/><path d="M-34 10 V31 M34 10 V31" stroke="#0CA5E9" stroke-width="4"/></g>
+    <g data-icon="path" transform="translate(1044 454)" fill="none" stroke-width="6" stroke-linecap="round"><path d="M-32 -18 H12 Q33 -18 33 -2 Q33 14 12 14 H-11 Q-28 14 -28 29" stroke="#6366F1"/><path d="M-33 -18 H-20 M-28 29 H-14" stroke="#2DD4BF"/></g>
+    <g data-icon="source" transform="translate(1300 454)" fill="none" stroke="#475569" stroke-width="4"><circle cx="-5" cy="-5" r="23"/><circle cx="-5" cy="-5" r="10" stroke="#0CA5E9"/><path d="M12 12 L31 31"/></g>
+    <g data-icon="dashboard" transform="translate(1548 454)" fill="none" stroke="#0CA5E9" stroke-width="3"><rect x="-27" y="-27" width="54" height="46"/><path d="M-34 27 H34 M0 19 V27"/><path d="M-15 10 V-4 M-2 10 V-16 M11 10 V-9" stroke="#10B981" stroke-width="5"/></g>
+    <g fill="url(#ar12-arrow-gradient)">
+      <path id="ar12-e1" data-diagram-role="connector" d="M292 1055 V986 H225 L325 928 L425 986 H358 V1055 Z"/>
+      <path id="ar12-e2" data-diagram-role="connector" d="M667 1055 V986 H600 L700 928 L800 986 H733 V1055 Z"/>
+      <path id="ar12-e3" data-diagram-role="connector" d="M1162 1055 V986 H1095 L1195 928 L1295 986 H1228 V1055 Z"/>
+      <path id="ar12-e4" data-diagram-role="connector" d="M1567 1055 V986 H1500 L1600 928 L1700 986 H1633 V1055 Z"/>
+    </g>
+    <g fill="#FFFFFF" font-size="26" font-weight="700" text-anchor="middle">
+      <text data-arrow-label="one" data-qa-allow-overlap="arrow-label" x="325" y="1015"><tspan x="325">馆藏</tspan><tspan x="325" dy="29">资料</tspan></text>
+      <text data-arrow-label="two" data-qa-allow-overlap="arrow-label" x="700" y="1015"><tspan x="700">读者</tspan><tspan x="700" dy="29">数据</tspan></text>
+      <text data-arrow-label="three" data-qa-allow-overlap="arrow-label" x="1195" y="1015"><tspan x="1195">使用</tspan><tspan x="1195" dy="29">数据</tspan></text>
+      <text data-arrow-label="four" data-qa-allow-overlap="arrow-label" x="1600" y="1015"><tspan x="1600">访问</tspan><tspan x="1600" dy="29">数据</tspan></text>
+    </g>
+  </g>
+</svg>

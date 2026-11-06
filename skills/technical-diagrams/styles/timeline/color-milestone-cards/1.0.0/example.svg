@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1850" height="654" viewBox="0 0 1850 654" role="img" aria-labelledby="tl01-title tl01-desc">
+  <title id="tl01-title">知识资料整理历程（虚构示例）</title>
+  <desc id="tl01-desc">六个等间隔虚构年份的里程碑，展示彩色时间标注、同心圆节点、同色虚线及下方分段卡片；横轴按两年等距。</desc>
+  <metadata>{&quot;sample_kind&quot;: &quot;synthetic&quot;, &quot;profile&quot;: &quot;timeline/color-milestone-cards@1.0.0&quot;, &quot;number&quot;: &quot;TL-01&quot;, &quot;semantic_version&quot;: &quot;1.0.0&quot;, &quot;line_style&quot;: {&quot;id&quot;: &quot;orthogonal&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;source&quot;: &quot;default&quot;}, &quot;interaction_standard&quot;: {&quot;id&quot;: &quot;single-direction&quot;, &quot;version&quot;: &quot;1.0.0&quot;}, &quot;overrides&quot;: {&quot;connectors&quot;: {&quot;axis&quot;: &quot;horizontal&quot;, &quot;stems&quot;: &quot;vertical-dashed&quot;}}, &quot;features&quot;: [&quot;六色时间标注&quot;, &quot;灰蓝时间轴与绿色终点箭头&quot;, &quot;浅色外晕与白色内环&quot;, &quot;同色竖向虚线&quot;, &quot;圆角卡片与直角标题带&quot;, &quot;分段居中正文&quot;], &quot;model&quot;: {&quot;scale&quot;: &quot;proportional&quot;, &quot;scale_unit&quot;: &quot;year&quot;, &quot;scale_step&quot;: 2, &quot;events&quot;: [{&quot;id&quot;: &quot;e1&quot;, &quot;date&quot;: &quot;2010&quot;, &quot;precision&quot;: &quot;year&quot;, &quot;title&quot;: &quot;资料收集&quot;}, {&quot;id&quot;: &quot;e2&quot;, &quot;date&quot;: &quot;2012&quot;, &quot;precision&quot;: &quot;year&quot;, &quot;title&quot;: &quot;目录编制&quot;}, {&quot;id&quot;: &quot;e3&quot;, &quot;date&quot;: &quot;2014&quot;, &quot;precision&quot;: &quot;year&quot;, &quot;title&quot;: &quot;数字扫描&quot;}, {&quot;id&quot;: &quot;e4&quot;, &quot;date&quot;: &quot;2016&quot;, &quot;precision&quot;: &quot;year&quot;, &quot;title&quot;: &quot;分类检索&quot;}, {&quot;id&quot;: &quot;e5&quot;, &quot;date&quot;: &quot;2018&quot;, &quot;precision&quot;: &quot;year&quot;, &quot;title&quot;: &quot;公开阅读&quot;}, {&quot;id&quot;: &quot;e6&quot;, &quot;date&quot;: &quot;2020&quot;, &quot;precision&quot;: &quot;year&quot;, &quot;title&quot;: &quot;协作维护&quot;}]}, &quot;dependencies&quot;: {&quot;SKILL.md&quot;: &quot;b1f057694d3d12e460da0056a18359237fff1910daedfb04f247bbe9e8ee5bcb&quot;, &quot;scripts/catalog.py&quot;: &quot;b2200a4fbb8a4616af769cba12863d8ca46f4bc7ec046241c504a8ad312297aa&quot;, &quot;scripts/render_svg.mjs&quot;: &quot;31f643602bc936f33c63426e42ec241d4529c129ebc393a2bc5c138d98596c60&quot;, &quot;agents/openai.yaml&quot;: &quot;fc24ee90982ccaf42b0b2e99ed1a3e2b4d4f9c4eb9851c1c9c7cc8f607118809&quot;, &quot;references/extensions-v1.md&quot;: &quot;5fef312b67549fbfd42e460406b8453629972067df3a7d2b85ac5a29ebfd3bb8&quot;, &quot;references/html-integration-v1.md&quot;: &quot;436eebd17a48688f68d526e887f7715c3c6f1d1008b5079a5185d5593b901ff9&quot;, &quot;references/style-numbering-v1.md&quot;: &quot;5415f0f7be85bc663db202f27b5ea1eef01550032c3f214126dee95d7a0e9322&quot;, &quot;references/common/1.0.0.md&quot;: &quot;5c4dc08bca97270b400fb29418381bd2978ae1fab14a51c321824cce543a55ba&quot;, &quot;types/timeline/1.0.0.md&quot;: &quot;a497bdda0ad5ae37be2f2f251a898785ce07896bd3126c90565db8b6bca932f8&quot;, &quot;styles/timeline/color-milestone-cards/1.0.0/SPEC.md&quot;: &quot;2abc409599cadc874a4f393ab50fe3259f7cf983fde6edfe1090a691b648dc31&quot;, &quot;styles/timeline/color-milestone-cards/1.0.0/tokens.json&quot;: &quot;fad50fb23c5f18c7a40e79b811a398b9a18a7b9952fe8e838ccd45f7fb56ffbd&quot;, &quot;references/line-styles-v1.md&quot;: &quot;623aac6e6721b001ce878ad4dc864e0ff4654b66bf8e2c17550d264955b445d0&quot;, &quot;references/interaction-standards/1.0.0.md&quot;: &quot;f2e2a466ad741b65d9df72a451201e9eceebdc9ef760e200b25e543e3846d56c&quot;, &quot;references/interaction-standards/1.0.0.svg&quot;: &quot;f492bbc9e401aeb90febb30f941ab959a0d34b893193e9f59b921cb45118e12b&quot;}, &quot;example_digest_source&quot;: &quot;catalog.lock.json 的 files（避免自引用）&quot;}</metadata>
+  <defs>
+    <marker id="tl01-axis-arrow" viewBox="0 0 20 20" refX="19" refY="10" markerWidth="20" markerHeight="20" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0 L20 10 L0 20 Z" fill="#079669"/></marker>
+  </defs>
+  <rect width="1850" height="654" fill="#FFFFFF"/>
+  <path d="M150 120 H1630" fill="none" stroke="#94A3B8" stroke-width="2"/>
+  <path data-axis="time" d="M1630 120 H1774" fill="none" stroke="#079669" stroke-width="2.4" marker-end="url(#tl01-axis-arrow)"/>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" text-anchor="middle">
+    <g data-milestone="e1" data-date="2010" transform="translate(150 0)">
+      <text x="0" y="45" font-size="33" fill="#92400D">2010</text>
+      <circle data-halo="e1" cx="0" cy="120" r="48" fill="#EFE3DC" stroke="#92400D" stroke-opacity=".15" stroke-width="4"/><circle cx="0" cy="120" r="33" fill="#FFFFFF"/><circle data-core="e1" cx="0" cy="120" r="25" fill="#92400D"/>
+      <path data-stem="e1" d="M0 162 V263" fill="none" stroke="#92400D" stroke-width="3" stroke-dasharray="11 10"/>
+      <rect data-card="e1" x="-132" y="263" width="264" height="372" rx="26" fill="#FFFFFF" stroke="#92400D" stroke-width="2.4"/><rect data-header="e1" x="-131" y="287" width="254" height="54" fill="#92400D"/>
+      <text x="-4" y="329" font-size="29" font-weight="700" fill="#FFFFFF">资料收集</text>
+      <text x="0" y="386" font-size="22" fill="#475569"><tspan x="0">集中整理纸质资料</tspan><tspan x="0" dy="39">登记来源与主题</tspan></text>
+      <text x="0" y="502" font-size="22" fill="#475569"><tspan x="0">建立资料清单</tspan><tspan x="0" dy="39">记录基本信息</tspan><tspan x="0" dy="39">统一编号管理</tspan></text>
+    </g>
+    <g data-milestone="e2" data-date="2012" transform="translate(458 0)">
+      <text x="0" y="45" font-size="33" fill="#B4540A">2012</text>
+      <circle data-halo="e2" cx="0" cy="120" r="48" fill="#F5E5DD" stroke="#B4540A" stroke-opacity=".15" stroke-width="4"/><circle cx="0" cy="120" r="33" fill="#FFFFFF"/><circle data-core="e2" cx="0" cy="120" r="25" fill="#B4540A"/>
+      <path data-stem="e2" d="M0 162 V263" fill="none" stroke="#B4540A" stroke-width="3" stroke-dasharray="11 10"/>
+      <rect data-card="e2" x="-132" y="263" width="264" height="372" rx="26" fill="#FFFFFF" stroke="#B4540A" stroke-width="2.4"/><rect data-header="e2" x="-131" y="287" width="254" height="54" fill="#B4540A"/>
+      <text x="-4" y="329" font-size="29" font-weight="700" fill="#FFFFFF">目录编制</text>
+      <text x="0" y="386" font-size="22" fill="#475569"><tspan x="0">按主题建立目录</tspan><tspan x="0" dy="39">人工录入条目</tspan></text>
+      <text x="0" y="502" font-size="22" fill="#475569"><tspan x="0">完善分类层级</tspan><tspan x="0" dy="39">记录作者与时间</tspan><tspan x="0" dy="39">方便馆员检索</tspan></text>
+    </g>
+    <g data-milestone="e3" data-date="2014" transform="translate(766 0)">
+      <text x="0" y="45" font-size="33" fill="#2463EB">2014</text>
+      <circle data-halo="e3" cx="0" cy="120" r="48" fill="#E0E7FD" stroke="#2463EB" stroke-opacity=".15" stroke-width="4"/><circle cx="0" cy="120" r="33" fill="#FFFFFF"/><circle data-core="e3" cx="0" cy="120" r="25" fill="#2463EB"/>
+      <path data-stem="e3" d="M0 162 V263" fill="none" stroke="#2463EB" stroke-width="3" stroke-dasharray="11 10"/>
+      <rect data-card="e3" x="-132" y="263" width="264" height="372" rx="26" fill="#FFFFFF" stroke="#2463EB" stroke-width="2.4"/><rect data-header="e3" x="-131" y="287" width="254" height="54" fill="#2463EB"/>
+      <text x="-4" y="329" font-size="29" font-weight="700" fill="#FFFFFF">数字扫描</text>
+      <text x="0" y="386" font-size="22" fill="#475569"><tspan x="0">纸质内容转为图像</tspan><tspan x="0" dy="39">保留原始记录</tspan></text>
+      <text x="0" y="502" font-size="22" fill="#475569"><tspan x="0">整理扫描文件</tspan><tspan x="0" dy="39">核对页码与质量</tspan><tspan x="0" dy="39">建立资料备份</tspan></text>
+    </g>
+    <g data-milestone="e4" data-date="2016" transform="translate(1074 0)">
+      <text x="0" y="45" font-size="33" fill="#0CA5E9">2016</text>
+      <circle data-halo="e4" cx="0" cy="120" r="48" fill="#E1F2FC" stroke="#0CA5E9" stroke-opacity=".15" stroke-width="4"/><circle cx="0" cy="120" r="33" fill="#FFFFFF"/><circle data-core="e4" cx="0" cy="120" r="25" fill="#0CA5E9"/>
+      <path data-stem="e4" d="M0 162 V263" fill="none" stroke="#0CA5E9" stroke-width="3" stroke-dasharray="11 10"/>
+      <rect data-card="e4" x="-132" y="263" width="264" height="372" rx="26" fill="#FFFFFF" stroke="#0CA5E9" stroke-width="2.4"/><rect data-header="e4" x="-131" y="287" width="254" height="54" fill="#0CA5E9"/>
+      <text x="-4" y="329" font-size="29" font-weight="700" fill="#FFFFFF">分类检索</text>
+      <text x="0" y="386" font-size="22" fill="#475569"><tspan x="0">资料增加检索字段</tspan><tspan x="0" dy="39">支持分类浏览</tspan></text>
+      <text x="0" y="502" font-size="22" fill="#475569"><tspan x="0">整理主题标签</tspan><tspan x="0" dy="39">建立检索入口</tspan><tspan x="0" dy="39">核查目录内容</tspan></text>
+    </g>
+    <g data-milestone="e5" data-date="2018" transform="translate(1382 0)">
+      <text x="0" y="45" font-size="33" fill="#7C3AED">2018</text>
+      <circle data-halo="e5" cx="0" cy="120" r="48" fill="#ECE2FD" stroke="#7C3AED" stroke-opacity=".15" stroke-width="4"/><circle cx="0" cy="120" r="33" fill="#FFFFFF"/><circle data-core="e5" cx="0" cy="120" r="25" fill="#7C3AED"/>
+      <path data-stem="e5" d="M0 162 V263" fill="none" stroke="#7C3AED" stroke-width="3" stroke-dasharray="11 10"/>
+      <rect data-card="e5" x="-132" y="263" width="264" height="372" rx="26" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2.4"/><rect data-header="e5" x="-131" y="287" width="254" height="54" fill="#7C3AED"/>
+      <text x="-4" y="329" font-size="29" font-weight="700" fill="#FFFFFF">公开阅读</text>
+      <text x="0" y="386" font-size="22" fill="#475569"><tspan x="0">开放资料阅读入口</tspan><tspan x="0" dy="39">按授权范围展示</tspan></text>
+      <text x="0" y="502" font-size="22" fill="#475569"><tspan x="0">呈现主题目录</tspan><tspan x="0" dy="39">支持读者查找</tspan><tspan x="0" dy="39">收集阅读反馈</tspan></text>
+    </g>
+    <g data-milestone="e6" data-date="2020" transform="translate(1690 0)">
+      <text x="0" y="45" font-size="33" fill="#079669">2020</text>
+      <circle data-halo="e6" cx="0" cy="120" r="48" fill="#E0EFE9" stroke="#079669" stroke-opacity=".15" stroke-width="4"/><circle cx="0" cy="120" r="33" fill="#FFFFFF"/><circle data-core="e6" cx="0" cy="120" r="25" fill="#079669"/>
+      <path data-stem="e6" d="M0 162 V263" fill="none" stroke="#079669" stroke-width="3" stroke-dasharray="11 10"/>
+      <rect data-card="e6" x="-132" y="263" width="264" height="372" rx="26" fill="#FFFFFF" stroke="#079669" stroke-width="2.4"/><rect data-header="e6" x="-131" y="287" width="254" height="54" fill="#079669"/>
+      <text x="-4" y="329" font-size="29" font-weight="700" fill="#FFFFFF">协作维护</text>
+      <text x="0" y="386" font-size="22" fill="#475569"><tspan x="0">多人维护资料内容</tspan><tspan x="0" dy="39">记录修改过程</tspan></text>
+      <text x="0" y="502" font-size="22" fill="#475569"><tspan x="0">更新条目说明</tspan><tspan x="0" dy="39">保留历史版本</tspan><tspan x="0" dy="39">持续整理反馈</tspan></text>
+    </g>
+  </g>
+</svg>

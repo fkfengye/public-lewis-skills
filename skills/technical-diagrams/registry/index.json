@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "skill_version": "1.9.0",
+  "common": {
+    "version": "1.0.0",
+    "spec": "references/common/1.0.0.md"
+  },
+  "types": [
+    "flowchart",
+    "sequence",
+    "state",
+    "architecture",
+    "er",
+    "topology",
+    "timeline",
+    "data-flow"
+  ],
+  "line_styles": "registry/shared/line-styles.json",
+  "interaction_standard": "registry/shared/interaction.json"
+}

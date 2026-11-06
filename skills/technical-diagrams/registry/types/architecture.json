@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "id": "architecture",
+  "name": "架构图",
+  "aliases": [
+    "架构图"
+  ],
+  "semantic_version": "1.0.0",
+  "number_prefix": "AR",
+  "guide": "references/type-guides/architecture.md",
+  "default": "architecture/soft-layered@1.0.0",
+  "style_versions": {
+    "soft-layered": "1.0.0",
+    "premium-cards": "1.0.0",
+    "layered-interactions": "1.0.0",
+    "contrast-process-bands": "1.0.0",
+    "blue-green-grid": "1.0.0",
+    "blue-green-detailed": "1.0.0",
+    "ecosystem-capability-matrix": "1.0.0",
+    "cross-boundary-layers": "1.0.0",
+    "three-column-feedback": "1.0.0",
+    "dashed-layered-cards": "1.0.0",
+    "stacked-layer-matrix": "1.0.0",
+    "blue-layered-icon-panels": "1.0.0",
+    "framed-layered-matrix": "1.0.0",
+    "handdrawn-design-board": "1.0.0",
+    "dual-ecosystem-capability-band": "1.0.0"
+  },
+  "styles": [
+    {
+      "id": "soft-layered",
+      "version": "1.0.0",
+      "number": "AR-01",
+      "name": "浅色分层架构",
+      "aliases": [
+        "浅色架构",
+        "分层蓝图"
+      ]
+    },
+    {
+      "id": "premium-cards",
+      "version": "1.0.0",
+      "number": "AR-02",
+      "name": "精致卡片架构",
+      "aliases": [
+        "卡片架构",
+        "精致卡片"
+      ]
+    },
+    {
+      "id": "layered-interactions",
+      "version": "1.0.0",
+      "number": "AR-03",
+      "name": "浅色分层交互",
+      "aliases": [
+        "分层交互模板",
+        "单向分层架构"
+      ],
+      "gallery_layout": "wide"
+    },
+    {
+      "id": "contrast-process-bands",
+      "version": "1.0.0",
+      "number": "AR-04",
+      "name": "暖底深绿分区",
+      "aliases": [
+        "深绿分区",
+        "暖底分区架构"
+      ],
+      "gallery_layout": "wide"
+    },
+    {
+      "id": "blue-green-grid",
+      "version": "1.0.0",
+      "number": "AR-05",
+      "name": "蓝绿密集分区",
+      "aliases": [
+        "蓝绿分区架构",
+        "密集分区架构"
+      ],
+      "gallery_layout": "wide"
+    },
+    {
+      "id": "blue-green-detailed",
+      "version": "1.0.0",
+      "number": "AR-06",
+      "name": "蓝绿密集细节",
+      "aliases": [
+        "蓝绿分区细节",
+        "多层蓝绿架构"
+      ],
+      "gallery_layout": "wide"
+    },
+    {
+      "id": "ecosystem-capability-matrix",
+      "version": "1.0.0",
+      "number": "AR-07",
+      "name": "蓝粉生态能力矩阵",
+      "aliases": [
+        "蓝粉能力矩阵",
+        "生态能力矩阵"
+      ]
+    },
+    {
+      "id": "cross-boundary-layers",
+      "version": "1.0.0",
+      "number": "AR-08",
+      "name": "跨域分层交互",
+      "aliases": [
+        "跨域分层",
+        "跨域分层架构"
+      ]
+    },
+    {
+      "id": "three-column-feedback",
+      "version": "1.0.0",
+      "number": "AR-09",
+      "name": "三栏分区与反馈闭环",
+      "aliases": [
+        "三栏反馈",
+        "虚线分区反馈"
+      ]
+    },
+    {
+      "id": "dashed-layered-cards",
+      "version": "1.0.0",
+      "number": "AR-10",
+      "name": "蓝紫虚线分区架构",
+      "aliases": [
+        "蓝紫分层架构",
+        "虚线分区架构"
+      ]
+    },
+    {
+      "id": "stacked-layer-matrix",
+      "version": "1.0.0",
+      "number": "AR-11",
+      "name": "浅色横向分层矩阵",
+      "aliases": [
+        "横向分层矩阵",
+        "浅色层叠矩阵"
+      ]
+    },
+    {
+      "id": "blue-layered-icon-panels",
+      "version": "1.0.0",
+      "number": "AR-12",
+      "name": "浅蓝图标分层面板",
+      "aliases": [
+        "浅蓝图文分层",
+        "蓝色图标能力面板"
+      ]
+    },
+    {
+      "id": "framed-layered-matrix",
+      "version": "1.0.0",
+      "number": "AR-13",
+      "name": "侧栏保障分层矩阵",
+      "aliases": [
+        "保障带分层架构",
+        "三面保障分层矩阵"
+      ]
+    },
+    {
+      "id": "handdrawn-design-board",
+      "version": "1.0.0",
+      "number": "AR-14",
+      "name": "手绘设计讨论架构",
+      "aliases": [
+        "手绘讨论架构",
+        "设计白板架构"
+      ]
+    },
+    {
+      "id": "dual-ecosystem-capability-band",
+      "version": "1.0.0",
+      "number": "AR-15",
+      "name": "双侧生态与能力矩阵",
+      "aliases": [
+        "双侧生态矩阵",
+        "蓝橙能力带"
+      ]
+    }
+  ]
+}

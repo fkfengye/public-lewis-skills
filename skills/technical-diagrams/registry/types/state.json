@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "state",
+  "name": "状态图",
+  "aliases": [
+    "状态图",
+    "状态机"
+  ],
+  "semantic_version": "1.0.0",
+  "number_prefix": "ST",
+  "guide": "references/type-guides/state.md",
+  "default": "state/classic-mono@1.0.0",
+  "style_versions": {
+    "classic-mono": "1.0.0",
+    "soft-cards": "1.0.0"
+  },
+  "styles": [
+    {
+      "id": "classic-mono",
+      "version": "1.0.0",
+      "number": "ST-01",
+      "name": "经典黑白状态",
+      "aliases": [
+        "黑白状态",
+        "经典黑白"
+      ]
+    },
+    {
+      "id": "soft-cards",
+      "version": "1.0.0",
+      "number": "ST-02",
+      "name": "浅色卡片状态",
+      "aliases": [
+        "浅色状态",
+        "卡片状态"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,911 @@
+<svg id="fc09-diagram" xmlns="http://www.w3.org/2000/svg" width="1600" height="1010" viewBox="0 0 1600 1010" role="img" aria-label="细线组件交互流程：资料整理通用示例">
+<metadata>{
+  &quot;profile&quot;: &quot;flowchart/thin-line-component-flow@1.0.0&quot;,
+  &quot;number&quot;: &quot;FC-09&quot;,
+  &quot;semantic_version&quot;: &quot;1.0.0&quot;,
+  &quot;sample_kind&quot;: &quot;synthetic&quot;,
+  &quot;line_style&quot;: {
+    &quot;id&quot;: &quot;orthogonal&quot;,
+    &quot;version&quot;: &quot;1.0.0&quot;,
+    &quot;source&quot;: &quot;explicit&quot;
+  },
+  &quot;interaction_standard&quot;: {
+    &quot;id&quot;: &quot;single-direction&quot;,
+    &quot;version&quot;: &quot;1.0.0&quot;
+  },
+  &quot;overrides&quot;: {},
+  &quot;dependencies&quot;: {
+    &quot;SKILL.md&quot;: &quot;b1f057694d3d12e460da0056a18359237fff1910daedfb04f247bbe9e8ee5bcb&quot;,
+    &quot;scripts/catalog.py&quot;: &quot;b2200a4fbb8a4616af769cba12863d8ca46f4bc7ec046241c504a8ad312297aa&quot;,
+    &quot;scripts/render_svg.mjs&quot;: &quot;31f643602bc936f33c63426e42ec241d4529c129ebc393a2bc5c138d98596c60&quot;,
+    &quot;agents/openai.yaml&quot;: &quot;fc24ee90982ccaf42b0b2e99ed1a3e2b4d4f9c4eb9851c1c9c7cc8f607118809&quot;,
+    &quot;references/extensions-v1.md&quot;: &quot;5fef312b67549fbfd42e460406b8453629972067df3a7d2b85ac5a29ebfd3bb8&quot;,
+    &quot;references/html-integration-v1.md&quot;: &quot;436eebd17a48688f68d526e887f7715c3c6f1d1008b5079a5185d5593b901ff9&quot;,
+    &quot;references/style-numbering-v1.md&quot;: &quot;5415f0f7be85bc663db202f27b5ea1eef01550032c3f214126dee95d7a0e9322&quot;,
+    &quot;references/common/1.0.0.md&quot;: &quot;5c4dc08bca97270b400fb29418381bd2978ae1fab14a51c321824cce543a55ba&quot;,
+    &quot;types/flowchart/1.0.0.md&quot;: &quot;e79b19eedb656186c96b7922c9077beb0f39b0bd19835165ccaeb8aa544bb1a4&quot;,
+    &quot;styles/flowchart/thin-line-component-flow/1.0.0/SPEC.md&quot;: &quot;ab9a99919039d91ca9492a2ab3c6089ea6589d9e251da818e1ecdc9089ce388e&quot;,
+    &quot;styles/flowchart/thin-line-component-flow/1.0.0/tokens.json&quot;: &quot;4d943302f207540ec0b47c2efd3aec9762fa957f2acfc9f57b5c2f239285bbf2&quot;,
+    &quot;references/line-styles-v1.md&quot;: &quot;623aac6e6721b001ce878ad4dc864e0ff4654b66bf8e2c17550d264955b445d0&quot;,
+    &quot;references/interaction-standards/1.0.0.md&quot;: &quot;f2e2a466ad741b65d9df72a451201e9eceebdc9ef760e200b25e543e3846d56c&quot;,
+    &quot;references/interaction-standards/1.0.0.svg&quot;: &quot;f492bbc9e401aeb90febb30f941ab959a0d34b893193e9f59b921cb45118e12b&quot;
+  },
+  &quot;model&quot;: {
+    &quot;nodes&quot;: [
+      {
+        &quot;id&quot;: &quot;source&quot;,
+        &quot;bounds&quot;: [
+          90,
+          305,
+          220,
+          60
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;gateway&quot;,
+        &quot;bounds&quot;: [
+          70,
+          445,
+          230,
+          60
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;directory&quot;,
+        &quot;bounds&quot;: [
+          80,
+          65,
+          280,
+          140
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;core&quot;,
+        &quot;bounds&quot;: [
+          470,
+          280,
+          560,
+          380
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;intake&quot;,
+        &quot;bounds&quot;: [
+          500,
+          360,
+          130,
+          180
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;review&quot;,
+        &quot;bounds&quot;: [
+          675,
+          360,
+          130,
+          180
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;publish&quot;,
+        &quot;bounds&quot;: [
+          850,
+          360,
+          130,
+          180
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;storage&quot;,
+        &quot;bounds&quot;: [
+          820,
+          685,
+          170,
+          70
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;notifier&quot;,
+        &quot;bounds&quot;: [
+          1170,
+          205,
+          260,
+          85
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;junction&quot;,
+        &quot;bounds&quot;: [
+          1296,
+          156,
+          8,
+          8
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;out1&quot;,
+        &quot;bounds&quot;: [
+          1100,
+          50,
+          130,
+          60
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;out2&quot;,
+        &quot;bounds&quot;: [
+          1235,
+          50,
+          130,
+          60
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;out3&quot;,
+        &quot;bounds&quot;: [
+          1420,
+          50,
+          130,
+          60
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;client1&quot;,
+        &quot;bounds&quot;: [
+          1170,
+          405,
+          280,
+          60
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;client2&quot;,
+        &quot;bounds&quot;: [
+          1170,
+          465,
+          280,
+          60
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;client3&quot;,
+        &quot;bounds&quot;: [
+          1170,
+          525,
+          280,
+          60
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;client4&quot;,
+        &quot;bounds&quot;: [
+          1170,
+          585,
+          280,
+          60
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;output1&quot;,
+        &quot;bounds&quot;: [
+          50,
+          875,
+          100,
+          55
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;output2&quot;,
+        &quot;bounds&quot;: [
+          150,
+          875,
+          100,
+          55
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;output3&quot;,
+        &quot;bounds&quot;: [
+          250,
+          875,
+          100,
+          55
+        ]
+      }
+    ],
+    &quot;connections&quot;: [
+      {
+        &quot;id&quot;: &quot;fc09-incoming&quot;,
+        &quot;from&quot;: &quot;source&quot;,
+        &quot;to&quot;: &quot;gateway&quot;,
+        &quot;label&quot;: &quot;1 接收资料&quot;,
+        &quot;kind&quot;: &quot;independent&quot;,
+        &quot;routing&quot;: {
+          &quot;bends&quot;: 0,
+          &quot;length&quot;: 80,
+          &quot;points&quot;: [
+            [
+              180,
+              365
+            ],
+            [
+              180,
+              445
+            ]
+          ],
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 0,
+              &quot;length&quot;: 80,
+              &quot;crossings&quot;: 0,
+              &quot;basis&quot;: &quot;固定端点的最小弯折数和曼哈顿距离下界；现路线达到该下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;先满足端口和边界约束；在可行路线中比较弯折、长度，再比较交叉。&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc09-submit&quot;,
+        &quot;from&quot;: &quot;gateway&quot;,
+        &quot;to&quot;: &quot;intake&quot;,
+        &quot;label&quot;: &quot;2 提交&quot;,
+        &quot;kind&quot;: &quot;independent&quot;,
+        &quot;routing&quot;: {
+          &quot;bends&quot;: 2,
+          &quot;length&quot;: 235,
+          &quot;points&quot;: [
+            [
+              300,
+              475
+            ],
+            [
+              390,
+              475
+            ],
+            [
+              390,
+              440
+            ],
+            [
+              500,
+              440
+            ]
+          ],
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;one-bend-horizontal-first&quot;,
+              &quot;bends&quot;: 1,
+              &quot;length&quot;: 235,
+              &quot;feasible&quot;: false,
+              &quot;basis&quot;: &quot;沿接收卡左边界移动，不能正向进入端口。&quot;
+            },
+            {
+              &quot;kind&quot;: &quot;one-bend-vertical-first&quot;,
+              &quot;bends&quot;: 1,
+              &quot;length&quot;: 235,
+              &quot;feasible&quot;: false,
+              &quot;basis&quot;: &quot;沿整理入口右边界移动，未从端口正常离开。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;先满足端口和边界约束；在可行路线中比较弯折、长度，再比较交叉。&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc09-discover&quot;,
+        &quot;from&quot;: &quot;directory&quot;,
+        &quot;to&quot;: &quot;intake&quot;,
+        &quot;label&quot;: &quot;3 读取目录&quot;,
+        &quot;kind&quot;: &quot;independent&quot;,
+        &quot;routing&quot;: {
+          &quot;bends&quot;: 2,
+          &quot;length&quot;: 495,
+          &quot;points&quot;: [
+            [
+              220,
+              205
+            ],
+            [
+              220,
+              245
+            ],
+            [
+              560,
+              245
+            ],
+            [
+              560,
+              360
+            ]
+          ],
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;one-bend-horizontal-first&quot;,
+              &quot;bends&quot;: 1,
+              &quot;length&quot;: 495,
+              &quot;feasible&quot;: false,
+              &quot;basis&quot;: &quot;沿目录卡底边移动，未从端口正常离开。&quot;
+            },
+            {
+              &quot;kind&quot;: &quot;one-bend-vertical-first&quot;,
+              &quot;bends&quot;: 1,
+              &quot;length&quot;: 495,
+              &quot;feasible&quot;: false,
+              &quot;basis&quot;: &quot;直行穿过下方资料来源叠片。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;先满足端口和边界约束；在可行路线中比较弯折、长度，再比较交叉。&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc09-review&quot;,
+        &quot;from&quot;: &quot;intake&quot;,
+        &quot;to&quot;: &quot;review&quot;,
+        &quot;label&quot;: &quot;4&quot;,
+        &quot;kind&quot;: &quot;independent&quot;,
+        &quot;routing&quot;: {
+          &quot;bends&quot;: 0,
+          &quot;length&quot;: 45,
+          &quot;points&quot;: [
+            [
+              630,
+              475
+            ],
+            [
+              675,
+              475
+            ]
+          ],
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 0,
+              &quot;length&quot;: 45,
+              &quot;crossings&quot;: 0,
+              &quot;basis&quot;: &quot;固定端点的最小弯折数和曼哈顿距离下界；现路线达到该下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;先满足端口和边界约束；在可行路线中比较弯折、长度，再比较交叉。&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc09-publish&quot;,
+        &quot;from&quot;: &quot;review&quot;,
+        &quot;to&quot;: &quot;publish&quot;,
+        &quot;label&quot;: &quot;5&quot;,
+        &quot;kind&quot;: &quot;independent&quot;,
+        &quot;routing&quot;: {
+          &quot;bends&quot;: 0,
+          &quot;length&quot;: 45,
+          &quot;points&quot;: [
+            [
+              805,
+              475
+            ],
+            [
+              850,
+              475
+            ]
+          ],
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 0,
+              &quot;length&quot;: 45,
+              &quot;crossings&quot;: 0,
+              &quot;basis&quot;: &quot;固定端点的最小弯折数和曼哈顿距离下界；现路线达到该下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;先满足端口和边界约束；在可行路线中比较弯折、长度，再比较交叉。&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc09-archive&quot;,
+        &quot;from&quot;: &quot;review&quot;,
+        &quot;to&quot;: &quot;storage&quot;,
+        &quot;label&quot;: &quot;6 归档&quot;,
+        &quot;kind&quot;: &quot;independent&quot;,
+        &quot;routing&quot;: {
+          &quot;bends&quot;: 1,
+          &quot;length&quot;: 260,
+          &quot;points&quot;: [
+            [
+              740,
+              540
+            ],
+            [
+              740,
+              720
+            ],
+            [
+              820,
+              720
+            ]
+          ],
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 1,
+              &quot;length&quot;: 260,
+              &quot;crossings&quot;: 0,
+              &quot;basis&quot;: &quot;固定端点的最小弯折数和曼哈顿距离下界；现路线达到该下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;先满足端口和边界约束；在可行路线中比较弯折、长度，再比较交叉。&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc09-dispatch&quot;,
+        &quot;from&quot;: &quot;core&quot;,
+        &quot;to&quot;: &quot;notifier&quot;,
+        &quot;label&quot;: &quot;7 发布通知&quot;,
+        &quot;kind&quot;: &quot;independent&quot;,
+        &quot;routing&quot;: {
+          &quot;bends&quot;: 2,
+          &quot;length&quot;: 213,
+          &quot;points&quot;: [
+            [
+              1030,
+              320
+            ],
+            [
+              1100,
+              320
+            ],
+            [
+              1100,
+              247
+            ],
+            [
+              1170,
+              247
+            ]
+          ],
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;one-bend-horizontal-first&quot;,
+              &quot;bends&quot;: 1,
+              &quot;length&quot;: 213,
+              &quot;feasible&quot;: false,
+              &quot;basis&quot;: &quot;沿通知卡左边界移动，不能正向进入端口。&quot;
+            },
+            {
+              &quot;kind&quot;: &quot;one-bend-vertical-first&quot;,
+              &quot;bends&quot;: 1,
+              &quot;length&quot;: 213,
+              &quot;feasible&quot;: false,
+              &quot;basis&quot;: &quot;沿核心主体右边界移动，未从端口正常离开。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;先满足端口和边界约束；在可行路线中比较弯折、长度，再比较交叉。&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc09-relay&quot;,
+        &quot;from&quot;: &quot;notifier&quot;,
+        &quot;to&quot;: &quot;junction&quot;,
+        &quot;label&quot;: &quot;8&quot;,
+        &quot;kind&quot;: &quot;independent&quot;,
+        &quot;routing&quot;: {
+          &quot;bends&quot;: 0,
+          &quot;length&quot;: 45,
+          &quot;points&quot;: [
+            [
+              1300,
+              205
+            ],
+            [
+              1300,
+              160
+            ]
+          ],
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 0,
+              &quot;length&quot;: 45,
+              &quot;crossings&quot;: 0,
+              &quot;basis&quot;: &quot;固定端点的最小弯折数和曼哈顿距离下界；现路线达到该下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;先满足端口和边界约束；在可行路线中比较弯折、长度，再比较交叉。&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc09-send1&quot;,
+        &quot;from&quot;: &quot;junction&quot;,
+        &quot;to&quot;: &quot;out1&quot;,
+        &quot;label&quot;: &quot;9&quot;,
+        &quot;kind&quot;: &quot;independent&quot;,
+        &quot;routing&quot;: {
+          &quot;bends&quot;: 1,
+          &quot;length&quot;: 185,
+          &quot;points&quot;: [
+            [
+              1300,
+              160
+            ],
+            [
+              1165,
+              160
+            ],
+            [
+              1165,
+              110
+            ]
+          ],
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 1,
+              &quot;length&quot;: 185,
+              &quot;crossings&quot;: 0,
+              &quot;basis&quot;: &quot;固定端点的最小弯折数和曼哈顿距离下界；现路线达到该下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;先满足端口和边界约束；在可行路线中比较弯折、长度，再比较交叉。&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc09-send2&quot;,
+        &quot;from&quot;: &quot;junction&quot;,
+        &quot;to&quot;: &quot;out2&quot;,
+        &quot;label&quot;: &quot;10&quot;,
+        &quot;kind&quot;: &quot;independent&quot;,
+        &quot;routing&quot;: {
+          &quot;bends&quot;: 0,
+          &quot;length&quot;: 50,
+          &quot;points&quot;: [
+            [
+              1300,
+              160
+            ],
+            [
+              1300,
+              110
+            ]
+          ],
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 0,
+              &quot;length&quot;: 50,
+              &quot;crossings&quot;: 0,
+              &quot;basis&quot;: &quot;固定端点的最小弯折数和曼哈顿距离下界；现路线达到该下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;先满足端口和边界约束；在可行路线中比较弯折、长度，再比较交叉。&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc09-send3&quot;,
+        &quot;from&quot;: &quot;junction&quot;,
+        &quot;to&quot;: &quot;out3&quot;,
+        &quot;label&quot;: &quot;11&quot;,
+        &quot;kind&quot;: &quot;independent&quot;,
+        &quot;routing&quot;: {
+          &quot;bends&quot;: 1,
+          &quot;length&quot;: 235,
+          &quot;points&quot;: [
+            [
+              1300,
+              160
+            ],
+            [
+              1485,
+              160
+            ],
+            [
+              1485,
+              110
+            ]
+          ],
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 1,
+              &quot;length&quot;: 235,
+              &quot;crossings&quot;: 0,
+              &quot;basis&quot;: &quot;固定端点的最小弯折数和曼哈顿距离下界；现路线达到该下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;先满足端口和边界约束；在可行路线中比较弯折、长度，再比较交叉。&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc09-query1&quot;,
+        &quot;from&quot;: &quot;client1&quot;,
+        &quot;to&quot;: &quot;core&quot;,
+        &quot;label&quot;: &quot;12 查询&quot;,
+        &quot;kind&quot;: &quot;independent&quot;,
+        &quot;routing&quot;: {
+          &quot;bends&quot;: 0,
+          &quot;length&quot;: 140,
+          &quot;points&quot;: [
+            [
+              1170,
+              435
+            ],
+            [
+              1030,
+              435
+            ]
+          ],
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 0,
+              &quot;length&quot;: 140,
+              &quot;crossings&quot;: 0,
+              &quot;basis&quot;: &quot;固定端点的最小弯折数和曼哈顿距离下界；现路线达到该下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;先满足端口和边界约束；在可行路线中比较弯折、长度，再比较交叉。&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc09-query2&quot;,
+        &quot;from&quot;: &quot;client2&quot;,
+        &quot;to&quot;: &quot;core&quot;,
+        &quot;label&quot;: &quot;13 查询&quot;,
+        &quot;kind&quot;: &quot;independent&quot;,
+        &quot;routing&quot;: {
+          &quot;bends&quot;: 0,
+          &quot;length&quot;: 140,
+          &quot;points&quot;: [
+            [
+              1170,
+              495
+            ],
+            [
+              1030,
+              495
+            ]
+          ],
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 0,
+              &quot;length&quot;: 140,
+              &quot;crossings&quot;: 0,
+              &quot;basis&quot;: &quot;固定端点的最小弯折数和曼哈顿距离下界；现路线达到该下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;先满足端口和边界约束；在可行路线中比较弯折、长度，再比较交叉。&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc09-query3&quot;,
+        &quot;from&quot;: &quot;client3&quot;,
+        &quot;to&quot;: &quot;core&quot;,
+        &quot;label&quot;: &quot;14 查询&quot;,
+        &quot;kind&quot;: &quot;independent&quot;,
+        &quot;routing&quot;: {
+          &quot;bends&quot;: 0,
+          &quot;length&quot;: 140,
+          &quot;points&quot;: [
+            [
+              1170,
+              555
+            ],
+            [
+              1030,
+              555
+            ]
+          ],
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 0,
+              &quot;length&quot;: 140,
+              &quot;crossings&quot;: 0,
+              &quot;basis&quot;: &quot;固定端点的最小弯折数和曼哈顿距离下界；现路线达到该下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;先满足端口和边界约束；在可行路线中比较弯折、长度，再比较交叉。&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc09-query4&quot;,
+        &quot;from&quot;: &quot;client4&quot;,
+        &quot;to&quot;: &quot;core&quot;,
+        &quot;label&quot;: &quot;15 查询&quot;,
+        &quot;kind&quot;: &quot;independent&quot;,
+        &quot;routing&quot;: {
+          &quot;bends&quot;: 0,
+          &quot;length&quot;: 140,
+          &quot;points&quot;: [
+            [
+              1170,
+              615
+            ],
+            [
+              1030,
+              615
+            ]
+          ],
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 0,
+              &quot;length&quot;: 140,
+              &quot;crossings&quot;: 0,
+              &quot;basis&quot;: &quot;固定端点的最小弯折数和曼哈顿距离下界；现路线达到该下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;先满足端口和边界约束；在可行路线中比较弯折、长度，再比较交叉。&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc09-deliver1&quot;,
+        &quot;from&quot;: &quot;core&quot;,
+        &quot;to&quot;: &quot;output1&quot;,
+        &quot;label&quot;: &quot;16&quot;,
+        &quot;kind&quot;: &quot;independent&quot;,
+        &quot;routing&quot;: {
+          &quot;bends&quot;: 1,
+          &quot;length&quot;: 665,
+          &quot;points&quot;: [
+            [
+              470,
+              580
+            ],
+            [
+              100,
+              580
+            ],
+            [
+              100,
+              875
+            ]
+          ],
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 1,
+              &quot;length&quot;: 665,
+              &quot;crossings&quot;: 0,
+              &quot;basis&quot;: &quot;固定端点的最小弯折数和曼哈顿距离下界；现路线达到该下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;先满足端口和边界约束；在可行路线中比较弯折、长度，再比较交叉。&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc09-deliver2&quot;,
+        &quot;from&quot;: &quot;core&quot;,
+        &quot;to&quot;: &quot;output2&quot;,
+        &quot;label&quot;: &quot;17&quot;,
+        &quot;kind&quot;: &quot;independent&quot;,
+        &quot;routing&quot;: {
+          &quot;bends&quot;: 1,
+          &quot;length&quot;: 545,
+          &quot;points&quot;: [
+            [
+              470,
+              600
+            ],
+            [
+              200,
+              600
+            ],
+            [
+              200,
+              875
+            ]
+          ],
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 1,
+              &quot;length&quot;: 545,
+              &quot;crossings&quot;: 0,
+              &quot;basis&quot;: &quot;固定端点的最小弯折数和曼哈顿距离下界；现路线达到该下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;先满足端口和边界约束；在可行路线中比较弯折、长度，再比较交叉。&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc09-deliver3&quot;,
+        &quot;from&quot;: &quot;core&quot;,
+        &quot;to&quot;: &quot;output3&quot;,
+        &quot;label&quot;: &quot;18&quot;,
+        &quot;kind&quot;: &quot;independent&quot;,
+        &quot;routing&quot;: {
+          &quot;bends&quot;: 1,
+          &quot;length&quot;: 425,
+          &quot;points&quot;: [
+            [
+              470,
+              620
+            ],
+            [
+              300,
+              620
+            ],
+            [
+              300,
+              875
+            ]
+          ],
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 1,
+              &quot;length&quot;: 425,
+              &quot;crossings&quot;: 0,
+              &quot;basis&quot;: &quot;固定端点的最小弯折数和曼哈顿距离下界；现路线达到该下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;先满足端口和边界约束；在可行路线中比较弯折、长度，再比较交叉。&quot;
+        }
+      }
+    ],
+    &quot;notes&quot;: [
+      &quot;堆叠代表多个来源&quot;,
+      &quot;分发节点表示真实扇出&quot;,
+      &quot;下方灰带是独立归档区域，邻接不代表部署归属&quot;,
+      &quot;左下三条并行路径各自连接不同接收端，不是共享总线。&quot;,
+      &quot;粗竖线仅作为原图视觉样例，不是连接或总线；原图含义待确认。&quot;,
+      &quot;独立的局部特征面板仅解释外观，不属于上方资料处理业务模型；是否共享、汇流和圆角取决于真实模型。&quot;
+    ]
+  }
+}</metadata>
+<defs><marker id="fc09-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#666666"/></marker></defs>
+<style>#fc09-diagram{font-family:Arial,Microsoft YaHei,sans-serif;font-size:21px;fill:#202020} #fc09-diagram [data-feature="detail-panel"] text{font-size:14px;fill:#4D4D4D} #fc09-diagram g[font-size="17"] text{font-size:17px;fill:#555555} #fc09-diagram [data-feature="dark-storage"] text{fill:#FFFFFF} #fc09-diagram [data-feature="blue-list"] g text{fill:#666666;font-size:16px}</style>
+<rect width="1600" height="1010" fill="#ffffff"/>
+<g data-feature="main-boundary"><rect x="470" y="280" width="560" height="380" fill="#FFECCF" stroke="#888888" stroke-width="1.5" stroke-dasharray="5 4"/><text x="750" y="322" text-anchor="middle" font-weight="bold" font-size="25">资料处理中心</text></g>
+<g data-feature="support-band"><rect x="470" y="660" width="560" height="115" fill="#E6E6E6" stroke="#888888" stroke-width="1.5"/><text x="590" y="725" text-anchor="middle" font-weight="bold">独立归档区域</text></g>
+<g fill="none" stroke="#666666" stroke-width="1.7" stroke-linejoin="round"><path id="fc09-incoming" data-diagram-role="connector" d="M180 365 L180 445" marker-end="url(#fc09-arrow)"/><path id="fc09-submit" data-diagram-role="connector" d="M300 475 L390 475 L390 440 L500 440" marker-end="url(#fc09-arrow)"/><path id="fc09-discover" data-diagram-role="connector" d="M220 205 L220 245 L560 245 L560 360" marker-end="url(#fc09-arrow)"/><path id="fc09-review" data-diagram-role="connector" d="M630 475 L675 475" marker-end="url(#fc09-arrow)"/><path id="fc09-publish" data-diagram-role="connector" d="M805 475 L850 475" marker-end="url(#fc09-arrow)"/><path id="fc09-archive" data-diagram-role="connector" d="M740 540 L740 720 L820 720" marker-end="url(#fc09-arrow)"/><path id="fc09-dispatch" data-diagram-role="connector" d="M1030 320 L1100 320 L1100 247 L1170 247" marker-end="url(#fc09-arrow)"/><path id="fc09-relay" data-diagram-role="connector" d="M1300 205 L1300 160" marker-end="url(#fc09-arrow)"/><path id="fc09-send1" data-diagram-role="connector" d="M1300 160 L1165 160 L1165 110" marker-end="url(#fc09-arrow)"/><path id="fc09-send2" data-diagram-role="connector" d="M1300 160 L1300 110" marker-end="url(#fc09-arrow)"/><path id="fc09-send3" data-diagram-role="connector" d="M1300 160 L1485 160 L1485 110" marker-end="url(#fc09-arrow)"/><path id="fc09-query1" data-diagram-role="connector" d="M1170 435 L1030 435" marker-end="url(#fc09-arrow)"/><path id="fc09-query2" data-diagram-role="connector" d="M1170 495 L1030 495" marker-end="url(#fc09-arrow)"/><path id="fc09-query3" data-diagram-role="connector" d="M1170 555 L1030 555" marker-end="url(#fc09-arrow)"/><path id="fc09-query4" data-diagram-role="connector" d="M1170 615 L1030 615" marker-end="url(#fc09-arrow)"/><g data-feature="parallel-channels"><path id="fc09-deliver1" data-diagram-role="connector" d="M470 580 L100 580 L100 875" marker-end="url(#fc09-arrow)"/><path id="fc09-deliver2" data-diagram-role="connector" d="M470 600 L200 600 L200 875" marker-end="url(#fc09-arrow)"/><path id="fc09-deliver3" data-diagram-role="connector" d="M470 620 L300 620 L300 875" marker-end="url(#fc09-arrow)"/></g></g>
+<g data-feature="internal-cards" fill="#FFFFFF" stroke="#999999" stroke-width="1.4"><rect x="500" y="360" width="130" height="180"/><rect x="675" y="360" width="130" height="180"/><rect x="850" y="360" width="130" height="180"/></g>
+<g font-family="Arial, Microsoft YaHei, sans-serif" fill="#202020" font-size="21" text-anchor="middle"><text x="565" y="398">接收</text><text x="740" y="398">审核</text><text x="915" y="398">发布</text><circle cx="565" cy="423" r="1.6" fill="#202020"/><circle cx="565" cy="443" r="1.6" fill="#202020"/><circle cx="565" cy="463" r="1.6" fill="#202020"/><circle cx="565" cy="483" r="1.6" fill="#202020"/><circle cx="565" cy="503" r="1.6" fill="#202020"/></g>
+<g data-feature="dark-storage"><rect x="820" y="685" width="170" height="70" fill="#575757" stroke="#202020" stroke-width="1.5"/><text x="905" y="728" text-anchor="middle" fill="#FFFFFF">归档库</text></g>
+<g data-feature="blue-list"><rect x="80" y="65" width="280" height="140" fill="#E6F2FF" stroke="#4D4D4D" stroke-width="1.5"/><rect x="80" y="65" width="280" height="39" fill="#99CCFF" stroke="#4D4D4D" stroke-width="1.5"/><text x="220" y="92" text-anchor="middle">资料目录</text><g fill="#666666" font-size="18"><text x="100" y="122">• 项目清单</text><text x="100" y="140">• 模板索引</text><text x="100" y="158">• 团队分类</text><text x="100" y="176">• …</text><text x="100" y="194">• 其他资料</text></g></g>
+<g data-feature="stack" fill="#FFFFFF" stroke="#202020" stroke-width="1.5"><rect x="70" y="285" width="220" height="60" rx="3"/><rect x="80" y="295" width="220" height="60" rx="3"/><rect x="90" y="305" width="220" height="60" rx="3"/></g><text x="200" y="342" text-anchor="middle">资料来源（多份）</text>
+<rect x="70" y="445" width="230" height="60" fill="#FFF3E6" stroke="#202020" stroke-width="1.5"/><text x="185" y="483" text-anchor="middle">整理入口</text>
+<rect x="1170" y="205" width="260" height="85" fill="#FFF3E6" stroke="#202020" stroke-width="1.5"/><text x="1300" y="255" text-anchor="middle">通知分发</text>
+<g data-feature="fan-out"><circle cx="1300" cy="160" r="4" fill="#666666"/><g fill="#FFFFFF" stroke="#4D4D4D" stroke-width="1.5"><rect x="1100" y="50" width="130" height="60"/><rect x="1235" y="50" width="130" height="60"/><rect x="1420" y="50" width="130" height="60"/></g><g text-anchor="middle"><text x="1165" y="87">工作台</text><text x="1300" y="87">消息箱</text><text x="1485" y="87">订阅端</text></g></g>
+<g data-feature="segmented-list" stroke="#4D4D4D" stroke-width="1.4"><rect x="1170" y="405" width="280" height="60" fill="#FFF3E6"/><rect x="1170" y="465" width="280" height="60" fill="#FFF3E6"/><rect x="1170" y="525" width="280" height="60" fill="#FFFFFF"/><rect x="1170" y="585" width="280" height="60" fill="#FFFFFF"/></g><g text-anchor="middle"><text x="1310" y="442">检索页面</text><text x="1310" y="502">资料看板</text><text x="1310" y="562">审阅工具</text><text x="1310" y="622">对接接口</text></g>
+<g fill="#FFF3E6" stroke="#4D4D4D" stroke-width="1.5"><rect x="50" y="875" width="100" height="55"/><rect x="150" y="875" width="100" height="55"/><rect x="250" y="875" width="100" height="55"/></g><g text-anchor="middle" font-size="18"><text x="100" y="909">接收端甲</text><text x="200" y="909">接收端乙</text><text x="300" y="909">接收端丙</text></g><text x="70" y="972" font-size="17">图例：平行通道各自独立，不表示汇流</text>
+<g data-feature="detail-panel" aria-label="局部特征示意，非业务连接">
+<rect x="1050" y="690" width="500" height="280" fill="#FFFFFF" stroke="#BBBBBB" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="1068" y="714">局部特征示意（不代表实际业务连接）</text>
+<g data-feature="reference-bars-context" aria-label="粗竖线与多路线的相邻组合，仅示意原图外观">
+<g fill="none" stroke="#777777" stroke-width="1.4"><path d="M1070 760 H1211"/><path d="M1082 772 H1211"/><path d="M1094 784 H1211"/><path d="M1250 772 H1265"/></g>
+<g data-feature="reference-bars" fill="none" stroke="#575757" stroke-width="5"><path d="M1217 750 V793"/><path d="M1226 750 V793"/><path d="M1235 750 V793"/><path d="M1244 750 V793"/></g>
+<rect x="1265" y="752" width="28" height="40" fill="#FFECCF" stroke="#999999" stroke-width="1.2"/>
+<text x="1070" y="814">粗线与多路相邻；原图含义待确认</text></g>
+<g data-feature="shared-trunk" aria-label="共享干线和四个分支，仅在模型确认时使用" fill="none" stroke="#666666" stroke-width="1.4">
+<rect x="1310" y="760" width="36" height="40" fill="#FFECCF"/><path d="M1382 780 H1346" marker-end="url(#fc09-arrow)"/><path d="M1382 750 V810"/>
+<path d="M1442 754 H1382"/><path d="M1442 770 H1382"/><path d="M1442 790 H1382"/><path d="M1442 806 H1382"/>
+<rect x="1442" y="746" width="80" height="16" fill="#FFF3E6"/><rect x="1442" y="762" width="80" height="16" fill="#FFF3E6"/><rect x="1442" y="782" width="80" height="16" fill="#FFFFFF"/><rect x="1442" y="798" width="80" height="16" fill="#FFFFFF"/></g>
+<text x="1310" y="838">共享干线：仅模型明确时使用</text>
+<g data-feature="stack-two-white" fill="#FFFFFF" stroke="#4D4D4D" stroke-width="1.2"><rect x="1070" y="850" width="75" height="29"/><rect x="1078" y="858" width="75" height="29"/></g>
+<text x="1070" y="911">白色两层</text>
+<g data-feature="stack-two-warm" fill="#FFF3E6" stroke="#4D4D4D" stroke-width="1.2"><rect x="1170" y="850" width="75" height="29"/><rect x="1178" y="858" width="75" height="29"/></g>
+<text x="1170" y="911">米色两层</text>
+<g data-feature="rounded-branch" aria-label="T 型支路与局部圆角，示意已确认的连接" fill="none" stroke="#666666" stroke-width="1.4"><path d="M1325 866 H1510" marker-end="url(#fc09-arrow)"/><path d="M1400 866 V882 Q1400 896 1414 896 H1510" marker-end="url(#fc09-arrow)"/></g>
+<text x="1325" y="924">T 型分支与局部圆角</text>
+<text x="1068" y="949">叠片数量与支路方向以实际资料为准。</text>
+</g>
+<g font-family="Arial, Microsoft YaHei, sans-serif" font-size="17" fill="#555555"><text data-edge-label="fc09-incoming" x="245" y="410" text-anchor="middle">1 接收资料</text><text data-edge-label="fc09-submit" x="330" y="462" text-anchor="middle">2 提交</text><text data-feature="multiline-label" data-edge-label="fc09-discover" x="390" y="215" text-anchor="middle"><tspan x="390" dy="0">3 读取</tspan><tspan x="390" dy="20">目录</tspan></text><text data-edge-label="fc09-review" x="650" y="462" text-anchor="middle">4</text><text data-edge-label="fc09-publish" x="825" y="462" text-anchor="middle">5</text><text data-edge-label="fc09-archive" x="785" y="695" text-anchor="middle">6 归档</text><text data-edge-label="fc09-dispatch" x="1160" y="345" text-anchor="middle">7 发布通知</text><text data-edge-label="fc09-relay" x="1312" y="190" text-anchor="middle">8</text><text data-edge-label="fc09-send1" x="1175" y="150" text-anchor="middle">9</text><text data-edge-label="fc09-send2" x="1335" y="150" text-anchor="middle">10</text><text data-edge-label="fc09-send3" x="1445" y="150" text-anchor="middle">11</text><text data-edge-label="fc09-query1" x="1100" y="425" text-anchor="middle">12 查询</text><text data-edge-label="fc09-query2" x="1100" y="485" text-anchor="middle">13 查询</text><text data-edge-label="fc09-query3" x="1100" y="545" text-anchor="middle">14 查询</text><text data-edge-label="fc09-query4" x="1100" y="605" text-anchor="middle">15 查询</text><text data-edge-label="fc09-deliver1" x="85" y="855" text-anchor="middle">16</text><text data-edge-label="fc09-deliver2" x="185" y="855" text-anchor="middle">17</text><text data-edge-label="fc09-deliver3" x="285" y="855" text-anchor="middle">18</text></g>
+</svg>

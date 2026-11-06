@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="960" viewBox="0 0 1400 960" role="img" aria-labelledby="sq03-title sq03-desc">
+<title id="sq03-title">消息订阅交互示例</title>
+<desc id="sq03-desc">独立构造的订阅与通知示例，展示蓝绿参与者、阶段标题带和单向消息。</desc>
+<metadata>{"profile":"sequence/blue-green-phases@1.0.0","number":"SQ-03","sample_kind":"synthetic","line_style":{"id":"orthogonal","version":"1.0.0"},"interaction_standard":{"id":"single-direction","version":"1.0.0"},"model":{"participants":{"client":250,"service":700,"template":1150},"phases":["订阅受理","通知发送"],"messages":[{"id":"sq03-m1","from":"client","to":"service","kind":"request"},{"id":"sq03-m2","from":"service","to":"template","kind":"request"},{"id":"sq03-m3","from":"template","to":"service","kind":"response"},{"id":"sq03-m4","from":"service","to":"client","kind":"response"},{"id":"sq03-m5","from":"service","to":"client","kind":"request"},{"id":"sq03-m6","from":"client","to":"service","kind":"response"}]}}</metadata>
+<defs>
+  <linearGradient id="sq03-blue" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ECF5FD"/><stop offset="1" stop-color="#D7E9FA"/></linearGradient>
+  <linearGradient id="sq03-green" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F0FAEF"/><stop offset="1" stop-color="#D9EFDA"/></linearGradient>
+  <filter id="sq03-shadow" x="-20%" y="-30%" width="140%" height="180%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#243C44" flood-opacity=".16"/></filter>
+  <marker id="sq03-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L9 5 L1 9 Z" fill="#65767E"/></marker>
+</defs>
+<rect width="1400" height="960" fill="#FFFFFF"/>
+<g font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" fill="#1D2930">
+  <text x="700" y="43" text-anchor="middle" font-size="30" font-weight="600">消息订阅交互示例</text>
+  <path d="M250 135 V835" fill="none" stroke="#7395AA" stroke-width="1.8" stroke-dasharray="9 7"/>
+  <path d="M700 135 V835" fill="none" stroke="#81AA85" stroke-width="1.8" stroke-dasharray="9 7"/>
+  <path d="M1150 135 V835" fill="none" stroke="#81AA85" stroke-width="1.8" stroke-dasharray="9 7"/>
+  <g filter="url(#sq03-shadow)">
+    <rect x="140" y="65" width="220" height="70" rx="13" fill="url(#sq03-blue)" stroke="#6998BC" stroke-width="1.6"/>
+    <rect x="590" y="65" width="220" height="70" rx="13" fill="url(#sq03-green)" stroke="#75AA7E" stroke-width="1.6"/>
+    <rect x="1040" y="65" width="220" height="70" rx="13" fill="url(#sq03-green)" stroke="#75AA7E" stroke-width="1.6"/>
+    <rect x="140" y="835" width="220" height="70" rx="13" fill="url(#sq03-blue)" stroke="#6998BC" stroke-width="1.6"/>
+    <rect x="590" y="835" width="220" height="70" rx="13" fill="url(#sq03-green)" stroke="#75AA7E" stroke-width="1.6"/>
+    <rect x="1040" y="835" width="220" height="70" rx="13" fill="url(#sq03-green)" stroke="#75AA7E" stroke-width="1.6"/>
+    <rect x="40" y="170" width="1320" height="54" rx="6" fill="#E6EEF5" stroke="#819AAF" stroke-width="1.6"/>
+    <rect x="40" y="565" width="1320" height="54" rx="6" fill="#E6EEF5" stroke="#819AAF" stroke-width="1.6"/>
+  </g>
+  <g font-size="22" text-anchor="middle">
+    <text x="250" y="108">用户端</text><text x="700" y="108">通知服务</text><text x="1150" y="108">模板服务</text>
+    <text x="250" y="878">用户端</text><text x="700" y="878">通知服务</text><text x="1150" y="878">模板服务</text>
+    <text x="700" y="205">阶段一：订阅受理</text><text x="700" y="600">阶段二：通知发送</text>
+  </g>
+  <g fill="none" stroke="#65767E" stroke-width="1.8">
+    <path id="sq03-m1" data-diagram-role="connector" d="M250 295 H700" marker-end="url(#sq03-arrow)"/>
+    <path id="sq03-m2" data-diagram-role="connector" d="M700 365 H1150" marker-end="url(#sq03-arrow)"/>
+    <path id="sq03-m3" data-diagram-role="connector" d="M1150 435 H700" stroke-dasharray="7 6" marker-end="url(#sq03-arrow)"/>
+    <path id="sq03-m4" data-diagram-role="connector" d="M700 505 H250" stroke-dasharray="7 6" marker-end="url(#sq03-arrow)"/>
+    <path id="sq03-m5" data-diagram-role="connector" d="M700 690 H250" marker-end="url(#sq03-arrow)"/>
+    <path id="sq03-m6" data-diagram-role="connector" d="M250 770 H700" stroke-dasharray="7 6" marker-end="url(#sq03-arrow)"/>
+  </g>
+  <g font-size="20" text-anchor="middle">
+    <text x="475" y="277">① 提交订阅</text><text x="925" y="347">② 获取模板</text>
+    <text x="925" y="417">③ 返回模板</text><text x="475" y="487">④ 订阅受理确认</text>
+    <text x="475" y="672">⑤ 发送通知（独立请求）</text><text x="475" y="752">⑥ 通知接收确认</text>
+  </g>
+</g>
+</svg>

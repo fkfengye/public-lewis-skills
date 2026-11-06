@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "sequence",
+  "name": "时序图",
+  "aliases": [
+    "时序图",
+    "顺序图"
+  ],
+  "semantic_version": "1.0.0",
+  "number_prefix": "SQ",
+  "guide": "references/type-guides/sequence.md",
+  "default": "sequence/institutional-blue@1.0.0",
+  "style_versions": {
+    "institutional-blue": "1.0.0",
+    "classic-mono": "1.0.0",
+    "blue-green-phases": "1.0.0",
+    "pale-folded-notes": "1.0.0",
+    "handdrawn-pastel-branches": "1.0.0"
+  },
+  "styles": [
+    {
+      "id": "institutional-blue",
+      "version": "1.0.0",
+      "number": "SQ-01",
+      "name": "蓝框机构时序",
+      "aliases": [
+        "蓝框时序",
+        "机构蓝框"
+      ]
+    },
+    {
+      "id": "classic-mono",
+      "version": "1.0.0",
+      "number": "SQ-02",
+      "name": "经典黑白时序",
+      "aliases": [
+        "黑白时序",
+        "经典黑白"
+      ]
+    },
+    {
+      "id": "blue-green-phases",
+      "version": "1.0.0",
+      "number": "SQ-03",
+      "name": "蓝绿分阶段时序",
+      "aliases": [
+        "蓝绿时序",
+        "分阶段时序"
+      ],
+      "gallery_layout": "wide"
+    },
+    {
+      "id": "pale-folded-notes",
+      "version": "1.0.0",
+      "number": "SQ-04",
+      "name": "浅色折角注释时序",
+      "aliases": [
+        "折角注释时序",
+        "浅色备注时序"
+      ]
+    },
+    {
+      "id": "handdrawn-pastel-branches",
+      "version": "1.0.0",
+      "semantic_version": "1.1.0",
+      "number": "SQ-05",
+      "name": "手绘粉彩分支时序",
+      "aliases": ["手绘粉彩时序", "粉彩分支时序"],
+      "gallery_layout": "wide"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "architecture/contrast-process-bands@1.0.0": "styles/architecture/contrast-process-bands/1.0.0/feature-atlas.svg",
+  "architecture/cross-boundary-layers@1.0.0": "styles/architecture/cross-boundary-layers/1.0.0/feature-atlas.svg",
+  "topology/icon-chain@1.0.0": "styles/topology/icon-chain/1.0.0/feature-atlas.svg",
+  "architecture/handdrawn-design-board@1.0.0": "styles/architecture/handdrawn-design-board/1.0.0/feature-atlas.svg",
+  "topology/layered-service-clusters@1.0.0": "styles/topology/layered-service-clusters/1.0.0/feature-atlas.svg",
+  "flowchart/pastel-document-pipeline@1.0.0": "styles/flowchart/pastel-document-pipeline/1.0.0/typography-example.svg"
+}

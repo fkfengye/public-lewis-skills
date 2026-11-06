@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1615" viewBox="0 0 1800 1615" role="img" aria-labelledby="ar13-title ar13-desc">
+<title id="ar13-title">知识共享平台能力架构（虚构示例）</title>
+<desc id="ar13-desc">白色留白间隔围绕六层能力矩阵，左右及底部保障带，含独立侧栏与存储圆柱；无组件关系线。</desc>
+<metadata>{&quot;sample_kind&quot;: &quot;synthetic&quot;, &quot;profile&quot;: &quot;architecture/framed-layered-matrix@1.0.0&quot;, &quot;number&quot;: &quot;AR-13&quot;, &quot;semantic_version&quot;: &quot;1.0.0&quot;, &quot;line_style&quot;: {&quot;id&quot;: &quot;orthogonal&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;source&quot;: &quot;default&quot;}, &quot;interaction_standard&quot;: {&quot;id&quot;: &quot;single-direction&quot;, &quot;version&quot;: &quot;1.0.0&quot;}, &quot;overrides&quot;: {&quot;connectors&quot;: {}}, &quot;model&quot;: {&quot;title&quot;: &quot;知识共享平台能力架构（虚构示例）&quot;, &quot;layers&quot;: {&quot;people&quot;: [&quot;资料管理员&quot;, &quot;内容作者&quot;, &quot;审阅人员&quot;, &quot;社区读者&quot;, &quot;合作机构&quot;], &quot;apps&quot;: [{&quot;title&quot;: &quot;资源工作台&quot;, &quot;items&quot;: [&quot;我的主页&quot;, &quot;内容整理&quot;, &quot;更新提醒&quot;, &quot;草稿编辑&quot;, &quot;目录管理&quot;, &quot;资源提交&quot;, &quot;标签维护&quot;, &quot;权限申请&quot;, &quot;基础设置&quot;], &quot;cols&quot;: 3}, {&quot;title&quot;: &quot;共享服务门户&quot;, &quot;items&quot;: [&quot;资源首页&quot;, &quot;目录浏览&quot;, &quot;内容阅读&quot;, &quot;订阅更新&quot;, &quot;使用统计&quot;, &quot;反馈登记&quot;], &quot;cols&quot;: 2}, {&quot;title&quot;: &quot;运营管理平台&quot;, &quot;items&quot;: [&quot;内容审核&quot;, &quot;作者管理&quot;, &quot;机构管理&quot;, &quot;数据统计&quot;, &quot;资源查询&quot;, &quot;状态提醒&quot;], &quot;cols&quot;: 2}], &quot;services&quot;: [&quot;资源登记&quot;, &quot;内容提交&quot;, &quot;审核受理&quot;, &quot;质量检查&quot;, &quot;资源发布&quot;, &quot;机构维护&quot;, &quot;用户维护&quot;], &quot;core&quot;: [&quot;内容中心&quot;, &quot;目录中心&quot;, &quot;用户中心&quot;, &quot;授权中心&quot;, &quot;资源中心&quot;, &quot;订阅中心&quot;, &quot;评价中心&quot;, &quot;统计中心&quot;, &quot;索引集成&quot;], &quot;support&quot;: [&quot;文件管理&quot;, &quot;任务编排&quot;, &quot;定时任务&quot;, &quot;消息提醒&quot;, &quot;实时通知&quot;, &quot;文档转换&quot;, &quot;全文检索&quot;, &quot;内容版本&quot;, &quot;动态表单&quot;, &quot;统一编码&quot;], &quot;side&quot;: [&quot;入口网关&quot;, &quot;服务目录&quot;, &quot;参数管理&quot;, &quot;访问认证&quot;, &quot;运行监测&quot;], &quot;data&quot;: [&quot;资源库&quot;, &quot;检索索引&quot;, &quot;访问缓存&quot;], &quot;infrastructure&quot;: [&quot;计算资源&quot;, &quot;网络资源&quot;, &quot;存储资源&quot;], &quot;data_placeholder&quot;: &quot;…&quot;}, &quot;guardrails&quot;: [&quot;安全保障体系&quot;, &quot;运行维护体系&quot;, &quot;标准规范体系&quot;], &quot;edges&quot;: []}, &quot;dependencies&quot;: {&quot;SKILL.md&quot;: &quot;b1f057694d3d12e460da0056a18359237fff1910daedfb04f247bbe9e8ee5bcb&quot;, &quot;scripts/catalog.py&quot;: &quot;b2200a4fbb8a4616af769cba12863d8ca46f4bc7ec046241c504a8ad312297aa&quot;, &quot;scripts/render_svg.mjs&quot;: &quot;31f643602bc936f33c63426e42ec241d4529c129ebc393a2bc5c138d98596c60&quot;, &quot;agents/openai.yaml&quot;: &quot;fc24ee90982ccaf42b0b2e99ed1a3e2b4d4f9c4eb9851c1c9c7cc8f607118809&quot;, &quot;references/extensions-v1.md&quot;: &quot;5fef312b67549fbfd42e460406b8453629972067df3a7d2b85ac5a29ebfd3bb8&quot;, &quot;references/html-integration-v1.md&quot;: &quot;436eebd17a48688f68d526e887f7715c3c6f1d1008b5079a5185d5593b901ff9&quot;, &quot;references/style-numbering-v1.md&quot;: &quot;5415f0f7be85bc663db202f27b5ea1eef01550032c3f214126dee95d7a0e9322&quot;, &quot;references/common/1.0.0.md&quot;: &quot;5c4dc08bca97270b400fb29418381bd2978ae1fab14a51c321824cce543a55ba&quot;, &quot;types/architecture/1.0.0.md&quot;: &quot;03000a660dc55bc385726e69afbe1ebc9709d202133bdd89c34ccd10848dd536&quot;, &quot;styles/architecture/framed-layered-matrix/1.0.0/SPEC.md&quot;: &quot;cb66b036568dfbf2eeab0851220ed830163d1afe223923ed3236818b0fd49d01&quot;, &quot;styles/architecture/framed-layered-matrix/1.0.0/tokens.json&quot;: &quot;73ec24e499e9ee9b7a5e02b074483b3df6f425c48b626644de56a365402714e6&quot;, &quot;references/line-styles-v1.md&quot;: &quot;623aac6e6721b001ce878ad4dc864e0ff4654b66bf8e2c17550d264955b445d0&quot;, &quot;references/interaction-standards/1.0.0.md&quot;: &quot;f2e2a466ad741b65d9df72a451201e9eceebdc9ef760e200b25e543e3846d56c&quot;, &quot;references/interaction-standards/1.0.0.svg&quot;: &quot;f492bbc9e401aeb90febb30f941ab959a0d34b893193e9f59b921cb45118e12b&quot;}, &quot;example_digest_source&quot;: &quot;catalog.lock.json 的 files（避免自引用）&quot;}</metadata>
+<rect x="0" y="0" width="1800" height="1615" fill="#FFFFFF" />
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<rect x="45" y="40" width="1710" height="96" fill="#5A99D8" data-header="title"/>
+<text x="900" y="104" text-anchor="middle" font-size="48" font-weight="700" fill="#FFFFFF" >知识共享平台能力架构</text>
+<rect x="45" y="155" width="98" height="1325" fill="#BBDEFB" data-guardrail="left"/>
+<text x="94" y="650" text-anchor="middle" font-size="42" fill="#323232" ><tspan x="94" dy="0">安</tspan><tspan x="94" dy="57">全</tspan><tspan x="94" dy="57">保</tspan><tspan x="94" dy="57">障</tspan><tspan x="94" dy="57">体</tspan><tspan x="94" dy="57">系</tspan></text>
+<rect x="1657" y="155" width="98" height="1325" fill="#BBDEFB" data-guardrail="right"/>
+<text x="1706" y="650" text-anchor="middle" font-size="42" fill="#323232" ><tspan x="1706" dy="0">运</tspan><tspan x="1706" dy="57">行</tspan><tspan x="1706" dy="57">维</tspan><tspan x="1706" dy="57">护</tspan><tspan x="1706" dy="57">体</tspan><tspan x="1706" dy="57">系</tspan></text>
+<rect x="45" y="1497" width="1710" height="78" fill="#BBDEFB" data-guardrail="bottom"/>
+<text x="900" y="1550" text-anchor="middle" font-size="44" font-weight="400" fill="#323232" >标准规范体系</text>
+<rect x="170" y="155" width="1460" height="92" fill="#F5F5F5" data-layer="people"/>
+<text x="182" y="213" text-anchor="start" font-size="27" font-weight="700" fill="#323232" >用户层</text>
+<rect x="325" y="176" width="190" height="52" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="people"/>
+<text x="420.0" y="209.35" text-anchor="middle" font-size="21" font-weight="400" fill="#323232" >资料管理员</text>
+<rect x="575" y="176" width="190" height="52" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="people"/>
+<text x="670.0" y="209.35" text-anchor="middle" font-size="21" font-weight="400" fill="#323232" >内容作者</text>
+<rect x="825" y="176" width="190" height="52" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="people"/>
+<text x="920.0" y="209.35" text-anchor="middle" font-size="21" font-weight="400" fill="#323232" >审阅人员</text>
+<rect x="1075" y="176" width="190" height="52" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="people"/>
+<text x="1170.0" y="209.35" text-anchor="middle" font-size="21" font-weight="400" fill="#323232" >社区读者</text>
+<rect x="1325" y="176" width="190" height="52" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="people"/>
+<text x="1420.0" y="209.35" text-anchor="middle" font-size="21" font-weight="400" fill="#323232" >合作机构</text>
+<rect x="170" y="266" width="1460" height="316" fill="#F5F5F5" data-layer="applications"/>
+<text x="182" y="438" text-anchor="start" font-size="27" font-weight="700" fill="#323232" >应用层</text>
+<rect x="275" y="287" width="555" height="274" fill="#DCE1F4" data-app-group="1"/>
+<text x="552.5" y="321" text-anchor="middle" font-size="27" font-weight="700" fill="#323232" >资源工作台</text>
+<rect x="295.0" y="338" width="159.67" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="374.835" y="370.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >我的主页</text>
+<rect x="472.67" y="338" width="159.67" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="552.505" y="370.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >内容整理</text>
+<rect x="650.33" y="338" width="159.67" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="730.1650000000001" y="370.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >更新提醒</text>
+<rect x="295.0" y="406" width="159.67" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="374.835" y="438.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >草稿编辑</text>
+<rect x="472.67" y="406" width="159.67" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="552.505" y="438.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >目录管理</text>
+<rect x="650.33" y="406" width="159.67" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="730.1650000000001" y="438.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >资源提交</text>
+<rect x="295.0" y="474" width="159.67" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="374.835" y="506.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >标签维护</text>
+<rect x="472.67" y="474" width="159.67" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="552.505" y="506.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >权限申请</text>
+<rect x="650.33" y="474" width="159.67" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="730.1650000000001" y="506.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >基础设置</text>
+<rect x="855" y="287" width="355" height="274" fill="#DCE1F4" data-app-group="2"/>
+<text x="1032.5" y="321" text-anchor="middle" font-size="27" font-weight="700" fill="#323232" >共享服务门户</text>
+<rect x="875.0" y="338" width="148.5" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="949.25" y="370.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >资源首页</text>
+<rect x="1041.5" y="338" width="148.5" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="1115.75" y="370.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >目录浏览</text>
+<rect x="875.0" y="406" width="148.5" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="949.25" y="438.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >内容阅读</text>
+<rect x="1041.5" y="406" width="148.5" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="1115.75" y="438.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >订阅更新</text>
+<rect x="875.0" y="474" width="148.5" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="949.25" y="506.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >使用统计</text>
+<rect x="1041.5" y="474" width="148.5" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="1115.75" y="506.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >反馈登记</text>
+<rect x="1235" y="287" width="370" height="274" fill="#DCE1F4" data-app-group="3"/>
+<text x="1420.0" y="321" text-anchor="middle" font-size="27" font-weight="700" fill="#323232" >运营管理平台</text>
+<rect x="1255.0" y="338" width="156.0" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="1333.0" y="370.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >内容审核</text>
+<rect x="1429.0" y="338" width="156.0" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="1507.0" y="370.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >作者管理</text>
+<rect x="1255.0" y="406" width="156.0" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="1333.0" y="438.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >机构管理</text>
+<rect x="1429.0" y="406" width="156.0" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="1507.0" y="438.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >数据统计</text>
+<rect x="1255.0" y="474" width="156.0" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="1333.0" y="506.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >资源查询</text>
+<rect x="1429.0" y="474" width="156.0" height="50" fill="#DCE1F4" stroke="#9E9E9E" stroke-width="2" data-node="application"/>
+<text x="1507.0" y="506.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >状态提醒</text>
+<rect x="170" y="601" width="1460" height="100" fill="#F5F5F5" data-layer="application-services"/>
+<text x="182" y="661" text-anchor="start" font-size="26" font-weight="700" fill="#323232" >应用服务层</text>
+<rect x="337" y="621" width="163" height="61" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="application-service"/>
+<text x="418.5" y="658.5" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >资源登记</text>
+<rect x="518" y="621" width="163" height="61" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="application-service"/>
+<text x="599.5" y="658.5" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >内容提交</text>
+<rect x="699" y="621" width="163" height="61" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="application-service"/>
+<text x="780.5" y="658.5" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >审核受理</text>
+<rect x="880" y="621" width="163" height="61" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="application-service"/>
+<text x="961.5" y="658.5" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >质量检查</text>
+<rect x="1061" y="621" width="163" height="61" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="application-service"/>
+<text x="1142.5" y="658.5" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >资源发布</text>
+<rect x="1242" y="621" width="163" height="61" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="application-service"/>
+<text x="1323.5" y="658.5" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >机构维护</text>
+<rect x="1423" y="621" width="163" height="61" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="application-service"/>
+<text x="1504.5" y="658.5" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >用户维护</text>
+<rect x="170" y="720" width="1255" height="434" fill="#E0E0E0" data-layer="base-services"/>
+<text x="200" y="861" text-anchor="middle" font-size="29" fill="#323232" ><tspan x="200" dy="0">基</tspan><tspan x="200" dy="38">础</tspan><tspan x="200" dy="38">服</tspan><tspan x="200" dy="38">务</tspan><tspan x="200" dy="38">层</tspan></text>
+<rect x="235" y="744" width="1175" height="190" fill="#F5F5F5" data-service-group="core"/>
+<text x="247" y="820" text-anchor="start" font-size="26" font-weight="700" fill="#323232" >核心服务</text>
+<text x="247" y="854" text-anchor="start" font-size="21" font-weight="700" fill="#323232" >（能力组）</text>
+<rect x="380" y="754" width="168" height="70" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="core"/>
+<text x="464.0" y="796.35" text-anchor="middle" font-size="21" font-weight="400" fill="#323232" >内容中心</text>
+<rect x="585" y="754" width="168" height="70" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="core"/>
+<text x="669.0" y="796.35" text-anchor="middle" font-size="21" font-weight="400" fill="#323232" >目录中心</text>
+<rect x="790" y="754" width="168" height="70" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="core"/>
+<text x="874.0" y="796.35" text-anchor="middle" font-size="21" font-weight="400" fill="#323232" >用户中心</text>
+<rect x="995" y="754" width="168" height="70" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="core"/>
+<text x="1079.0" y="796.35" text-anchor="middle" font-size="21" font-weight="400" fill="#323232" >授权中心</text>
+<rect x="380" y="845" width="168" height="70" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="core"/>
+<text x="464.0" y="887.35" text-anchor="middle" font-size="21" font-weight="400" fill="#323232" >资源中心</text>
+<rect x="585" y="845" width="168" height="70" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="core"/>
+<text x="669.0" y="887.35" text-anchor="middle" font-size="21" font-weight="400" fill="#323232" >订阅中心</text>
+<rect x="790" y="845" width="168" height="70" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="core"/>
+<text x="874.0" y="887.35" text-anchor="middle" font-size="21" font-weight="400" fill="#323232" >评价中心</text>
+<rect x="995" y="845" width="168" height="70" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="core"/>
+<text x="1079.0" y="887.35" text-anchor="middle" font-size="21" font-weight="400" fill="#323232" >统计中心</text>
+<rect x="1200" y="754" width="185" height="161" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="spanning-core"/>
+<text x="1292.5" y="841.85" text-anchor="middle" font-size="21" font-weight="400" fill="#323232" >索引集成</text>
+<rect x="235" y="949" width="1175" height="190" fill="#F5F5F5" data-service-group="support"/>
+<text x="247" y="1026" text-anchor="start" font-size="26" font-weight="700" fill="#323232" >支撑服务</text>
+<text x="247" y="1060" text-anchor="start" font-size="21" font-weight="700" fill="#323232" >（能力组）</text>
+<rect x="380" y="959" width="178" height="70" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="support"/>
+<text x="469.0" y="1001.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >文件管理</text>
+<rect x="582" y="959" width="178" height="70" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="support"/>
+<text x="671.0" y="1001.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >任务编排</text>
+<rect x="784" y="959" width="178" height="70" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="support"/>
+<text x="873.0" y="1001.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >定时任务</text>
+<rect x="986" y="959" width="178" height="70" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="support"/>
+<text x="1075.0" y="1001.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >消息提醒</text>
+<rect x="1188" y="959" width="178" height="70" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="support"/>
+<text x="1277.0" y="1001.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >实时通知</text>
+<rect x="380" y="1050" width="178" height="70" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="support"/>
+<text x="469.0" y="1092.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >文档转换</text>
+<rect x="582" y="1050" width="178" height="70" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="support"/>
+<text x="671.0" y="1092.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >全文检索</text>
+<rect x="784" y="1050" width="178" height="70" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="support"/>
+<text x="873.0" y="1092.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >内容版本</text>
+<rect x="986" y="1050" width="178" height="70" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="support"/>
+<text x="1075.0" y="1092.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >动态表单</text>
+<rect x="1188" y="1050" width="178" height="70" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="support"/>
+<text x="1277.0" y="1092.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >统一编码</text>
+<rect x="1446" y="720" width="184" height="434" fill="#DEEAF6" data-capability-sidebar="true"/>
+<rect x="1460" y="742" width="156" height="60" fill="#DEEAF6" stroke="#E0E0E0" stroke-width="2" data-node="side"/>
+<text x="1538.0" y="779.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >入口网关</text>
+<rect x="1460" y="821" width="156" height="60" fill="#DEEAF6" stroke="#E0E0E0" stroke-width="2" data-node="side"/>
+<text x="1538.0" y="858.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >服务目录</text>
+<rect x="1460" y="900" width="156" height="60" fill="#DEEAF6" stroke="#E0E0E0" stroke-width="2" data-node="side"/>
+<text x="1538.0" y="937.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >参数管理</text>
+<rect x="1460" y="979" width="156" height="60" fill="#DEEAF6" stroke="#E0E0E0" stroke-width="2" data-node="side"/>
+<text x="1538.0" y="1016.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >访问认证</text>
+<rect x="1460" y="1058" width="156" height="60" fill="#DEEAF6" stroke="#E0E0E0" stroke-width="2" data-node="side"/>
+<text x="1538.0" y="1095.0" text-anchor="middle" font-size="20" font-weight="400" fill="#323232" >运行监测</text>
+<rect x="170" y="1173" width="1460" height="145" fill="#F5F5F5" data-layer="data"/>
+<text x="182" y="1258" text-anchor="start" font-size="27" font-weight="700" fill="#323232" >数据层</text>
+<g data-storage="1"><path d="M320 1215 C320 1190 475 1190 475 1215 V1274 C475 1299 320 1299 320 1274 Z" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="3"/><ellipse cx="397.5" cy="1215" rx="77.5" ry="19" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="3"/></g>
+<text x="397.5" y="1266" text-anchor="middle" font-size="21" font-weight="400" fill="#323232" >资源库</text>
+<g data-storage="2"><path d="M645 1215 C645 1190 800 1190 800 1215 V1274 C800 1299 645 1299 645 1274 Z" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="3"/><ellipse cx="722.5" cy="1215" rx="77.5" ry="19" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="3"/></g>
+<text x="722.5" y="1266" text-anchor="middle" font-size="21" font-weight="400" fill="#323232" >检索索引</text>
+<g data-storage="3"><path d="M970 1215 C970 1190 1125 1190 1125 1215 V1274 C1125 1299 970 1299 970 1274 Z" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="3"/><ellipse cx="1047.5" cy="1215" rx="77.5" ry="19" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="3"/></g>
+<text x="1047.5" y="1266" text-anchor="middle" font-size="21" font-weight="400" fill="#323232" >访问缓存</text>
+<g data-placeholder="true"><path d="M1295 1215 C1295 1190 1450 1190 1450 1215 V1274 C1450 1299 1295 1299 1295 1274 Z" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="3"/><ellipse cx="1372.5" cy="1215" rx="77.5" ry="19" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="3"/></g>
+<text x="1372.5" y="1266" text-anchor="middle" font-size="21" font-weight="400" fill="#323232" >…</text>
+<rect x="170" y="1338" width="1460" height="142" fill="#F5F5F5" data-layer="infrastructure"/>
+<text x="182" y="1420" text-anchor="start" font-size="27" font-weight="700" fill="#323232" >基础设施层</text>
+<rect x="320" y="1372" width="325" height="62" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="infrastructure"/>
+<text x="482.5" y="1410.7" text-anchor="middle" font-size="22" font-weight="400" fill="#323232" >计算资源</text>
+<rect x="760" y="1372" width="325" height="62" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="infrastructure"/>
+<text x="922.5" y="1410.7" text-anchor="middle" font-size="22" font-weight="400" fill="#323232" >网络资源</text>
+<rect x="1200" y="1372" width="325" height="62" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" data-node="infrastructure"/>
+<text x="1362.5" y="1410.7" text-anchor="middle" font-size="22" font-weight="400" fill="#323232" >存储资源</text>
+</g>
+</svg>

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "timeline",
+  "name": "时间线图",
+  "aliases": [
+    "时间线图",
+    "时间线",
+    "大事记"
+  ],
+  "semantic_version": "1.0.0",
+  "number_prefix": "TL",
+  "guide": "references/type-guides/timeline.md",
+  "default": "timeline/color-milestone-cards@1.0.0",
+  "style_versions": {
+    "color-milestone-cards": "1.0.0",
+    "multilane-era-axis": "1.0.0"
+  },
+  "styles": [
+    {
+      "id": "color-milestone-cards",
+      "version": "1.0.0",
+      "number": "TL-01",
+      "name": "彩色里程碑卡片",
+      "aliases": [
+        "彩色里程碑",
+        "卡片时间线"
+      ]
+    },
+    {
+      "id": "multilane-era-axis",
+      "version": "1.0.0",
+      "number": "TL-02",
+      "name": "多层时期事件时间轴",
+      "aliases": [
+        "多层时期时间轴",
+        "分层事件时间线"
+      ]
+    }
+  ]
+}

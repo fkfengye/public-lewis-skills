@@ -1,0 +1,1066 @@
+{
+  "schema_version": 1,
+  "types": {
+    "flowchart": {
+      "name": "流程图",
+      "aliases": [
+        "流程图"
+      ],
+      "spec": "types/flowchart/1.0.0.md",
+      "default": "flowchart/soft-process@1.0.0",
+      "style_versions": {
+        "soft-process": "1.0.0",
+        "classic-mono": "1.0.0",
+        "soft-swimlanes": "1.0.0",
+        "contrast-swimlanes": "1.0.0",
+        "monochrome-horizontal-collaboration": "1.0.0",
+        "global-header-swimlanes": "1.0.0",
+        "handdrawn-design-board": "1.0.0",
+        "handdrawn-runtime-flow": "1.0.0",
+        "thin-line-component-flow": "1.0.0",
+        "pastel-document-pipeline": "1.0.0"
+      },
+      "guide": "references/type-guides/flowchart.md"
+    },
+    "sequence": {
+      "name": "时序图",
+      "aliases": [
+        "时序图",
+        "顺序图"
+      ],
+      "spec": "types/sequence/1.0.0.md",
+      "default": "sequence/institutional-blue@1.0.0",
+      "style_versions": {
+        "institutional-blue": "1.0.0",
+        "classic-mono": "1.0.0",
+        "blue-green-phases": "1.0.0",
+        "pale-folded-notes": "1.0.0",
+        "handdrawn-pastel-branches": "1.0.0"
+      },
+      "guide": "references/type-guides/sequence.md"
+    },
+    "state": {
+      "name": "状态图",
+      "aliases": [
+        "状态图",
+        "状态机"
+      ],
+      "spec": "types/state/1.0.0.md",
+      "default": "state/classic-mono@1.0.0",
+      "style_versions": {
+        "classic-mono": "1.0.0",
+        "soft-cards": "1.0.0"
+      },
+      "guide": "references/type-guides/state.md"
+    },
+    "architecture": {
+      "name": "架构图",
+      "aliases": [
+        "架构图"
+      ],
+      "spec": "types/architecture/1.0.0.md",
+      "default": "architecture/soft-layered@1.0.0",
+      "style_versions": {
+        "soft-layered": "1.0.0",
+        "premium-cards": "1.0.0",
+        "layered-interactions": "1.0.0",
+        "contrast-process-bands": "1.0.0",
+        "blue-green-grid": "1.0.0",
+        "blue-green-detailed": "1.0.0",
+        "ecosystem-capability-matrix": "1.0.0",
+        "cross-boundary-layers": "1.0.0",
+        "three-column-feedback": "1.0.0",
+        "dashed-layered-cards": "1.0.0",
+        "stacked-layer-matrix": "1.0.0",
+        "blue-layered-icon-panels": "1.0.0",
+        "framed-layered-matrix": "1.0.0",
+        "handdrawn-design-board": "1.0.0",
+        "dual-ecosystem-capability-band": "1.0.0"
+      },
+      "guide": "references/type-guides/architecture.md"
+    },
+    "er": {
+      "name": "ER 图",
+      "aliases": [
+        "ER图",
+        "实体关系图",
+        "实体关系",
+        "表关系图"
+      ],
+      "spec": "types/er/1.0.0.md",
+      "default": "er/soft-tables@1.0.0",
+      "style_versions": {
+        "soft-tables": "1.0.0",
+        "classic-mono": "1.0.0",
+        "domain-ddl": "1.0.0"
+      },
+      "guide": "references/type-guides/er.md",
+      "gallery_layout": "wide"
+    },
+    "topology": {
+      "name": "拓扑图",
+      "aliases": [
+        "拓扑图",
+        "拓扑"
+      ],
+      "spec": "types/topology/1.0.0.md",
+      "default": "topology/icon-chain@1.0.0",
+      "style_versions": {
+        "icon-chain": "1.0.0",
+        "layered-service-clusters": "1.0.0"
+      },
+      "guide": "references/type-guides/topology.md"
+    },
+    "timeline": {
+      "name": "时间线图",
+      "aliases": [
+        "时间线图",
+        "时间线",
+        "大事记"
+      ],
+      "spec": "types/timeline/1.0.0.md",
+      "default": "timeline/color-milestone-cards@1.0.0",
+      "style_versions": {
+        "color-milestone-cards": "1.0.0",
+        "multilane-era-axis": "1.0.0"
+      },
+      "guide": "references/type-guides/timeline.md"
+    },
+    "data-flow": {
+      "name": "数据流图",
+      "aliases": [
+        "数据流图",
+        "数据流",
+        "DFD"
+      ],
+      "spec": "types/data-flow/1.0.0.md",
+      "default": "data-flow/pastel-handdrawn@1.0.0",
+      "style_versions": {
+        "pastel-handdrawn": "1.0.0"
+      },
+      "guide": "references/type-guides/data-flow.md"
+    }
+  },
+  "profiles": {
+    "flowchart/soft-process@1.0.0": {
+      "type": "flowchart",
+      "id": "soft-process",
+      "version": "1.0.0",
+      "name": "浅色业务流程",
+      "aliases": [
+        "浅色流程",
+        "浅色业务"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/flowchart/1.0.0.md",
+      "spec": "styles/flowchart/soft-process/1.0.0/SPEC.md",
+      "tokens": "styles/flowchart/soft-process/1.0.0/tokens.json",
+      "example": "styles/flowchart/soft-process/1.0.0/example.svg"
+    },
+    "flowchart/classic-mono@1.0.0": {
+      "type": "flowchart",
+      "id": "classic-mono",
+      "version": "1.0.0",
+      "name": "经典黑白流程",
+      "aliases": [
+        "黑白流程",
+        "经典黑白"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/flowchart/1.0.0.md",
+      "spec": "styles/flowchart/classic-mono/1.0.0/SPEC.md",
+      "tokens": "styles/flowchart/classic-mono/1.0.0/tokens.json",
+      "example": "styles/flowchart/classic-mono/1.0.0/example.svg"
+    },
+    "flowchart/soft-swimlanes@1.0.0": {
+      "type": "flowchart",
+      "id": "soft-swimlanes",
+      "version": "1.0.0",
+      "name": "浅色分区泳道",
+      "aliases": [
+        "浅色泳道",
+        "柔和泳道",
+        "泳道浅色"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/flowchart/1.0.0.md",
+      "spec": "styles/flowchart/soft-swimlanes/1.0.0/SPEC.md",
+      "tokens": "styles/flowchart/soft-swimlanes/1.0.0/tokens.json",
+      "example": "styles/flowchart/soft-swimlanes/1.0.0/example.svg",
+      "layout": "swimlane",
+      "gallery_layout": "wide"
+    },
+    "flowchart/contrast-swimlanes@1.0.0": {
+      "type": "flowchart",
+      "id": "contrast-swimlanes",
+      "version": "1.0.0",
+      "name": "深色标题泳道",
+      "aliases": [
+        "深色泳道",
+        "高对比泳道",
+        "泳道深色标题"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/flowchart/1.0.0.md",
+      "spec": "styles/flowchart/contrast-swimlanes/1.0.0/SPEC.md",
+      "tokens": "styles/flowchart/contrast-swimlanes/1.0.0/tokens.json",
+      "example": "styles/flowchart/contrast-swimlanes/1.0.0/example.svg",
+      "layout": "swimlane",
+      "gallery_layout": "wide"
+    },
+    "flowchart/monochrome-horizontal-collaboration@1.0.0": {
+      "type": "flowchart",
+      "id": "monochrome-horizontal-collaboration",
+      "version": "1.0.0",
+      "name": "黑白横向协作流程",
+      "aliases": [
+        "黑白横向协作",
+        "黑白参与方流程"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/flowchart/1.0.0.md",
+      "spec": "styles/flowchart/monochrome-horizontal-collaboration/1.0.0/SPEC.md",
+      "tokens": "styles/flowchart/monochrome-horizontal-collaboration/1.0.0/tokens.json",
+      "example": "styles/flowchart/monochrome-horizontal-collaboration/1.0.0/example.svg"
+    },
+    "flowchart/global-header-swimlanes@1.0.0": {
+      "type": "flowchart",
+      "id": "global-header-swimlanes",
+      "version": "1.0.0",
+      "name": "全局深蓝标题泳道",
+      "aliases": [
+        "深蓝全局标题泳道",
+        "蓝灰业务泳道"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/flowchart/1.0.0.md",
+      "spec": "styles/flowchart/global-header-swimlanes/1.0.0/SPEC.md",
+      "tokens": "styles/flowchart/global-header-swimlanes/1.0.0/tokens.json",
+      "example": "styles/flowchart/global-header-swimlanes/1.0.0/example.svg",
+      "layout": "swimlane",
+      "gallery_layout": "wide"
+    },
+    "flowchart/handdrawn-design-board@1.0.0": {
+      "type": "flowchart",
+      "id": "handdrawn-design-board",
+      "version": "1.0.0",
+      "name": "手绘设计讨论流程",
+      "aliases": [
+        "手绘讨论流程",
+        "手绘设计流程图"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/flowchart/1.0.0.md",
+      "spec": "styles/flowchart/handdrawn-design-board/1.0.0/SPEC.md",
+      "tokens": "styles/flowchart/handdrawn-design-board/1.0.0/tokens.json",
+      "example": "styles/flowchart/handdrawn-design-board/1.0.0/example.svg",
+      "gallery_layout": "wide"
+    },
+    "flowchart/handdrawn-runtime-flow@1.0.0": {
+      "type": "flowchart",
+      "id": "handdrawn-runtime-flow",
+      "version": "1.0.0",
+      "name": "手绘运行边界流程",
+      "aliases": [
+        "手绘运行流程",
+        "手绘边界流程"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/flowchart/1.0.0.md",
+      "spec": "styles/flowchart/handdrawn-runtime-flow/1.0.0/SPEC.md",
+      "tokens": "styles/flowchart/handdrawn-runtime-flow/1.0.0/tokens.json",
+      "example": "styles/flowchart/handdrawn-runtime-flow/1.0.0/example.svg",
+      "gallery_layout": "wide"
+    },
+    "flowchart/thin-line-component-flow@1.0.0": {
+      "type": "flowchart",
+      "id": "thin-line-component-flow",
+      "version": "1.0.0",
+      "name": "细线组件交互流程",
+      "aliases": [
+        "细线组件流程",
+        "米蓝组件交互流程"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/flowchart/1.0.0.md",
+      "spec": "styles/flowchart/thin-line-component-flow/1.0.0/SPEC.md",
+      "tokens": "styles/flowchart/thin-line-component-flow/1.0.0/tokens.json",
+      "example": "styles/flowchart/thin-line-component-flow/1.0.0/example.svg",
+      "gallery_layout": "wide"
+    },
+    "flowchart/pastel-document-pipeline@1.0.0": {
+      "type": "flowchart",
+      "id": "pastel-document-pipeline",
+      "version": "1.0.0",
+      "name": "柔色文档处理流程",
+      "aliases": [
+        "柔色文档流程",
+        "粉彩资料处理"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/flowchart/1.0.0.md",
+      "spec": "styles/flowchart/pastel-document-pipeline/1.0.0/SPEC.md",
+      "tokens": "styles/flowchart/pastel-document-pipeline/1.0.0/tokens.json",
+      "example": "styles/flowchart/pastel-document-pipeline/1.0.0/example.svg",
+      "gallery_layout": "wide"
+    },
+    "sequence/institutional-blue@1.0.0": {
+      "type": "sequence",
+      "id": "institutional-blue",
+      "version": "1.0.0",
+      "name": "蓝框机构时序",
+      "aliases": [
+        "蓝框时序",
+        "机构蓝框"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/sequence/1.0.0.md",
+      "spec": "styles/sequence/institutional-blue/1.0.0/SPEC.md",
+      "tokens": "styles/sequence/institutional-blue/1.0.0/tokens.json",
+      "example": "styles/sequence/institutional-blue/1.0.0/example.svg"
+    },
+    "sequence/classic-mono@1.0.0": {
+      "type": "sequence",
+      "id": "classic-mono",
+      "version": "1.0.0",
+      "name": "经典黑白时序",
+      "aliases": [
+        "黑白时序",
+        "经典黑白"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/sequence/1.0.0.md",
+      "spec": "styles/sequence/classic-mono/1.0.0/SPEC.md",
+      "tokens": "styles/sequence/classic-mono/1.0.0/tokens.json",
+      "example": "styles/sequence/classic-mono/1.0.0/example.svg"
+    },
+    "sequence/blue-green-phases@1.0.0": {
+      "type": "sequence",
+      "id": "blue-green-phases",
+      "version": "1.0.0",
+      "name": "蓝绿分阶段时序",
+      "aliases": [
+        "蓝绿时序",
+        "分阶段时序"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/sequence/1.0.0.md",
+      "spec": "styles/sequence/blue-green-phases/1.0.0/SPEC.md",
+      "tokens": "styles/sequence/blue-green-phases/1.0.0/tokens.json",
+      "example": "styles/sequence/blue-green-phases/1.0.0/example.svg",
+      "gallery_layout": "wide"
+    },
+    "sequence/pale-folded-notes@1.0.0": {
+      "type": "sequence",
+      "id": "pale-folded-notes",
+      "version": "1.0.0",
+      "name": "浅色折角注释时序",
+      "aliases": [
+        "折角注释时序",
+        "浅色备注时序"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/sequence/1.0.0.md",
+      "spec": "styles/sequence/pale-folded-notes/1.0.0/SPEC.md",
+      "tokens": "styles/sequence/pale-folded-notes/1.0.0/tokens.json",
+      "example": "styles/sequence/pale-folded-notes/1.0.0/example.svg"
+    },
+    "sequence/handdrawn-pastel-branches@1.0.0": {
+      "type": "sequence",
+      "id": "handdrawn-pastel-branches",
+      "version": "1.0.0",
+      "name": "手绘粉彩分支时序",
+      "aliases": [
+        "手绘粉彩时序",
+        "粉彩分支时序"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.1.0",
+      "semantic_spec": "types/sequence/1.1.0.md",
+      "spec": "styles/sequence/handdrawn-pastel-branches/1.0.0/SPEC.md",
+      "tokens": "styles/sequence/handdrawn-pastel-branches/1.0.0/tokens.json",
+      "example": "styles/sequence/handdrawn-pastel-branches/1.0.0/example.svg",
+      "gallery_layout": "wide"
+    },
+    "state/classic-mono@1.0.0": {
+      "type": "state",
+      "id": "classic-mono",
+      "version": "1.0.0",
+      "name": "经典黑白状态",
+      "aliases": [
+        "黑白状态",
+        "经典黑白"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/state/1.0.0.md",
+      "spec": "styles/state/classic-mono/1.0.0/SPEC.md",
+      "tokens": "styles/state/classic-mono/1.0.0/tokens.json",
+      "example": "styles/state/classic-mono/1.0.0/example.svg"
+    },
+    "state/soft-cards@1.0.0": {
+      "type": "state",
+      "id": "soft-cards",
+      "version": "1.0.0",
+      "name": "浅色卡片状态",
+      "aliases": [
+        "浅色状态",
+        "卡片状态"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/state/1.0.0.md",
+      "spec": "styles/state/soft-cards/1.0.0/SPEC.md",
+      "tokens": "styles/state/soft-cards/1.0.0/tokens.json",
+      "example": "styles/state/soft-cards/1.0.0/example.svg"
+    },
+    "architecture/soft-layered@1.0.0": {
+      "type": "architecture",
+      "id": "soft-layered",
+      "version": "1.0.0",
+      "name": "浅色分层架构",
+      "aliases": [
+        "浅色架构",
+        "分层蓝图"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/architecture/1.0.0.md",
+      "spec": "styles/architecture/soft-layered/1.0.0/SPEC.md",
+      "tokens": "styles/architecture/soft-layered/1.0.0/tokens.json",
+      "example": "styles/architecture/soft-layered/1.0.0/example.svg"
+    },
+    "architecture/premium-cards@1.0.0": {
+      "type": "architecture",
+      "id": "premium-cards",
+      "version": "1.0.0",
+      "name": "精致卡片架构",
+      "aliases": [
+        "卡片架构",
+        "精致卡片"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/architecture/1.0.0.md",
+      "spec": "styles/architecture/premium-cards/1.0.0/SPEC.md",
+      "tokens": "styles/architecture/premium-cards/1.0.0/tokens.json",
+      "example": "styles/architecture/premium-cards/1.0.0/example.svg"
+    },
+    "architecture/layered-interactions@1.0.0": {
+      "type": "architecture",
+      "id": "layered-interactions",
+      "version": "1.0.0",
+      "name": "浅色分层交互",
+      "aliases": [
+        "分层交互模板",
+        "单向分层架构"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/architecture/1.0.0.md",
+      "spec": "styles/architecture/layered-interactions/1.0.0/SPEC.md",
+      "tokens": "styles/architecture/layered-interactions/1.0.0/tokens.json",
+      "example": "styles/architecture/layered-interactions/1.0.0/example.svg",
+      "gallery_layout": "wide"
+    },
+    "architecture/contrast-process-bands@1.0.0": {
+      "type": "architecture",
+      "id": "contrast-process-bands",
+      "version": "1.0.0",
+      "name": "暖底深绿分区",
+      "aliases": [
+        "深绿分区",
+        "暖底分区架构"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/architecture/1.0.0.md",
+      "spec": "styles/architecture/contrast-process-bands/1.0.0/SPEC.md",
+      "tokens": "styles/architecture/contrast-process-bands/1.0.0/tokens.json",
+      "example": "styles/architecture/contrast-process-bands/1.0.0/example.svg",
+      "gallery_layout": "wide"
+    },
+    "architecture/blue-green-grid@1.0.0": {
+      "type": "architecture",
+      "id": "blue-green-grid",
+      "version": "1.0.0",
+      "name": "蓝绿密集分区",
+      "aliases": [
+        "蓝绿分区架构",
+        "密集分区架构"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/architecture/1.0.0.md",
+      "spec": "styles/architecture/blue-green-grid/1.0.0/SPEC.md",
+      "tokens": "styles/architecture/blue-green-grid/1.0.0/tokens.json",
+      "example": "styles/architecture/blue-green-grid/1.0.0/example.svg",
+      "gallery_layout": "wide"
+    },
+    "architecture/blue-green-detailed@1.0.0": {
+      "type": "architecture",
+      "id": "blue-green-detailed",
+      "version": "1.0.0",
+      "name": "蓝绿密集细节",
+      "aliases": [
+        "蓝绿分区细节",
+        "多层蓝绿架构"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/architecture/1.0.0.md",
+      "spec": "styles/architecture/blue-green-detailed/1.0.0/SPEC.md",
+      "tokens": "styles/architecture/blue-green-detailed/1.0.0/tokens.json",
+      "example": "styles/architecture/blue-green-detailed/1.0.0/example.svg",
+      "gallery_layout": "wide"
+    },
+    "architecture/ecosystem-capability-matrix@1.0.0": {
+      "type": "architecture",
+      "id": "ecosystem-capability-matrix",
+      "version": "1.0.0",
+      "name": "蓝粉生态能力矩阵",
+      "aliases": [
+        "蓝粉能力矩阵",
+        "生态能力矩阵"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/architecture/1.0.0.md",
+      "spec": "styles/architecture/ecosystem-capability-matrix/1.0.0/SPEC.md",
+      "tokens": "styles/architecture/ecosystem-capability-matrix/1.0.0/tokens.json",
+      "example": "styles/architecture/ecosystem-capability-matrix/1.0.0/example.svg"
+    },
+    "architecture/cross-boundary-layers@1.0.0": {
+      "type": "architecture",
+      "id": "cross-boundary-layers",
+      "version": "1.0.0",
+      "name": "跨域分层交互",
+      "aliases": [
+        "跨域分层",
+        "跨域分层架构"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/architecture/1.0.0.md",
+      "spec": "styles/architecture/cross-boundary-layers/1.0.0/SPEC.md",
+      "tokens": "styles/architecture/cross-boundary-layers/1.0.0/tokens.json",
+      "example": "styles/architecture/cross-boundary-layers/1.0.0/example.svg"
+    },
+    "architecture/three-column-feedback@1.0.0": {
+      "type": "architecture",
+      "id": "three-column-feedback",
+      "version": "1.0.0",
+      "name": "三栏分区与反馈闭环",
+      "aliases": [
+        "三栏反馈",
+        "虚线分区反馈"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/architecture/1.0.0.md",
+      "spec": "styles/architecture/three-column-feedback/1.0.0/SPEC.md",
+      "tokens": "styles/architecture/three-column-feedback/1.0.0/tokens.json",
+      "example": "styles/architecture/three-column-feedback/1.0.0/example.svg"
+    },
+    "architecture/dashed-layered-cards@1.0.0": {
+      "type": "architecture",
+      "id": "dashed-layered-cards",
+      "version": "1.0.0",
+      "name": "蓝紫虚线分区架构",
+      "aliases": [
+        "蓝紫分层架构",
+        "虚线分区架构"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/architecture/1.0.0.md",
+      "spec": "styles/architecture/dashed-layered-cards/1.0.0/SPEC.md",
+      "tokens": "styles/architecture/dashed-layered-cards/1.0.0/tokens.json",
+      "example": "styles/architecture/dashed-layered-cards/1.0.0/example.svg"
+    },
+    "architecture/stacked-layer-matrix@1.0.0": {
+      "type": "architecture",
+      "id": "stacked-layer-matrix",
+      "version": "1.0.0",
+      "name": "浅色横向分层矩阵",
+      "aliases": [
+        "横向分层矩阵",
+        "浅色层叠矩阵"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/architecture/1.0.0.md",
+      "spec": "styles/architecture/stacked-layer-matrix/1.0.0/SPEC.md",
+      "tokens": "styles/architecture/stacked-layer-matrix/1.0.0/tokens.json",
+      "example": "styles/architecture/stacked-layer-matrix/1.0.0/example.svg"
+    },
+    "architecture/blue-layered-icon-panels@1.0.0": {
+      "type": "architecture",
+      "id": "blue-layered-icon-panels",
+      "version": "1.0.0",
+      "name": "浅蓝图标分层面板",
+      "aliases": [
+        "浅蓝图文分层",
+        "蓝色图标能力面板"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/architecture/1.0.0.md",
+      "spec": "styles/architecture/blue-layered-icon-panels/1.0.0/SPEC.md",
+      "tokens": "styles/architecture/blue-layered-icon-panels/1.0.0/tokens.json",
+      "example": "styles/architecture/blue-layered-icon-panels/1.0.0/example.svg"
+    },
+    "architecture/framed-layered-matrix@1.0.0": {
+      "type": "architecture",
+      "id": "framed-layered-matrix",
+      "version": "1.0.0",
+      "name": "侧栏保障分层矩阵",
+      "aliases": [
+        "保障带分层架构",
+        "三面保障分层矩阵"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/architecture/1.0.0.md",
+      "spec": "styles/architecture/framed-layered-matrix/1.0.0/SPEC.md",
+      "tokens": "styles/architecture/framed-layered-matrix/1.0.0/tokens.json",
+      "example": "styles/architecture/framed-layered-matrix/1.0.0/example.svg"
+    },
+    "architecture/handdrawn-design-board@1.0.0": {
+      "type": "architecture",
+      "id": "handdrawn-design-board",
+      "version": "1.0.0",
+      "name": "手绘设计讨论架构",
+      "aliases": [
+        "手绘讨论架构",
+        "设计白板架构"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/architecture/1.0.0.md",
+      "spec": "styles/architecture/handdrawn-design-board/1.0.0/SPEC.md",
+      "tokens": "styles/architecture/handdrawn-design-board/1.0.0/tokens.json",
+      "example": "styles/architecture/handdrawn-design-board/1.0.0/example.svg"
+    },
+    "architecture/dual-ecosystem-capability-band@1.0.0": {
+      "type": "architecture",
+      "id": "dual-ecosystem-capability-band",
+      "version": "1.0.0",
+      "name": "双侧生态与能力矩阵",
+      "aliases": [
+        "双侧生态矩阵",
+        "蓝橙能力带"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/architecture/1.0.0.md",
+      "spec": "styles/architecture/dual-ecosystem-capability-band/1.0.0/SPEC.md",
+      "tokens": "styles/architecture/dual-ecosystem-capability-band/1.0.0/tokens.json",
+      "example": "styles/architecture/dual-ecosystem-capability-band/1.0.0/example.svg"
+    },
+    "er/soft-tables@1.0.0": {
+      "type": "er",
+      "id": "soft-tables",
+      "version": "1.0.0",
+      "name": "浅色表结构",
+      "aliases": [
+        "浅色ER",
+        "浅色表关系",
+        "参考图表结构"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/er/1.0.0.md",
+      "spec": "styles/er/soft-tables/1.0.0/SPEC.md",
+      "tokens": "styles/er/soft-tables/1.0.0/tokens.json",
+      "example": "styles/er/soft-tables/1.0.0/example.svg"
+    },
+    "er/classic-mono@1.0.0": {
+      "type": "er",
+      "id": "classic-mono",
+      "version": "1.0.0",
+      "name": "经典黑白 ER",
+      "aliases": [
+        "黑白ER",
+        "黑白表关系",
+        "经典黑白"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/er/1.0.0.md",
+      "spec": "styles/er/classic-mono/1.0.0/SPEC.md",
+      "tokens": "styles/er/classic-mono/1.0.0/tokens.json",
+      "example": "styles/er/classic-mono/1.0.0/example.svg"
+    },
+    "er/domain-ddl@1.0.0": {
+      "type": "er",
+      "id": "domain-ddl",
+      "version": "1.0.0",
+      "name": "多域 DDL 表结构",
+      "aliases": [
+        "多域ER",
+        "DDL表结构",
+        "复杂ER"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/er/1.0.0.md",
+      "spec": "styles/er/domain-ddl/1.0.0/SPEC.md",
+      "tokens": "styles/er/domain-ddl/1.0.0/tokens.json",
+      "example": "styles/er/domain-ddl/1.0.0/example.svg"
+    },
+    "topology/icon-chain@1.0.0": {
+      "type": "topology",
+      "id": "icon-chain",
+      "version": "1.0.0",
+      "name": "橙红图标链路",
+      "aliases": [
+        "图标链路拓扑",
+        "橙红拓扑"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/topology/1.0.0.md",
+      "spec": "styles/topology/icon-chain/1.0.0/SPEC.md",
+      "tokens": "styles/topology/icon-chain/1.0.0/tokens.json",
+      "example": "styles/topology/icon-chain/1.0.0/example.svg"
+    },
+    "topology/layered-service-clusters@1.0.0": {
+      "type": "topology",
+      "id": "layered-service-clusters",
+      "version": "1.0.0",
+      "name": "分层图标集群拓扑",
+      "aliases": [
+        "分布式集群拓扑",
+        "多层图标拓扑"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/topology/1.0.0.md",
+      "spec": "styles/topology/layered-service-clusters/1.0.0/SPEC.md",
+      "tokens": "styles/topology/layered-service-clusters/1.0.0/tokens.json",
+      "example": "styles/topology/layered-service-clusters/1.0.0/example.svg",
+      "gallery_layout": "wide"
+    },
+    "timeline/color-milestone-cards@1.0.0": {
+      "type": "timeline",
+      "id": "color-milestone-cards",
+      "version": "1.0.0",
+      "name": "彩色里程碑卡片",
+      "aliases": [
+        "彩色里程碑",
+        "卡片时间线"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/timeline/1.0.0.md",
+      "spec": "styles/timeline/color-milestone-cards/1.0.0/SPEC.md",
+      "tokens": "styles/timeline/color-milestone-cards/1.0.0/tokens.json",
+      "example": "styles/timeline/color-milestone-cards/1.0.0/example.svg"
+    },
+    "timeline/multilane-era-axis@1.0.0": {
+      "type": "timeline",
+      "id": "multilane-era-axis",
+      "version": "1.0.0",
+      "name": "多层时期事件时间轴",
+      "aliases": [
+        "多层时期时间轴",
+        "分层事件时间线"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/timeline/1.0.0.md",
+      "spec": "styles/timeline/multilane-era-axis/1.0.0/SPEC.md",
+      "tokens": "styles/timeline/multilane-era-axis/1.0.0/tokens.json",
+      "example": "styles/timeline/multilane-era-axis/1.0.0/example.svg"
+    },
+    "data-flow/pastel-handdrawn@1.0.0": {
+      "type": "data-flow",
+      "id": "pastel-handdrawn",
+      "version": "1.0.0",
+      "name": "手绘粉彩数据流",
+      "aliases": [
+        "粉彩手绘数据流",
+        "手绘数据流"
+      ],
+      "common_version": "1.0.0",
+      "common_spec": "references/common/1.0.0.md",
+      "semantic_version": "1.0.0",
+      "semantic_spec": "types/data-flow/1.0.0.md",
+      "spec": "styles/data-flow/pastel-handdrawn/1.0.0/SPEC.md",
+      "tokens": "styles/data-flow/pastel-handdrawn/1.0.0/tokens.json",
+      "example": "styles/data-flow/pastel-handdrawn/1.0.0/example.svg"
+    }
+  },
+  "style_numbers": {
+    "FC-01": "flowchart/soft-process@1.0.0",
+    "FC-02": "flowchart/classic-mono@1.0.0",
+    "FC-03": "flowchart/soft-swimlanes@1.0.0",
+    "FC-04": "flowchart/contrast-swimlanes@1.0.0",
+    "FC-05": "flowchart/monochrome-horizontal-collaboration@1.0.0",
+    "FC-06": "flowchart/global-header-swimlanes@1.0.0",
+    "FC-07": "flowchart/handdrawn-design-board@1.0.0",
+    "FC-08": "flowchart/handdrawn-runtime-flow@1.0.0",
+    "FC-09": "flowchart/thin-line-component-flow@1.0.0",
+    "FC-10": "flowchart/pastel-document-pipeline@1.0.0",
+    "SQ-01": "sequence/institutional-blue@1.0.0",
+    "SQ-02": "sequence/classic-mono@1.0.0",
+    "SQ-03": "sequence/blue-green-phases@1.0.0",
+    "SQ-04": "sequence/pale-folded-notes@1.0.0",
+    "SQ-05": "sequence/handdrawn-pastel-branches@1.0.0",
+    "ST-01": "state/classic-mono@1.0.0",
+    "ST-02": "state/soft-cards@1.0.0",
+    "AR-01": "architecture/soft-layered@1.0.0",
+    "AR-02": "architecture/premium-cards@1.0.0",
+    "AR-03": "architecture/layered-interactions@1.0.0",
+    "AR-04": "architecture/contrast-process-bands@1.0.0",
+    "AR-05": "architecture/blue-green-grid@1.0.0",
+    "AR-06": "architecture/blue-green-detailed@1.0.0",
+    "AR-07": "architecture/ecosystem-capability-matrix@1.0.0",
+    "AR-08": "architecture/cross-boundary-layers@1.0.0",
+    "AR-09": "architecture/three-column-feedback@1.0.0",
+    "AR-10": "architecture/dashed-layered-cards@1.0.0",
+    "AR-11": "architecture/stacked-layer-matrix@1.0.0",
+    "AR-12": "architecture/blue-layered-icon-panels@1.0.0",
+    "AR-13": "architecture/framed-layered-matrix@1.0.0",
+    "AR-14": "architecture/handdrawn-design-board@1.0.0",
+    "AR-15": "architecture/dual-ecosystem-capability-band@1.0.0",
+    "ER-01": "er/soft-tables@1.0.0",
+    "ER-02": "er/classic-mono@1.0.0",
+    "ER-03": "er/domain-ddl@1.0.0",
+    "TP-01": "topology/icon-chain@1.0.0",
+    "TP-02": "topology/layered-service-clusters@1.0.0",
+    "TL-01": "timeline/color-milestone-cards@1.0.0",
+    "TL-02": "timeline/multilane-era-axis@1.0.0",
+    "DF-01": "data-flow/pastel-handdrawn@1.0.0"
+  },
+  "line_styles": {
+    "default": "orthogonal",
+    "version": "1.0.0",
+    "spec": "references/line-styles-v1.md",
+    "options": {
+      "orthogonal": {
+        "name": "直角折线",
+        "aliases": [
+          "直角",
+          "正交折线"
+        ]
+      },
+      "rounded-orthogonal": {
+        "name": "圆角折线",
+        "aliases": [
+          "圆角",
+          "圆角正交折线"
+        ]
+      },
+      "curved": {
+        "name": "直连曲线",
+        "aliases": [
+          "曲线",
+          "平滑曲线"
+        ]
+      }
+    }
+  },
+  "interaction_standard": {
+    "id": "single-direction",
+    "version": "1.0.0",
+    "spec": "references/interaction-standards/1.0.0.md",
+    "example": "references/interaction-standards/1.0.0.svg"
+  },
+  "files": {
+    "SKILL.md": "b1f057694d3d12e460da0056a18359237fff1910daedfb04f247bbe9e8ee5bcb",
+    "agents/openai.yaml": "fc24ee90982ccaf42b0b2e99ed1a3e2b4d4f9c4eb9851c1c9c7cc8f607118809",
+    "references/common/1.0.0.md": "5c4dc08bca97270b400fb29418381bd2978ae1fab14a51c321824cce543a55ba",
+    "references/extensions-v1.md": "5fef312b67549fbfd42e460406b8453629972067df3a7d2b85ac5a29ebfd3bb8",
+    "references/html-integration-v1.md": "436eebd17a48688f68d526e887f7715c3c6f1d1008b5079a5185d5593b901ff9",
+    "references/interaction-standards/1.0.0.md": "f2e2a466ad741b65d9df72a451201e9eceebdc9ef760e200b25e543e3846d56c",
+    "references/interaction-standards/1.0.0.svg": "f492bbc9e401aeb90febb30f941ab959a0d34b893193e9f59b921cb45118e12b",
+    "references/line-styles-v1.md": "623aac6e6721b001ce878ad4dc864e0ff4654b66bf8e2c17550d264955b445d0",
+    "references/style-numbering-v1.md": "5415f0f7be85bc663db202f27b5ea1eef01550032c3f214126dee95d7a0e9322",
+    "scripts/catalog.py": "b2200a4fbb8a4616af769cba12863d8ca46f4bc7ec046241c504a8ad312297aa",
+    "scripts/render_svg.mjs": "31f643602bc936f33c63426e42ec241d4529c129ebc393a2bc5c138d98596c60",
+    "styles/architecture/blue-green-detailed/1.0.0/SPEC.md": "7fd2dedcdccd70c93b6ac1e98ea1a1408d18ab664a8bebf053a54e433c9cf309",
+    "styles/architecture/blue-green-detailed/1.0.0/example.svg": "52964c96c170e8fd8b720784f403f56c13e4b9e628c50b14a8339558379c8302",
+    "styles/architecture/blue-green-detailed/1.0.0/tokens.json": "a9d093888327d5b7e1a86314d887fe9f427f71d9c7a3f6757fc24fa3c339703c",
+    "styles/architecture/blue-green-grid/1.0.0/SPEC.md": "2d666c6571d05d3d4858b68f383409a39236254db3d1d2e79f20371caece4234",
+    "styles/architecture/blue-green-grid/1.0.0/example.svg": "9c1edbb8af8a0366284ba40a20088276ce6375a768529e09cdc1e9d3d7afc3d9",
+    "styles/architecture/blue-green-grid/1.0.0/tokens.json": "02359c0e1f9f9430ed79e3cadb9f1971a3d71854e2c65f4890cc45059f7ee795",
+    "styles/architecture/blue-layered-icon-panels/1.0.0/SPEC.md": "fcc6731c0b6c65cbfd9a1cbd2db28d0293b3714bc2f959e42e6b64e94e181130",
+    "styles/architecture/blue-layered-icon-panels/1.0.0/example.svg": "79f76991e8a00f4b2112f8d86b2fa80be6320c9fe56ea549a12fd8bc11908868",
+    "styles/architecture/blue-layered-icon-panels/1.0.0/tokens.json": "4b5a5f4280ef601d55420fc7a58fee0c9bd1270e899aebb5f99399d724127562",
+    "styles/architecture/contrast-process-bands/1.0.0/SPEC.md": "fefeb3a729dc416a418fa76444220f66d3203854e20dc87aba0975b8cdce9c44",
+    "styles/architecture/contrast-process-bands/1.0.0/example.svg": "9a241762948aa463c99648f0e3d89b19a8e75db29c391eb32ac59a40ff50de27",
+    "styles/architecture/contrast-process-bands/1.0.0/tokens.json": "b27cefa4fa7b1283b60e19d5ca12e536faa11daf96521696cf7a8483a5db8012",
+    "styles/architecture/cross-boundary-layers/1.0.0/SPEC.md": "426f898769308e13ab033b8f668fcd8f669282e8369341be79a6863572c64269",
+    "styles/architecture/cross-boundary-layers/1.0.0/example.svg": "1b7a456f0899f44af6dbed0c82293b46098ae991759ccb9bf382e13a92c75276",
+    "styles/architecture/cross-boundary-layers/1.0.0/tokens.json": "f1b360f8f3bea1e3142c51fe6fdc37062757ccbdab03a569bdb4aebd3496fef9",
+    "styles/architecture/dashed-layered-cards/1.0.0/SPEC.md": "6b1da9d6ec01c01f966c627d7a589e9475947efa181cf3f2cfea75d74971e057",
+    "styles/architecture/dashed-layered-cards/1.0.0/example.svg": "2564fd7c483f259f5b13cfa2cf88bd4c96a92c8bdc0a15565dacdc3f50fca622",
+    "styles/architecture/dashed-layered-cards/1.0.0/tokens.json": "bed406f4a0aae6ccca17bce76bd7e1d5e9816bfe63b485317e8e5de0352d35af",
+    "styles/architecture/dual-ecosystem-capability-band/1.0.0/SPEC.md": "c5816caad48bd44fad192d308b27b61260f2633e2ea145d2e0520189a6b52c38",
+    "styles/architecture/dual-ecosystem-capability-band/1.0.0/example.svg": "ac04dfa9e4b34e350539acda914a6915f9d580c21b8be3a3c5e5bfe2430b4e71",
+    "styles/architecture/dual-ecosystem-capability-band/1.0.0/tokens.json": "b61d835e764c8dcfea6144a1611b5b01f7db98ec8e7d57e47591ce19e49bfa4d",
+    "styles/architecture/ecosystem-capability-matrix/1.0.0/SPEC.md": "67b29ef615b5e62c7070e8d8bac2d5d5348eb72bf521b12b5c22a0c62b934b64",
+    "styles/architecture/ecosystem-capability-matrix/1.0.0/example.svg": "bca10711ba3829a6eb80c517a35e41a310ba800dba85a9e199b953485ae8fd68",
+    "styles/architecture/ecosystem-capability-matrix/1.0.0/tokens.json": "4710e03b4d87ee6808e4b82de12705b0dd27a4189eef569cc30243997d8ccb97",
+    "styles/architecture/framed-layered-matrix/1.0.0/SPEC.md": "cb66b036568dfbf2eeab0851220ed830163d1afe223923ed3236818b0fd49d01",
+    "styles/architecture/framed-layered-matrix/1.0.0/example.svg": "b26d35120ce306d637530017e7246db86b63cef76297a1da5904ad93984fc647",
+    "styles/architecture/framed-layered-matrix/1.0.0/tokens.json": "73ec24e499e9ee9b7a5e02b074483b3df6f425c48b626644de56a365402714e6",
+    "styles/architecture/handdrawn-design-board/1.0.0/SPEC.md": "eea575c40b871472d2d045056a4795065d558fa2aeb1c0ee8ccb7858ea9a5b79",
+    "styles/architecture/handdrawn-design-board/1.0.0/example.svg": "cbf463f9bb92ca8d9266c2ed844a6e40f278e3e1c64804777b1e80dc720a956e",
+    "styles/architecture/handdrawn-design-board/1.0.0/tokens.json": "f5de91056e44f09c5f62506d50aee3d158dba9db1361d45f9401f0d1dcde0d1c",
+    "styles/architecture/layered-interactions/1.0.0/SPEC.md": "fb73a0c78f37d7cf089e5f7d99b611b23be74b5febb037c12cff3d9d300eb03d",
+    "styles/architecture/layered-interactions/1.0.0/example.svg": "4c46f27a63ce76ea8467cf5dea7b99948add1a94c7db289b6d4177e99d94ebda",
+    "styles/architecture/layered-interactions/1.0.0/tokens.json": "02f0feda6648b2d257c9b5944564198711e87d1515f4ddb6b34dbc0d55e37f51",
+    "styles/architecture/premium-cards/1.0.0/SPEC.md": "081a55c204f47701a516eb2bb45cd7ae6cf446181402522cdcf10c73d1a90b7a",
+    "styles/architecture/premium-cards/1.0.0/example.svg": "e2eb0881923e943ca8df0e6824cde40a2d13a39d7aa5cc65279321d2791a5ad8",
+    "styles/architecture/premium-cards/1.0.0/tokens.json": "ed27bc6cc207ec7fd0021837ebd7b0acea33ef1a00b54a298d75c0e8d8625d7c",
+    "styles/architecture/soft-layered/1.0.0/SPEC.md": "fa5968b3dfc3043fb424c3468b498adcf9436be44462434b8419b621cb95ccaa",
+    "styles/architecture/soft-layered/1.0.0/example.svg": "3e5f6f7f689c4bb392409be98d9a51624116b55441a88bf5024735f7bf2696f5",
+    "styles/architecture/soft-layered/1.0.0/tokens.json": "7862c768464243425cb286159395881bb0f15ef26d7e5f39e912d44dfc8cd986",
+    "styles/architecture/stacked-layer-matrix/1.0.0/SPEC.md": "4af87f20b96d6ab0ce1dd643022fb9ad5c37b3419f95809b472b7f5d063abb62",
+    "styles/architecture/stacked-layer-matrix/1.0.0/example.svg": "1d04d6bd772a888bbdbcfffa13e513864641824649c905e586640f3a73a30401",
+    "styles/architecture/stacked-layer-matrix/1.0.0/tokens.json": "27e9e59817743d58aaa56c5fd8645a3298cae2b0ad809d52d02090faa2235624",
+    "styles/architecture/three-column-feedback/1.0.0/SPEC.md": "a8adbc11a01836d728e1626d2d3bd8836b621804c46c2feff2afb6d55703839d",
+    "styles/architecture/three-column-feedback/1.0.0/example.svg": "8ad689c4bba0068814fdce818a0b358999e9b2ef0cb627ff7bf617da5d48dbc8",
+    "styles/architecture/three-column-feedback/1.0.0/tokens.json": "8450bb3db65241d433decb2611616846162246001b782fb44d1762a8b76655dc",
+    "styles/data-flow/pastel-handdrawn/1.0.0/SPEC.md": "49d38f78b9499c609a51edb55bef470cba39f2754615c08db3dd86cd1898ca79",
+    "styles/data-flow/pastel-handdrawn/1.0.0/example.svg": "eb03d340fd3f4d0264bb1420dd964891738729daec445ef6b34409039b04daa1",
+    "styles/data-flow/pastel-handdrawn/1.0.0/tokens.json": "9cb5baee94f295cfa1b406e164f886273e902b1891032f14b589048e46e64ac5",
+    "styles/er/classic-mono/1.0.0/SPEC.md": "47638eadbea5374113de5217c428432ec11b8daeba2ebefb2525032806d53d8e",
+    "styles/er/classic-mono/1.0.0/example.svg": "71825829b219f03122d78daa47394b94957893d43c4ea30f391e834971883da5",
+    "styles/er/classic-mono/1.0.0/tokens.json": "d17b6b36c3d114d500adb09ff79bd9aecb7c50a017ba60642a029cdb201f868a",
+    "styles/er/domain-ddl/1.0.0/SPEC.md": "fcf7f48baff2b467bcf23755ff2a4ba5f2e8fd27358a19304c6e532518bea733",
+    "styles/er/domain-ddl/1.0.0/example.svg": "511ec371088ff689cb99c8c24f536df582f6b72b19680954289746063083fed1",
+    "styles/er/domain-ddl/1.0.0/tokens.json": "4487d3632b9056d7e0bf21127875bc4a9168af536e09a8c7e9b90c89d45b5769",
+    "styles/er/soft-tables/1.0.0/SPEC.md": "ef58aeb59efd597c8845132db20483ad349a261396c48bb77819234d086994b5",
+    "styles/er/soft-tables/1.0.0/example.svg": "4984aff121b08b4aea3947aace629670b5c2236c5915209144db95f0abeb5ba8",
+    "styles/er/soft-tables/1.0.0/tokens.json": "c8026e5a95cc5fe8c55bafd5086f72d8d86876b9057129bca9418d6d99fc2470",
+    "styles/flowchart/classic-mono/1.0.0/SPEC.md": "b08909b0949e0bda1538d9b2e129f5532b6db95ecb7b29207a397d8a706fde9d",
+    "styles/flowchart/classic-mono/1.0.0/example.svg": "2402ef4dabbe0978a8d20a8b9e3a62ed016e7f022b96d44c1c0db6345390a0e7",
+    "styles/flowchart/classic-mono/1.0.0/tokens.json": "c38abf20719a0aa2acd60b18f8708de79e561c2af1ab112cec760668db348334",
+    "styles/flowchart/contrast-swimlanes/1.0.0/SPEC.md": "3a71bbf4b9f8b1cd38d0ecb925d50c0c0de2ac9dc200eb102d700e7a92a2fc01",
+    "styles/flowchart/contrast-swimlanes/1.0.0/example.svg": "ce8254e1100bc3abbfe63c8ae93eb16c1adf6842ceb44dd2ac2db6138fa1c735",
+    "styles/flowchart/contrast-swimlanes/1.0.0/tokens.json": "6db07531e37d169ed7edf41ca3068f5bbce53320662c3dde0220eceba12da600",
+    "styles/flowchart/global-header-swimlanes/1.0.0/SPEC.md": "cc8b2d2d5dfacf7296a741a875185e8928d8398e5a548b0ebd50d7174c63ad74",
+    "styles/flowchart/global-header-swimlanes/1.0.0/example.svg": "f5e8cf988f016286a68e4fe92c012cf002378867314e8748a94c3f960296a769",
+    "styles/flowchart/global-header-swimlanes/1.0.0/tokens.json": "1655c26f46574808b7b36d2fc5892d28a1a3384280b70e9ea3855129b8c0bd76",
+    "styles/flowchart/handdrawn-design-board/1.0.0/SPEC.md": "ecfc468278579413eb150cdb272202a0af3fb304fbdda9103191f1ab063efcc5",
+    "styles/flowchart/handdrawn-design-board/1.0.0/example.svg": "04ce38a953db35bc986620b74eaf60d1f5853e38d3988a68a846d37d0124f377",
+    "styles/flowchart/handdrawn-design-board/1.0.0/tokens.json": "ae5216679283305f744c3c6d9ed6af7b7979cd4e29e0d8a06bbb2b4250efcd8e",
+    "styles/flowchart/handdrawn-runtime-flow/1.0.0/SPEC.md": "6506bb075a32a6b657e6e3dfc14b0765a03f14617ab19d16246f1c0cc2cb9056",
+    "styles/flowchart/handdrawn-runtime-flow/1.0.0/example.svg": "bdafc81ff1b0bd6a2bf17843909bd27047e90a467e987f921eae0d3d543b9901",
+    "styles/flowchart/handdrawn-runtime-flow/1.0.0/tokens.json": "fae0d3cc4a44071faf98bfd03f8de14f4c288dcbef11fddcaa7d0989bece2f26",
+    "styles/flowchart/monochrome-horizontal-collaboration/1.0.0/SPEC.md": "476ddf2c93a765ca771656850b011d8073df1ae5c6311fb585347b871f1b8e9e",
+    "styles/flowchart/monochrome-horizontal-collaboration/1.0.0/example.svg": "e01554c675b7ec8d335fae25a3ed54786108ff346c803d82812db8706f6c9e58",
+    "styles/flowchart/monochrome-horizontal-collaboration/1.0.0/tokens.json": "411e49df1318a034c26e49e97f1ab938ae639c93c15688b824992e0fde770d3b",
+    "styles/flowchart/pastel-document-pipeline/1.0.0/SPEC.md": "74c5d8db7d54f4069d7e79efadff045d78024baa0c105ef23e81a99926000ad8",
+    "styles/flowchart/pastel-document-pipeline/1.0.0/example.svg": "7511b54da497e4b04d152c10b102d36f4874563f4a34cceb3ced0220703d840a",
+    "styles/flowchart/pastel-document-pipeline/1.0.0/tokens.json": "f627ec58e5754d2cf1520713b6c21da0513ffdb81556a02f1bb07d4a5162d8c9",
+    "styles/flowchart/soft-process/1.0.0/SPEC.md": "ac13dd279a79837468de3935a3b050782139948d616bb55efbd259be5045aea2",
+    "styles/flowchart/soft-process/1.0.0/example.svg": "96b82fd0b768350aa95dcc0eaaee6d39bb71bd4e88c3267db548de2a0865edba",
+    "styles/flowchart/soft-process/1.0.0/tokens.json": "7f4331135f49d3a8cd88b2fd1412c17e044611af44ead4f46da5af98f50e50f9",
+    "styles/flowchart/soft-swimlanes/1.0.0/SPEC.md": "77dff2653d30b79579323c3bcfb472db16942ec05618f56b61ff9e4c1453fdf6",
+    "styles/flowchart/soft-swimlanes/1.0.0/example.svg": "3a1758e292d91258c974da669416e6a94095d748a8393893d25ba5fe084785e8",
+    "styles/flowchart/soft-swimlanes/1.0.0/tokens.json": "15db5b6613f3326cbc300b226e2e8c559f091deb036b4d9954dd2d0a2bdfd1cd",
+    "styles/flowchart/thin-line-component-flow/1.0.0/SPEC.md": "ab9a99919039d91ca9492a2ab3c6089ea6589d9e251da818e1ecdc9089ce388e",
+    "styles/flowchart/thin-line-component-flow/1.0.0/example.svg": "c4b3a879a1b23ca21a93aaf695ce2eee7c6c8471030e8dd753ca9fed0bc3ef47",
+    "styles/flowchart/thin-line-component-flow/1.0.0/tokens.json": "4d943302f207540ec0b47c2efd3aec9762fa957f2acfc9f57b5c2f239285bbf2",
+    "styles/sequence/blue-green-phases/1.0.0/SPEC.md": "91ae882022d22241822451a56c852eab335667dd903f5be67c44b77f9feb1521",
+    "styles/sequence/blue-green-phases/1.0.0/example.svg": "4321bf26f4a7da7a4362fd33aaab26fe25d418442865522306aba5a012d09804",
+    "styles/sequence/blue-green-phases/1.0.0/tokens.json": "5ac93f0368dd985f9a40bb9dd86b71fb795db95dcf9f44649b4ce53a663e8691",
+    "styles/sequence/classic-mono/1.0.0/SPEC.md": "609eb04ebfb47e6aa921843a91a3976a11f49efe59bc42312f465351d51ee8ea",
+    "styles/sequence/classic-mono/1.0.0/example.svg": "7faa9ded02b366e98caec32b8f28be5b643446eda78253d50fcc246cdd8ef24f",
+    "styles/sequence/classic-mono/1.0.0/tokens.json": "cc11579992affb6f242fc4c8ece529a33f44b1cf4d91fb55d203337da29e34be",
+    "styles/sequence/handdrawn-pastel-branches/1.0.0/SPEC.md": "0d5d13b83ca4edf83605381bcc5cb9f596241695b482de928f286aeee7554af8",
+    "styles/sequence/handdrawn-pastel-branches/1.0.0/example.svg": "7f743d5be474c9c65632cd54e26e66916f08f052624df93d17bd784876d9f4af",
+    "styles/sequence/handdrawn-pastel-branches/1.0.0/tokens.json": "153fa568e0bfd7b6c6f615be3cb2518a9bdf4d6236be466415febf042b56a307",
+    "styles/sequence/institutional-blue/1.0.0/SPEC.md": "3c5039749394e64985ee062e8cc63ffecb79dc3fd3e2680e5ea1e2d728f02de5",
+    "styles/sequence/institutional-blue/1.0.0/example.svg": "9f8df84710bdaee2a9614e05dc86fc9a612c5cd0ffe36af4376df920785ce96b",
+    "styles/sequence/institutional-blue/1.0.0/tokens.json": "b855f0f298cc14282f6d8ab9744bb57fc553db29d007157530d1a7e82584699a",
+    "styles/sequence/pale-folded-notes/1.0.0/SPEC.md": "96aed90922b36637c104d8ef291901ea78e3adbe5f03900666c4417c3913f320",
+    "styles/sequence/pale-folded-notes/1.0.0/example.svg": "2757128dbb68a8fb534a0a75f8992aeac608dd53124178194cdf7ac529b62249",
+    "styles/sequence/pale-folded-notes/1.0.0/tokens.json": "db98bbfde45c2aa1dce207134a53b7c18dee0c898e356c67350d281a5d578835",
+    "styles/state/classic-mono/1.0.0/SPEC.md": "75b73b86ba5172e0ef5ca17f1ba7e358ff4076a57100a0c1420d6843fbe3912f",
+    "styles/state/classic-mono/1.0.0/example.svg": "227a2f5617b30d7884f38089f2e42a2b56b5afe914c63fef8294b7fc54360c1d",
+    "styles/state/classic-mono/1.0.0/tokens.json": "a3625b640497025ea0612fec1c06318071d47c285aca626f417a7f0a04af4ff6",
+    "styles/state/soft-cards/1.0.0/SPEC.md": "27629eadc4d3b0673120ddf0487704c9bed0eed2846929394c5e6105185d0b32",
+    "styles/state/soft-cards/1.0.0/example.svg": "7635ed09890d0fdf5aec29dcb5dccdde4be722e3d56fa120a99bcbc4d15794fd",
+    "styles/state/soft-cards/1.0.0/tokens.json": "78d4f1fd7eb1a2475b6bb8a28a4bf595619282beb3bb0285a3c7e07fd4564836",
+    "styles/timeline/color-milestone-cards/1.0.0/SPEC.md": "2abc409599cadc874a4f393ab50fe3259f7cf983fde6edfe1090a691b648dc31",
+    "styles/timeline/color-milestone-cards/1.0.0/example.svg": "a3af909dc133b774d0588b5ac2eb8033ca76cf65994d9d63a38c50a6826addb9",
+    "styles/timeline/color-milestone-cards/1.0.0/tokens.json": "fad50fb23c5f18c7a40e79b811a398b9a18a7b9952fe8e838ccd45f7fb56ffbd",
+    "styles/timeline/multilane-era-axis/1.0.0/SPEC.md": "a047bef12c76e66313369b77713364b110522fb7e31d1e6962f2045ed5a25422",
+    "styles/timeline/multilane-era-axis/1.0.0/example.svg": "d9a7fdd9a909ce49cdc4d18676f37ecdb9be9854513480033ad8d911be6e5274",
+    "styles/timeline/multilane-era-axis/1.0.0/tokens.json": "025e35b5fec50f0db880233084c5e50d9787f0ccdcb0d58d47f41012e030c39c",
+    "styles/topology/icon-chain/1.0.0/SPEC.md": "8c0b446359119010a1d767a433c8f81cd0cad90f4f0e58c01e6295434c3e98c5",
+    "styles/topology/icon-chain/1.0.0/example.svg": "794550906cee634f58484233ff8f5aed43f9944d7946f91d7d1a0f9ae82b70f6",
+    "styles/topology/icon-chain/1.0.0/tokens.json": "26dada49da64dda6d737272f9efe6e55313fa6eb5ee4fa8152d0da3cce8a5945",
+    "styles/topology/layered-service-clusters/1.0.0/SPEC.md": "aaabde186a25d6772f86bea9662cc64a8d0028a465f0baeece2ddc5c85ce0759",
+    "styles/topology/layered-service-clusters/1.0.0/example.svg": "b562f832d3ea824d22e4192b6b4a47583ebd68cb267c88cc44c066fbf9254da2",
+    "styles/topology/layered-service-clusters/1.0.0/tokens.json": "aefd3367d63857cb67bc2849b0d1e30277dd2b707727fe53cdb09e5cc613d2e9",
+    "types/architecture/1.0.0.md": "03000a660dc55bc385726e69afbe1ebc9709d202133bdd89c34ccd10848dd536",
+    "types/data-flow/1.0.0.md": "214c919cf5791e9a6c513ae58e05ae0cbd17cb6da796e033db2ca275a3188a43",
+    "types/er/1.0.0.md": "5724ebfe9320c87c9b101330a8f368015cb5f872acbc92f3a20f6d07d2502a1a",
+    "types/flowchart/1.0.0.md": "e79b19eedb656186c96b7922c9077beb0f39b0bd19835165ccaeb8aa544bb1a4",
+    "types/sequence/1.0.0.md": "952a6136ee595022e7bf43cf8cd12f6e69535e7fd5cd069e52cf603374466323",
+    "types/sequence/1.1.0.md": "198ef6af43b8bf308309b10a4af4f27c457a19a6dd3823dd97a8854affb8c0df",
+    "types/state/1.0.0.md": "ffa2ee7aa83f592004e2efcc270a3bf50f39e9d4dab8731ee621c09d7983302b",
+    "types/timeline/1.0.0.md": "a497bdda0ad5ae37be2f2f251a898785ce07896bd3126c90565db8b6bca932f8",
+    "types/topology/1.0.0.md": "223522105c6cef6ca7db034dc6e3f667055719ce82dec5acf1f6209fa7683997"
+  }
+}

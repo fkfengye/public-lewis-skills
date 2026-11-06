@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="776" viewBox="0 0 1280 776" role="img" aria-labelledby="ar11-title ar11-desc">
+  <title id="ar11-title">知识资源服务分层（通用示例）</title>
+  <desc id="ar11-desc">四个浅色横向分层，包含侧边与顶部标题、圆角容器、细格矩阵和层间向下箭头；箭头表示模型提供的层级方向，不指定组件调用。</desc>
+  <metadata>{&quot;sample_kind&quot;: &quot;synthetic&quot;, &quot;profile&quot;: &quot;architecture/stacked-layer-matrix@1.0.0&quot;, &quot;number&quot;: &quot;AR-11&quot;, &quot;semantic_version&quot;: &quot;1.0.0&quot;, &quot;line_style&quot;: {&quot;id&quot;: &quot;orthogonal&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;source&quot;: &quot;default&quot;}, &quot;interaction_standard&quot;: {&quot;id&quot;: &quot;single-direction&quot;, &quot;version&quot;: &quot;1.0.0&quot;}, &quot;overrides&quot;: {&quot;connectors&quot;: {&quot;layer_arrow&quot;: &quot;solid-down&quot;}}, &quot;features&quot;: [&quot;四条浅色直角色带&quot;, &quot;侧边与顶部层名&quot;, &quot;四个双行入口&quot;, &quot;三组细格和通栏&quot;, &quot;四组两行矩阵&quot;, &quot;五个底层圆角卡&quot;, &quot;层间粗直箭头&quot;], &quot;model&quot;: {&quot;layers&quot;: [&quot;访问层&quot;, &quot;处理编排层&quot;, &quot;资源与服务层&quot;, &quot;治理保障层&quot;], &quot;edges&quot;: [{&quot;id&quot;: &quot;ar11-e1&quot;, &quot;source&quot;: &quot;访问层&quot;, &quot;target&quot;: &quot;处理编排层&quot;, &quot;kind&quot;: &quot;layer-direction&quot;}, {&quot;id&quot;: &quot;ar11-e2&quot;, &quot;source&quot;: &quot;处理编排层&quot;, &quot;target&quot;: &quot;资源与服务层&quot;, &quot;kind&quot;: &quot;layer-direction&quot;}, {&quot;id&quot;: &quot;ar11-e3&quot;, &quot;source&quot;: &quot;资源与服务层&quot;, &quot;target&quot;: &quot;治理保障层&quot;, &quot;kind&quot;: &quot;layer-direction&quot;}]}, &quot;dependencies&quot;: {&quot;SKILL.md&quot;: &quot;b1f057694d3d12e460da0056a18359237fff1910daedfb04f247bbe9e8ee5bcb&quot;, &quot;scripts/catalog.py&quot;: &quot;b2200a4fbb8a4616af769cba12863d8ca46f4bc7ec046241c504a8ad312297aa&quot;, &quot;scripts/render_svg.mjs&quot;: &quot;31f643602bc936f33c63426e42ec241d4529c129ebc393a2bc5c138d98596c60&quot;, &quot;agents/openai.yaml&quot;: &quot;fc24ee90982ccaf42b0b2e99ed1a3e2b4d4f9c4eb9851c1c9c7cc8f607118809&quot;, &quot;references/extensions-v1.md&quot;: &quot;5fef312b67549fbfd42e460406b8453629972067df3a7d2b85ac5a29ebfd3bb8&quot;, &quot;references/html-integration-v1.md&quot;: &quot;436eebd17a48688f68d526e887f7715c3c6f1d1008b5079a5185d5593b901ff9&quot;, &quot;references/style-numbering-v1.md&quot;: &quot;5415f0f7be85bc663db202f27b5ea1eef01550032c3f214126dee95d7a0e9322&quot;, &quot;references/common/1.0.0.md&quot;: &quot;5c4dc08bca97270b400fb29418381bd2978ae1fab14a51c321824cce543a55ba&quot;, &quot;types/architecture/1.0.0.md&quot;: &quot;03000a660dc55bc385726e69afbe1ebc9709d202133bdd89c34ccd10848dd536&quot;, &quot;styles/architecture/stacked-layer-matrix/1.0.0/SPEC.md&quot;: &quot;4af87f20b96d6ab0ce1dd643022fb9ad5c37b3419f95809b472b7f5d063abb62&quot;, &quot;styles/architecture/stacked-layer-matrix/1.0.0/tokens.json&quot;: &quot;27e9e59817743d58aaa56c5fd8645a3298cae2b0ad809d52d02090faa2235624&quot;, &quot;references/line-styles-v1.md&quot;: &quot;623aac6e6721b001ce878ad4dc864e0ff4654b66bf8e2c17550d264955b445d0&quot;, &quot;references/interaction-standards/1.0.0.md&quot;: &quot;f2e2a466ad741b65d9df72a451201e9eceebdc9ef760e200b25e543e3846d56c&quot;, &quot;references/interaction-standards/1.0.0.svg&quot;: &quot;f492bbc9e401aeb90febb30f941ab959a0d34b893193e9f59b921cb45118e12b&quot;}, &quot;example_digest_source&quot;: &quot;catalog.lock.json 的 files（避免自引用）&quot;}</metadata>
+  <rect width="1280" height="776" fill="#FFFFFF"/>
+  <rect data-layer="access" x="6" y="9" width="1264" height="117" fill="#EFF6FF" stroke="#2463EB" stroke-width="1.8"/>
+  <rect data-layer="orchestration" x="6" y="165" width="1264" height="156" fill="#F0F9FF" stroke="#0084C7" stroke-width="1.8"/>
+  <rect data-layer="resources" x="6" y="358" width="1266" height="193" fill="#FAF5FF" stroke="#6D27D9" stroke-width="1.8"/>
+  <rect data-layer="governance" x="6" y="590" width="1266" height="181" fill="#F8FAFC" stroke="#475569" stroke-width="1.8"/>
+  <g fill="#93C5FD">
+    <path id="ar11-e1" data-diagram-role="connector" d="M632 132 H642 V141 H651 L637 161 L623 141 H632 Z"/>
+    <path id="ar11-e2" data-diagram-role="connector" d="M632 327 H642 V336 H651 L637 356 L623 336 H632 Z"/>
+    <path id="ar11-e3" data-diagram-role="connector" d="M632 557 H642 V566 H651 L637 587 L623 566 H632 Z"/>
+  </g>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#000000">
+    <g font-size="24"><text x="54" y="78">访问层</text><text x="24" y="252">处理编排层</text><text x="27" y="402">资源与服务层</text><text x="27" y="635">治理保障层</text></g>
+    <g fill="#EFF6FF" stroke="#2463EB" stroke-width="1.8">
+      <rect data-card="entry-card" x="163" y="30" width="235" height="70" rx="11"/><rect data-card="entry-card" x="414" y="30" width="235" height="70" rx="11"/><rect data-card="entry-card" x="668" y="30" width="235" height="70" rx="11"/><rect data-card="entry-card" x="922" y="30" width="235" height="70" rx="11"/>
+    </g>
+    <g font-size="21" text-anchor="middle">
+      <text x="280" y="59"><tspan x="280">网页入口</tspan><tspan x="280" dy="26">知识浏览</tspan></text><text x="531" y="59"><tspan x="531">移动入口</tspan><tspan x="531" dy="26">知识浏览</tspan></text>
+      <text x="785" y="59"><tspan x="785">馆员终端</tspan><tspan x="785" dy="26">内容维护</tspan></text><text x="1039" y="59"><tspan x="1039">开放接口</tspan><tspan x="1039" dy="26">资源接入</tspan></text>
+    </g>
+    <g fill="#FFFFFF" stroke="#0084C7" stroke-width="1.8">
+      <rect data-card="orchestrator" x="168" y="183" width="325" height="120" rx="18"/><rect data-card="orchestrator" x="516" y="183" width="325" height="120" rx="18"/><rect data-card="orchestrator" x="854" y="183" width="397" height="120" rx="18"/>
+    </g>
+    <g font-size="20" text-anchor="middle"><text x="330" y="214">检索编排</text><text x="678" y="214">内容聚合</text><text x="1052" y="214">展示配置</text></g>
+    <g fill="#FFFFFF" stroke="#0084C7" stroke-width="1.6">
+      <rect data-cell="keyword" x="197" y="227" width="85" height="28"/><rect data-cell="category" x="293" y="227" width="85" height="28"/><rect data-cell="language" x="389" y="227" width="84" height="28"/><rect data-summary="search" x="196" y="259" width="277" height="28"/>
+      <rect data-cell="source" x="540" y="227" width="88" height="28"/><rect data-cell="theme" x="637" y="227" width="88" height="28"/><rect data-cell="version" x="734" y="227" width="82" height="28"/><rect data-summary="gather" x="539" y="259" width="277" height="28"/>
+      <rect data-cell="device" x="870" y="227" width="88" height="28"/><rect data-cell="font" x="966" y="227" width="88" height="28"/><rect data-cell="region" x="1062" y="227" width="88" height="28"/><rect data-cell="locale" x="1158" y="227" width="80" height="28"/><rect data-summary="display" x="869" y="259" width="369" height="28"/>
+    </g>
+    <g font-size="18" text-anchor="middle">
+      <text x="239" y="248">关键词</text><text x="335" y="248">分类</text><text x="431" y="248">语言</text><text x="334" y="280">按条件组织检索</text>
+      <text x="584" y="248">来源</text><text x="681" y="248">主题</text><text x="775" y="248">版本</text><text x="677" y="280">统一汇集与筛选</text>
+      <text x="914" y="248">终端</text><text x="1010" y="248">字体</text><text x="1106" y="248">地区</text><text x="1198" y="248">语言</text><text x="1053" y="280">按配置适配页面</text>
+    </g>
+    <g fill="#FFFFFF" stroke="#6D27D9" stroke-width="1.8">
+      <rect data-card="matrix-card" x="23" y="427" width="297" height="112" rx="17"/><rect data-card="matrix-card" x="341" y="427" width="297" height="112" rx="17"/><rect data-card="matrix-card" x="657" y="427" width="297" height="112" rx="17"/><rect data-card="matrix-card" x="968" y="427" width="297" height="112" rx="17"/>
+    </g>
+    <g font-size="19" text-anchor="middle"><text x="171" y="454">馆藏资料</text><text x="489" y="454">社区资源</text><text x="805" y="454">知识内容</text><text x="1116" y="454">公开服务</text></g>
+    <g fill="#FFFFFF" stroke="#0084C7" stroke-width="1.6">
+      <rect data-cell="archive" x="35" y="464" width="87" height="28"/><rect data-cell="book" x="129" y="464" width="87" height="28"/><rect data-cell="image" x="223" y="464" width="87" height="28"/><rect data-cell="audio" x="35" y="497" width="140" height="28"/><rect data-cell="map" x="183" y="497" width="127" height="28"/>
+      <rect data-cell="oral" x="351" y="464" width="87" height="28"/><rect data-cell="activity" x="445" y="464" width="87" height="28"/><rect data-cell="notes" x="539" y="464" width="87" height="28"/><rect data-cell="collection" x="351" y="497" width="140" height="28"/><rect data-cell="history" x="499" y="497" width="127" height="28"/>
+      <rect data-cell="article" x="669" y="464" width="87" height="28"/><rect data-cell="topic" x="763" y="464" width="87" height="28"/><rect data-cell="catalog" x="857" y="464" width="87" height="28"/><rect data-cell="annotation" x="669" y="497" width="140" height="28"/><rect data-cell="translation" x="817" y="497" width="127" height="28"/>
+      <rect data-cell="search" x="980" y="464" width="87" height="28"/><rect data-cell="read" x="1074" y="464" width="87" height="28"/><rect data-cell="share" x="1168" y="464" width="87" height="28"/><rect data-cell="subscribe" x="980" y="497" width="140" height="28"/><rect data-cell="feedback" x="1128" y="497" width="127" height="28"/>
+    </g>
+    <g font-size="18" text-anchor="middle">
+      <text x="78" y="485">档案</text><text x="172" y="485">文献</text><text x="266" y="485">图片</text><text x="105" y="518">音频</text><text x="246" y="518">地图</text>
+      <text x="394" y="485">口述</text><text x="488" y="485">活动</text><text x="582" y="485">笔记</text><text x="421" y="518">收藏</text><text x="562" y="518">历史</text>
+      <text x="712" y="485">文章</text><text x="806" y="485">专题</text><text x="900" y="485">目录</text><text x="739" y="518">注释</text><text x="880" y="518">译文</text>
+      <text x="1023" y="485">检索</text><text x="1117" y="485">阅读</text><text x="1211" y="485">共享</text><text x="1050" y="518">订阅</text><text x="1191" y="518">反馈</text>
+    </g>
+    <g fill="#FFFFFF" stroke="#475569" stroke-width="1.8">
+      <rect data-card="guard-card" x="63" y="660" width="217" height="82" rx="14"/><rect data-card="guard-card" x="290" y="660" width="254" height="82" rx="14"/><rect data-card="guard-card" x="554" y="660" width="253" height="82" rx="14"/><rect data-card="guard-card" x="817" y="660" width="234" height="82" rx="14"/><rect data-card="guard-card" x="1061" y="660" width="179" height="82" rx="14"/>
+    </g>
+    <g font-size="20" text-anchor="middle"><text x="171" y="696"><tspan x="171">访问控制</tspan><tspan x="171" dy="25">与权限管理</tspan></text><text x="417" y="709">内容授权 / 来源登记</text><text x="680" y="709">隐私保护 / 脱敏处理</text><text x="934" y="709">版本留存 / 审计</text><text x="1150" y="709">异常处理</text></g>
+  </g>
+</svg>

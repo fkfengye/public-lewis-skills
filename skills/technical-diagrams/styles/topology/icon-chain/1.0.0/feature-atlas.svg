@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1662" height="604" viewBox="0 0 1662 604" role="img" aria-labelledby="tp01-atlas-title tp01-atlas-desc">
+  <title id="tp01-atlas-title">TP-01 橙红图标链路特征展示</title>
+  <desc id="tp01-atlas-desc">独立的资料共享示例，展示宽幅单排、重复建筑图标、商铺形实心图标、上下文字及灰色直箭头。</desc>
+  <metadata>{&quot;sample_kind&quot;: &quot;feature-showcase&quot;, &quot;profile&quot;: &quot;topology/icon-chain@1.0.0&quot;, &quot;number&quot;: &quot;TP-01&quot;, &quot;semantic_version&quot;: &quot;1.0.0&quot;, &quot;line_style&quot;: {&quot;id&quot;: &quot;orthogonal&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;source&quot;: &quot;default&quot;}, &quot;interaction_standard&quot;: {&quot;id&quot;: &quot;single-direction&quot;, &quot;version&quot;: &quot;1.0.0&quot;}, &quot;overrides&quot;: {&quot;connectors&quot;: {&quot;style&quot;: &quot;solid-block-arrow&quot;}}, &quot;features&quot;: [&quot;宽幅单排&quot;, &quot;浅色斜纹&quot;, &quot;顶部双强调&quot;, &quot;上下层标注&quot;, &quot;两行名称&quot;, &quot;重复建筑图标&quot;, &quot;轮廓与实心图标&quot;, &quot;灰色粗直箭头&quot;], &quot;model&quot;: {&quot;nodes&quot;: [&quot;资料站&quot;, &quot;协作中枢&quot;, &quot;资源中心&quot;, &quot;社区站点&quot;], &quot;edges&quot;: [{&quot;id&quot;: &quot;tp01-atlas-e1&quot;, &quot;source&quot;: &quot;资料站&quot;, &quot;target&quot;: &quot;协作中枢&quot;}, {&quot;id&quot;: &quot;tp01-atlas-e2&quot;, &quot;source&quot;: &quot;协作中枢&quot;, &quot;target&quot;: &quot;资源中心&quot;}, {&quot;id&quot;: &quot;tp01-atlas-e3&quot;, &quot;source&quot;: &quot;资源中心&quot;, &quot;target&quot;: &quot;社区站点&quot;}]}, &quot;dependencies&quot;: {&quot;SKILL.md&quot;: &quot;b1f057694d3d12e460da0056a18359237fff1910daedfb04f247bbe9e8ee5bcb&quot;, &quot;scripts/catalog.py&quot;: &quot;b2200a4fbb8a4616af769cba12863d8ca46f4bc7ec046241c504a8ad312297aa&quot;, &quot;scripts/render_svg.mjs&quot;: &quot;31f643602bc936f33c63426e42ec241d4529c129ebc393a2bc5c138d98596c60&quot;, &quot;agents/openai.yaml&quot;: &quot;fc24ee90982ccaf42b0b2e99ed1a3e2b4d4f9c4eb9851c1c9c7cc8f607118809&quot;, &quot;references/extensions-v1.md&quot;: &quot;5fef312b67549fbfd42e460406b8453629972067df3a7d2b85ac5a29ebfd3bb8&quot;, &quot;references/html-integration-v1.md&quot;: &quot;436eebd17a48688f68d526e887f7715c3c6f1d1008b5079a5185d5593b901ff9&quot;, &quot;references/style-numbering-v1.md&quot;: &quot;5415f0f7be85bc663db202f27b5ea1eef01550032c3f214126dee95d7a0e9322&quot;, &quot;references/common/1.0.0.md&quot;: &quot;5c4dc08bca97270b400fb29418381bd2978ae1fab14a51c321824cce543a55ba&quot;, &quot;types/topology/1.0.0.md&quot;: &quot;223522105c6cef6ca7db034dc6e3f667055719ce82dec5acf1f6209fa7683997&quot;, &quot;styles/topology/icon-chain/1.0.0/SPEC.md&quot;: &quot;8c0b446359119010a1d767a433c8f81cd0cad90f4f0e58c01e6295434c3e98c5&quot;, &quot;styles/topology/icon-chain/1.0.0/tokens.json&quot;: &quot;26dada49da64dda6d737272f9efe6e55313fa6eb5ee4fa8152d0da3cce8a5945&quot;, &quot;styles/topology/icon-chain/1.0.0/example.svg&quot;: &quot;794550906cee634f58484233ff8f5aed43f9944d7946f91d7d1a0f9ae82b70f6&quot;, &quot;references/line-styles-v1.md&quot;: &quot;623aac6e6721b001ce878ad4dc864e0ff4654b66bf8e2c17550d264955b445d0&quot;, &quot;references/interaction-standards/1.0.0.md&quot;: &quot;f2e2a466ad741b65d9df72a451201e9eceebdc9ef760e200b25e543e3846d56c&quot;, &quot;references/interaction-standards/1.0.0.svg&quot;: &quot;f492bbc9e401aeb90febb30f941ab959a0d34b893193e9f59b921cb45118e12b&quot;}, &quot;reference_analysis_sha256&quot;: &quot;b525425267325e2f4b0aa3a6336fb256dffeffa5eb5133e09e40a41b4a67ed65&quot;}</metadata>
+  <defs>
+    <pattern id="tp01-atlas-stripes" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#FFFFFF"/><path d="M0 0 V6" stroke="#F6F6F6" stroke-width="3"/></pattern>
+  </defs>
+  <rect width="1662" height="604" fill="url(#tp01-atlas-stripes)"/>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" text-anchor="middle">
+    <g fill="#FF3000" font-size="44"><text x="325" y="98">资料整理</text><text x="1277" y="98">成果共享</text></g>
+    <g fill="#3D3D3D" font-size="48"><text x="117" y="190">本地资料</text><text x="578" y="190">分类资料</text><text x="1017" y="190">归档→共享</text><text x="1473" y="190">共享资料</text></g>
+    <g fill="#3D3D3D" font-size="59">
+      <text x="117" y="496">资料站</text>
+      <text x="578" y="472"><tspan x="578">协作中枢</tspan><tspan x="578" dy="70">整理中心</tspan></text>
+      <text x="1017" y="472"><tspan x="1017">资源中心</tspan><tspan x="1017" dy="70">共享枢纽</tspan></text>
+      <text x="1473" y="485">社区站点</text>
+    </g>
+  </g>
+  <g fill="#A6A6A6">
+    <path id="tp01-atlas-e1" data-diagram-role="connector" d="M248 304 H424 V286 L458 321 L424 356 V338 H248 Z"/>
+    <path id="tp01-atlas-e2" data-diagram-role="connector" d="M700 304 H876 V286 L910 321 L876 356 V338 H700 Z"/>
+    <path id="tp01-atlas-e3" data-diagram-role="connector" d="M1185 304 H1326 V286 L1360 321 L1326 356 V338 H1185 Z"/>
+  </g>
+  <g fill="none" stroke="#FF3000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <g data-node="资料站" data-icon-kind="institution" transform="translate(117 310)">
+      <path d="M-62 -47 L0 -65 L62 -47 V-32 H-62 Z M-62 48 H62 M-62 48 V60 M62 48 V60 M-50 -21 V34 M-32 -21 V34 M32 -21 V34 M50 -21 V34"/>
+      <circle cx="0" cy="0" r="15"/><path d="M0 -21 V21"/>
+    </g>
+    <g data-node="协作中枢" data-icon-kind="community" transform="translate(578 310)">
+      <path d="M-65 -4 L0 -68 L65 -4 V13 H52 V58 H-52 V13 H-65 Z M-67 60 H67 M-17 60 V17 H17 V60"/>
+      <circle cx="0" cy="-20" r="17"/>
+    </g>
+    <g data-node="资源中心" data-icon-kind="institution" transform="translate(1017 310)">
+      <path d="M-62 -47 L0 -65 L62 -47 V-32 H-62 Z M-62 48 H62 M-62 48 V60 M62 48 V60 M-50 -21 V34 M-32 -21 V34 M32 -21 V34 M50 -21 V34"/>
+      <circle cx="0" cy="0" r="15"/><path d="M0 -21 V21"/>
+    </g>
+    <g data-node="社区站点" data-icon-kind="storefront" transform="translate(1473 310)">
+      <path d="M-57 4 V68 H57 V4 M-22 68 V23 H22 V68"/>
+      <path d="M-61 -59 H61 L74 -19 Q76 -1 57 -1 Q43 -1 38 -13 Q34 0 19 0 Q5 0 0 -13 Q-5 0 -19 0 Q-34 0 -38 -13 Q-43 -1 -57 -1 Q-76 -1 -74 -19 Z" fill="#FF3000" stroke="#FF3000"/>
+      <path d="M-37 -58 L-42 -11 M-1 -58 V-12 M36 -58 L42 -11" stroke="#FFFFFF" stroke-width="5"/>
+    </g>
+  </g>
+</svg>

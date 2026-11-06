@@ -1,0 +1,4 @@
+interface:
+  display_name: "通用技术画图"
+  short_description: "按独立图种规范与版本化风格绘制流程图、时序图、状态图、架构图和 ER 图"
+  default_prompt: "使用 $technical-diagrams，先列出目标图种支持的风格与固定编号，再按选定规范绘图、验证和交付。"

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1120" viewBox="0 0 2000 1120" role="img" aria-labelledby="ar06-title ar06-desc">
+<title id="ar06-title">环境观测平台架构示例</title>
+<desc id="ar06-desc">独立构造的环境观测场景，展示蓝绿多层分区、点线边框和消息图例。</desc>
+<metadata>{"profile":"architecture/blue-green-detailed@1.0.0","number":"AR-06","sample_kind":"synthetic","line_style":{"id":"orthogonal","version":"1.0.0"},"interaction_standard":{"id":"single-direction","version":"1.0.0"},"model":{"groups":["外部来源","观测处理平台","数据接入","处理引擎","调度服务","分析服务","观测资料","数据规则","调度设置","分析能力","设备资料","观测数据","结果资料"],"nodes":["观测终端","数据入口","格式检验","数据规则","过滤配置","字段映射","合并运算","质量标记","调度设置","周期配置","来源配置","执行队列","分析能力","趋势计算","分布统计","结果汇集","设备资料","观测数据","结果资料","设备档案","来源目录","原始样本","质量记录","分析结果","汇总视图","展示配置"],"edges":[{"id":"ar06-e1","from":"观测终端","to":"数据入口","kind":"request","label":"上传"},{"id":"ar06-e2","from":"数据入口","to":"格式检验","kind":"request","label":"校验"},{"id":"ar06-e3","from":"格式检验","to":"合并运算","kind":"request","label":"合并"},{"id":"ar06-e4","from":"合并运算","to":"质量标记","kind":"request","label":"标记"},{"id":"ar06-e5","from":"质量标记","to":"执行队列","kind":"request","label":"投递"},{"id":"ar06-e6","from":"执行队列","to":"结果汇集","kind":"request","label":"传送"},{"id":"ar06-e7","from":"格式检验","to":"设备资料","kind":"request","label":"读取"},{"id":"ar06-e8","from":"质量标记","to":"观测数据","kind":"request","label":"读取"},{"id":"ar06-e9","from":"观测数据","to":"质量标记","kind":"response","label":"响应"},{"id":"ar06-e10","from":"结果汇集","to":"结果资料","kind":"request","label":"保存"}],"node_owners":{"观测终端":"外部来源","数据入口":"数据接入","格式检验":"数据接入","数据规则":"处理引擎","过滤配置":"数据规则","字段映射":"数据规则","合并运算":"处理引擎","质量标记":"处理引擎","调度设置":"调度服务","周期配置":"调度设置","来源配置":"调度设置","执行队列":"调度服务","分析能力":"分析服务","趋势计算":"分析能力","分布统计":"分析能力","结果汇集":"分析服务","设备资料":"观测资料","观测数据":"观测资料","结果资料":"观测资料","设备档案":"设备资料","来源目录":"设备资料","原始样本":"观测数据","质量记录":"观测数据","分析结果":"结果资料","汇总视图":"结果资料","展示配置":"结果资料"},"group_parents":{"外部来源":null,"观测处理平台":null,"数据接入":"观测处理平台","处理引擎":"观测处理平台","调度服务":"观测处理平台","分析服务":"观测处理平台","观测资料":"观测处理平台","数据规则":"处理引擎","调度设置":"调度服务","分析能力":"分析服务","设备资料":"观测资料","观测数据":"观测资料","结果资料":"观测资料"}}}</metadata>
+<defs>
+  <marker id="ar06-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#20272B" stroke-width="1.5"/></marker>
+  <marker id="ar06-arrow-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#26549A" stroke-width="1.5"/></marker>
+</defs>
+<rect width="2000" height="1120" fill="#FFFFFF"/>
+<g font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" fill="#101820">
+  <text x="285" y="68" font-size="36" font-weight="600">环境观测平台</text>
+  <path d="M1020 56 H1075" stroke="#20272B" stroke-width="2"/><text x="1090" y="63" font-size="19">调用</text>
+  <path d="M1200 56 H1255" stroke="#26549A" stroke-width="2"/><text x="1270" y="63" font-size="19">独立消息</text>
+  <path d="M1450 56 H1505" stroke="#26549A" stroke-width="3.5" stroke-dasharray="2 5"/><text x="1520" y="63" font-size="19">响应</text>
+  <rect x="260" y="110" width="1710" height="970" fill="#CCF5F2" stroke="#00B3F6" stroke-width="1.6" stroke-dasharray="2 4"/>
+  <text x="1115" y="158" text-anchor="middle" font-size="30" font-weight="600">观测处理平台</text>
+  <rect x="30" y="190" width="200" height="420" fill="#D8E3F7" stroke="#26549A" stroke-width="1.6" stroke-dasharray="2 4"/>
+  <text x="130" y="225" text-anchor="middle" font-size="24" font-weight="600">外部来源</text>
+  <rect x="285" y="190" width="245" height="420" fill="#D8E3F7" stroke="#00B3F6" stroke-width="1.6"/>
+  <text x="407.5" y="225" text-anchor="middle" font-size="26" font-weight="600">数据接入</text>
+  <rect x="560" y="190" width="440" height="420" fill="#D8E3F7" stroke="#00B3F6" stroke-width="1.6"/>
+  <text x="780" y="225" text-anchor="middle" font-size="26" font-weight="600">处理引擎</text>
+  <rect x="1020" y="190" width="380" height="420" fill="#A0D985" stroke="#26549A" stroke-width="1.6" stroke-dasharray="2 4"/>
+  <text x="1210" y="225" text-anchor="middle" font-size="26" font-weight="600">调度服务</text>
+  <rect x="1420" y="190" width="500" height="420" fill="#B2C8ED" stroke="#00B3F6" stroke-width="1.6"/>
+  <text x="1670" y="225" text-anchor="middle" font-size="26" font-weight="600">分析服务</text>
+  <rect x="285" y="645" width="1635" height="400" fill="#B3EAB6" stroke="#00B3F6" stroke-width="1.6"/>
+  <text x="1102.5" y="686" text-anchor="middle" font-size="26" font-weight="600">观测资料</text>
+  <g stroke="#26549A" stroke-width="1.4" stroke-dasharray="2 4">
+    <rect x="585" y="250" width="390" height="120" fill="#D5DCE6"/>
+    <rect x="1040" y="250" width="340" height="120" fill="#DFF3D7"/>
+    <rect x="1450" y="250" width="440" height="120" fill="#D8E3F7"/>
+    <rect x="310" y="720" width="480" height="50" fill="#8AADE5"/>
+    <rect x="810" y="720" width="430" height="50" fill="#8AADE5"/>
+    <rect x="1260" y="720" width="610" height="50" fill="#8AADE5"/>
+  </g>
+  <g font-size="21" text-anchor="middle"><text x="780" y="280">数据规则</text><text x="1210" y="280">调度设置</text><text x="1670" y="280">分析能力</text></g>
+  <g fill="#D8E3F7" stroke="#26549A" stroke-width="1.3" stroke-dasharray="2 4">
+    <rect x="610" y="300" width="160" height="50"/><rect x="810" y="300" width="160" height="50"/>
+    <rect x="1060" y="300" width="140" height="50"/><rect x="1225" y="300" width="135" height="50"/>
+    <rect x="1450" y="300" width="180" height="50"/><rect x="1680" y="300" width="180" height="50"/>
+    <rect x="325" y="820" width="190" height="80"/><rect x="535" y="820" width="190" height="80" fill="#FFE5D3"/>
+    <rect x="830" y="820" width="170" height="80"/><rect x="1020" y="820" width="190" height="80" fill="#FFE5D3"/>
+    <rect x="1290" y="820" width="170" height="80"/><rect x="1480" y="820" width="170" height="80"/><rect x="1670" y="820" width="170" height="80"/>
+  </g>
+  <g fill="none" stroke="#20272B" stroke-width="2" marker-end="url(#ar06-arrow)">
+    <path id="ar06-e1" data-diagram-role="connector" d="M220 300 H310"/>
+    <path id="ar06-e2" data-diagram-role="connector" d="M405 330 V420"/>
+    <path id="ar06-e3" data-diagram-role="connector" d="M500 450 H610"/>
+    <path id="ar06-e4" data-diagram-role="connector" d="M770 450 H810"/>
+    <path id="ar06-e6" data-diagram-role="connector" d="M1340 450 H1450"/>
+    <path id="ar06-e7" data-diagram-role="connector" d="M405 480 V720"/>
+    <path id="ar06-e10" data-diagram-role="connector" d="M1655 480 V720"/>
+  </g>
+  <path id="ar06-e5" data-diagram-role="connector" d="M970 450 H1080" fill="none" stroke="#26549A" stroke-width="2" marker-end="url(#ar06-arrow-blue)"/>
+  <path id="ar06-e8" data-diagram-role="connector" d="M890 480 V720" fill="none" stroke="#20272B" stroke-width="2" marker-end="url(#ar06-arrow)"/>
+  <path id="ar06-e9" data-diagram-role="connector" d="M940 720 V480" fill="none" stroke="#26549A" stroke-width="3.5" stroke-dasharray="2 5" marker-end="url(#ar06-arrow-blue)"/>
+  <g stroke="#26549A" stroke-width="1.5" stroke-dasharray="2 4">
+    <rect x="50" y="270" width="170" height="60" fill="#00B3F6"/>
+    <rect x="310" y="270" width="190" height="60" fill="#00B3F6"/>
+    <rect x="310" y="420" width="190" height="60" fill="#D5DCE6"/>
+    <rect x="610" y="420" width="160" height="60" fill="#D8E3F7"/>
+    <rect x="810" y="420" width="160" height="60" fill="#D8E3F7"/>
+    <rect x="1080" y="420" width="260" height="60" fill="#7ED233"/>
+    <rect x="1450" y="420" width="410" height="60" fill="#DFF3D7"/>
+  </g>
+  <g font-size="22" text-anchor="middle">
+    <text x="135" y="308">观测终端</text><text x="405" y="308">数据入口</text><text x="405" y="458">格式检验</text>
+    <text x="690" y="458">合并运算</text><text x="890" y="458">质量标记</text><text x="1210" y="458">执行队列</text><text x="1655" y="458">结果汇集</text>
+    <text x="690" y="333">过滤配置</text><text x="890" y="333">字段映射</text><text x="1130" y="333">周期配置</text><text x="1292" y="333">来源配置</text><text x="1540" y="333">趋势计算</text><text x="1770" y="333">分布统计</text>
+    <text x="550" y="752">设备资料</text><text x="1025" y="752">观测数据</text><text x="1565" y="752">结果资料</text>
+    <text x="420" y="868">设备档案</text><text x="630" y="868">来源目录</text><text x="915" y="868">原始样本</text><text x="1115" y="868">质量记录</text><text x="1375" y="868">分析结果</text><text x="1565" y="868">汇总视图</text><text x="1755" y="868">展示配置</text>
+  </g>
+  <g font-size="19" text-anchor="middle">
+    <text x="370" y="255">① 上传</text><text x="425" y="386" text-anchor="start">② 校验</text>
+    <text x="690" y="407">③ 合并</text><text x="790" y="407">④ 标记</text>
+    <text x="1130" y="408" fill="#26549A">⑤ 投递</text><text x="1510" y="408">⑥ 传送</text>
+    <text x="425" y="635" text-anchor="start">⑦ 读取</text><text x="870" y="635" text-anchor="end">⑧ 读取</text>
+    <text x="960" y="635" text-anchor="start" fill="#26549A">⑨ 响应</text><text x="1675" y="635" text-anchor="start">⑩ 保存</text>
+  </g>
+</g>
+</svg>

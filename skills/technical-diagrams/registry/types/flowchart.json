@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "id": "flowchart",
+  "name": "流程图",
+  "aliases": [
+    "流程图"
+  ],
+  "semantic_version": "1.0.0",
+  "number_prefix": "FC",
+  "guide": "references/type-guides/flowchart.md",
+  "default": "flowchart/soft-process@1.0.0",
+  "style_versions": {
+    "soft-process": "1.0.0",
+    "classic-mono": "1.0.0",
+    "soft-swimlanes": "1.0.0",
+    "contrast-swimlanes": "1.0.0",
+    "monochrome-horizontal-collaboration": "1.0.0",
+    "global-header-swimlanes": "1.0.0",
+    "handdrawn-design-board": "1.0.0",
+    "handdrawn-runtime-flow": "1.0.0",
+    "thin-line-component-flow": "1.0.0",
+    "pastel-document-pipeline": "1.0.0"
+  },
+  "styles": [
+    {
+      "id": "soft-process",
+      "version": "1.0.0",
+      "number": "FC-01",
+      "name": "浅色业务流程",
+      "aliases": [
+        "浅色流程",
+        "浅色业务"
+      ]
+    },
+    {
+      "id": "classic-mono",
+      "version": "1.0.0",
+      "number": "FC-02",
+      "name": "经典黑白流程",
+      "aliases": [
+        "黑白流程",
+        "经典黑白"
+      ]
+    },
+    {
+      "id": "soft-swimlanes",
+      "version": "1.0.0",
+      "number": "FC-03",
+      "name": "浅色分区泳道",
+      "aliases": [
+        "浅色泳道",
+        "柔和泳道",
+        "泳道浅色"
+      ],
+      "layout": "swimlane",
+      "gallery_layout": "wide"
+    },
+    {
+      "id": "contrast-swimlanes",
+      "version": "1.0.0",
+      "number": "FC-04",
+      "name": "深色标题泳道",
+      "aliases": [
+        "深色泳道",
+        "高对比泳道",
+        "泳道深色标题"
+      ],
+      "layout": "swimlane",
+      "gallery_layout": "wide"
+    },
+    {
+      "id": "monochrome-horizontal-collaboration",
+      "version": "1.0.0",
+      "number": "FC-05",
+      "name": "黑白横向协作流程",
+      "aliases": [
+        "黑白横向协作",
+        "黑白参与方流程"
+      ]
+    },
+    {
+      "id": "global-header-swimlanes",
+      "version": "1.0.0",
+      "number": "FC-06",
+      "name": "全局深蓝标题泳道",
+      "aliases": [
+        "深蓝全局标题泳道",
+        "蓝灰业务泳道"
+      ],
+      "layout": "swimlane",
+      "gallery_layout": "wide"
+    },
+    {
+      "id": "handdrawn-design-board",
+      "version": "1.0.0",
+      "number": "FC-07",
+      "name": "手绘设计讨论流程",
+      "aliases": [
+        "手绘讨论流程",
+        "手绘设计流程图"
+      ],
+      "gallery_layout": "wide"
+    },
+    {
+      "id": "handdrawn-runtime-flow",
+      "version": "1.0.0",
+      "number": "FC-08",
+      "name": "手绘运行边界流程",
+      "aliases": [
+        "手绘运行流程",
+        "手绘边界流程"
+      ],
+      "gallery_layout": "wide"
+    },
+    {
+      "id": "thin-line-component-flow",
+      "version": "1.0.0",
+      "number": "FC-09",
+      "name": "细线组件交互流程",
+      "aliases": [
+        "细线组件流程",
+        "米蓝组件交互流程"
+      ],
+      "gallery_layout": "wide"
+    },
+    {
+      "id": "pastel-document-pipeline",
+      "version": "1.0.0",
+      "number": "FC-10",
+      "name": "柔色文档处理流程",
+      "aliases": [
+        "柔色文档流程",
+        "粉彩资料处理"
+      ],
+      "gallery_layout": "wide"
+    }
+  ]
+}

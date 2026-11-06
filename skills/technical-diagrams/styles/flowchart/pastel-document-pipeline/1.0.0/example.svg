@@ -1,0 +1,585 @@
+<svg id="fc10-diagram" xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-label="柔色文档处理流程：工单编排示例">
+<metadata>{
+  &quot;profile&quot;: &quot;flowchart/pastel-document-pipeline@1.0.0&quot;,
+  &quot;number&quot;: &quot;FC-10&quot;,
+  &quot;semantic_version&quot;: &quot;1.0.0&quot;,
+  &quot;sample_kind&quot;: &quot;synthetic&quot;,
+  &quot;line_style&quot;: {
+    &quot;id&quot;: &quot;rounded-orthogonal&quot;,
+    &quot;version&quot;: &quot;1.0.0&quot;,
+    &quot;source&quot;: &quot;explicit&quot;
+  },
+  &quot;interaction_standard&quot;: {
+    &quot;id&quot;: &quot;single-direction&quot;,
+    &quot;version&quot;: &quot;1.0.0&quot;
+  },
+  &quot;dependencies&quot;: {
+    &quot;SKILL.md&quot;: &quot;b1f057694d3d12e460da0056a18359237fff1910daedfb04f247bbe9e8ee5bcb&quot;,
+    &quot;scripts/catalog.py&quot;: &quot;b2200a4fbb8a4616af769cba12863d8ca46f4bc7ec046241c504a8ad312297aa&quot;,
+    &quot;scripts/render_svg.mjs&quot;: &quot;31f643602bc936f33c63426e42ec241d4529c129ebc393a2bc5c138d98596c60&quot;,
+    &quot;agents/openai.yaml&quot;: &quot;fc24ee90982ccaf42b0b2e99ed1a3e2b4d4f9c4eb9851c1c9c7cc8f607118809&quot;,
+    &quot;references/extensions-v1.md&quot;: &quot;5fef312b67549fbfd42e460406b8453629972067df3a7d2b85ac5a29ebfd3bb8&quot;,
+    &quot;references/html-integration-v1.md&quot;: &quot;436eebd17a48688f68d526e887f7715c3c6f1d1008b5079a5185d5593b901ff9&quot;,
+    &quot;references/style-numbering-v1.md&quot;: &quot;5415f0f7be85bc663db202f27b5ea1eef01550032c3f214126dee95d7a0e9322&quot;,
+    &quot;references/common/1.0.0.md&quot;: &quot;5c4dc08bca97270b400fb29418381bd2978ae1fab14a51c321824cce543a55ba&quot;,
+    &quot;types/flowchart/1.0.0.md&quot;: &quot;e79b19eedb656186c96b7922c9077beb0f39b0bd19835165ccaeb8aa544bb1a4&quot;,
+    &quot;styles/flowchart/pastel-document-pipeline/1.0.0/SPEC.md&quot;: &quot;74c5d8db7d54f4069d7e79efadff045d78024baa0c105ef23e81a99926000ad8&quot;,
+    &quot;styles/flowchart/pastel-document-pipeline/1.0.0/tokens.json&quot;: &quot;f627ec58e5754d2cf1520713b6c21da0513ffdb81556a02f1bb07d4a5162d8c9&quot;,
+    &quot;references/line-styles-v1.md&quot;: &quot;623aac6e6721b001ce878ad4dc864e0ff4654b66bf8e2c17550d264955b445d0&quot;,
+    &quot;references/interaction-standards/1.0.0.md&quot;: &quot;f2e2a466ad741b65d9df72a451201e9eceebdc9ef760e200b25e543e3846d56c&quot;,
+    &quot;references/interaction-standards/1.0.0.svg&quot;: &quot;f492bbc9e401aeb90febb30f941ab959a0d34b893193e9f59b921cb45118e12b&quot;
+  },
+  &quot;overrides&quot;: {
+    &quot;connectors&quot;: {
+      &quot;corner_radius&quot;: 15
+    }
+  },
+  &quot;model&quot;: {
+    &quot;nodes&quot;: [
+      {
+        &quot;id&quot;: &quot;input&quot;,
+        &quot;bounds&quot;: [
+          80,
+          920,
+          360,
+          115
+        ],
+        &quot;label&quot;: &quot;请处理这批巡检工单&quot;,
+        &quot;kind&quot;: &quot;speech-bubble&quot;,
+        &quot;container&quot;: null,
+        &quot;lines&quot;: [
+          &quot;请处理这批&quot;,
+          &quot;巡检工单&quot;
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;actor&quot;,
+        &quot;bounds&quot;: [
+          135,
+          1050,
+          55,
+          65
+        ],
+        &quot;label&quot;: &quot;提交人&quot;,
+        &quot;kind&quot;: &quot;actor&quot;,
+        &quot;container&quot;: null
+      },
+      {
+        &quot;id&quot;: &quot;intake&quot;,
+        &quot;bounds&quot;: [
+          165,
+          540,
+          190,
+          100
+        ],
+        &quot;label&quot;: &quot;接收工单&quot;,
+        &quot;kind&quot;: &quot;processing&quot;,
+        &quot;container&quot;: &quot;system&quot;
+      },
+      {
+        &quot;id&quot;: &quot;database&quot;,
+        &quot;bounds&quot;: [
+          165,
+          275,
+          190,
+          149
+        ],
+        &quot;label&quot;: &quot;规则资料库&quot;,
+        &quot;kind&quot;: &quot;data-store&quot;,
+        &quot;container&quot;: &quot;system&quot;
+      },
+      {
+        &quot;id&quot;: &quot;before&quot;,
+        &quot;bounds&quot;: [
+          430,
+          190,
+          185,
+          320
+        ],
+        &quot;label&quot;: &quot;待分配工单&quot;,
+        &quot;kind&quot;: &quot;document-group&quot;,
+        &quot;container&quot;: &quot;system&quot;,
+        &quot;lines&quot;: [
+          &quot;待分配&quot;,
+          &quot;工单&quot;
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;review&quot;,
+        &quot;bounds&quot;: [
+          700,
+          210,
+          175,
+          390
+        ],
+        &quot;label&quot;: &quot;调度决策&quot;,
+        &quot;kind&quot;: &quot;processing&quot;,
+        &quot;container&quot;: &quot;system&quot;
+      },
+      {
+        &quot;id&quot;: &quot;after&quot;,
+        &quot;bounds&quot;: [
+          960,
+          250,
+          185,
+          320
+        ],
+        &quot;label&quot;: &quot;处理顺序&quot;,
+        &quot;kind&quot;: &quot;document-group&quot;,
+        &quot;container&quot;: &quot;system&quot;,
+        &quot;lines&quot;: [
+          &quot;处理&quot;,
+          &quot;顺序&quot;
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;publish&quot;,
+        &quot;bounds&quot;: [
+          1240,
+          330,
+          190,
+          115
+        ],
+        &quot;label&quot;: &quot;任务发布&quot;,
+        &quot;kind&quot;: &quot;processing&quot;,
+        &quot;container&quot;: &quot;system&quot;
+      },
+      {
+        &quot;id&quot;: &quot;output&quot;,
+        &quot;bounds&quot;: [
+          1150,
+          880,
+          370,
+          145
+        ],
+        &quot;label&quot;: &quot;处理结果&quot;,
+        &quot;kind&quot;: &quot;response-cloud&quot;,
+        &quot;container&quot;: null,
+        &quot;lines&quot;: [
+          &quot;派工顺序&quot;,
+          &quot;已安排完成&quot;
+        ]
+      }
+    ],
+    &quot;connections&quot;: [
+      {
+        &quot;id&quot;: &quot;fc10-input-intake&quot;,
+        &quot;from&quot;: &quot;input&quot;,
+        &quot;to&quot;: &quot;intake&quot;,
+        &quot;label&quot;: &quot;1 提交&quot;,
+        &quot;routing&quot;: {
+          &quot;points&quot;: [
+            [
+              260,
+              920
+            ],
+            [
+              260,
+              640
+            ]
+          ],
+          &quot;bends&quot;: 0,
+          &quot;orthogonal_channel_length&quot;: 280,
+          &quot;corners&quot;: &quot;直连&quot;,
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 0,
+              &quot;length&quot;: 280,
+              &quot;basis&quot;: &quot;共线直连达到零弯折和最短距离下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;满足端口、归属与避让后，优先比较弯折数、通道长度和交叉。&quot;,
+          &quot;length&quot;: 280.0,
+          &quot;length_basis&quot;: &quot;实际 SVG 路径（Q 曲线采样）&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc10-database-intake&quot;,
+        &quot;from&quot;: &quot;database&quot;,
+        &quot;to&quot;: &quot;intake&quot;,
+        &quot;label&quot;: &quot;2 规则数据&quot;,
+        &quot;routing&quot;: {
+          &quot;points&quot;: [
+            [
+              260,
+              424
+            ],
+            [
+              260,
+              540
+            ]
+          ],
+          &quot;bends&quot;: 0,
+          &quot;orthogonal_channel_length&quot;: 116,
+          &quot;corners&quot;: &quot;直连&quot;,
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 0,
+              &quot;length&quot;: 116,
+              &quot;basis&quot;: &quot;共线直连达到零弯折和最短距离下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;满足端口、归属与避让后，优先比较弯折数、通道长度和交叉。&quot;,
+          &quot;length&quot;: 116.0,
+          &quot;length_basis&quot;: &quot;实际 SVG 路径（Q 曲线采样）&quot;
+        },
+        &quot;note&quot;: &quot;序列：[3, 1, 2, …]&quot;
+      },
+      {
+        &quot;id&quot;: &quot;fc10-intake-doc&quot;,
+        &quot;from&quot;: &quot;intake&quot;,
+        &quot;to&quot;: &quot;before&quot;,
+        &quot;label&quot;: &quot;3 汇集&quot;,
+        &quot;routing&quot;: {
+          &quot;points&quot;: [
+            [
+              355,
+              590
+            ],
+            [
+              397,
+              590
+            ],
+            [
+              397,
+              480
+            ],
+            [
+              430,
+              480
+            ]
+          ],
+          &quot;bends&quot;: 2,
+          &quot;orthogonal_channel_length&quot;: 185,
+          &quot;corners&quot;: &quot;Q 曲线半径 15&quot;,
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;one-bend-horizontal-first&quot;,
+              &quot;bends&quot;: 1,
+              &quot;feasible&quot;: false,
+              &quot;basis&quot;: &quot;沿目标节点边缘进入，不能从目标端口的外侧正常入线。&quot;
+            },
+            {
+              &quot;kind&quot;: &quot;one-bend-vertical-first&quot;,
+              &quot;bends&quot;: 1,
+              &quot;feasible&quot;: false,
+              &quot;basis&quot;: &quot;不沿起点端口的外法线离开，或沿起点节点边缘走线。&quot;
+            },
+            {
+              &quot;kind&quot;: &quot;shifted-channel&quot;,
+              &quot;feasible&quot;: true,
+              &quot;bends&quot;: 2,
+              &quot;length&quot;: 173.696,
+              &quot;crossings&quot;: 0,
+              &quot;path&quot;: &quot;M355 590 H375 Q390 590 390 575 V495 Q390 480 405 480 H430&quot;,
+              &quot;points&quot;: [
+                [
+                  355,
+                  590
+                ],
+                [
+                  390,
+                  590
+                ],
+                [
+                  390,
+                  480
+                ],
+                [
+                  430,
+                  480
+                ]
+              ],
+              &quot;basis&quot;: &quot;同端口、同圆角及净空；可与当前路径比较。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;满足端口、归属与避让后，优先比较弯折数、通道长度和交叉。&quot;,
+          &quot;length&quot;: 173.696,
+          &quot;length_basis&quot;: &quot;实际 SVG 路径（Q 曲线采样）&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc10-docs-review&quot;,
+        &quot;from&quot;: &quot;before&quot;,
+        &quot;to&quot;: &quot;review&quot;,
+        &quot;label&quot;: &quot;4 交审&quot;,
+        &quot;routing&quot;: {
+          &quot;points&quot;: [
+            [
+              615,
+              350
+            ],
+            [
+              700,
+              350
+            ]
+          ],
+          &quot;bends&quot;: 0,
+          &quot;orthogonal_channel_length&quot;: 85,
+          &quot;corners&quot;: &quot;直连&quot;,
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 0,
+              &quot;length&quot;: 85,
+              &quot;basis&quot;: &quot;共线直连达到零弯折和最短距离下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;满足端口、归属与避让后，优先比较弯折数、通道长度和交叉。&quot;,
+          &quot;length&quot;: 85.0,
+          &quot;length_basis&quot;: &quot;实际 SVG 路径（Q 曲线采样）&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc10-input-review&quot;,
+        &quot;from&quot;: &quot;input&quot;,
+        &quot;to&quot;: &quot;review&quot;,
+        &quot;label&quot;: &quot;5 补充要求&quot;,
+        &quot;routing&quot;: {
+          &quot;points&quot;: [
+            [
+              440,
+              970
+            ],
+            [
+              665,
+              970
+            ],
+            [
+              665,
+              530
+            ],
+            [
+              700,
+              530
+            ]
+          ],
+          &quot;bends&quot;: 2,
+          &quot;orthogonal_channel_length&quot;: 700,
+          &quot;corners&quot;: &quot;Q 曲线半径 15&quot;,
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;one-bend-horizontal-first&quot;,
+              &quot;bends&quot;: 1,
+              &quot;feasible&quot;: false,
+              &quot;basis&quot;: &quot;沿目标节点边缘进入，不能从目标端口的外侧正常入线。&quot;
+            },
+            {
+              &quot;kind&quot;: &quot;one-bend-vertical-first&quot;,
+              &quot;bends&quot;: 1,
+              &quot;feasible&quot;: false,
+              &quot;basis&quot;: &quot;不沿起点端口的外法线离开，或沿起点节点边缘走线。&quot;
+            },
+            {
+              &quot;kind&quot;: &quot;shifted-channel&quot;,
+              &quot;feasible&quot;: true,
+              &quot;bends&quot;: 2,
+              &quot;length&quot;: 688.696,
+              &quot;crossings&quot;: 0,
+              &quot;path&quot;: &quot;M440 970 H635 Q650 970 650 955 V545 Q650 530 665 530 H700&quot;,
+              &quot;points&quot;: [
+                [
+                  440,
+                  970
+                ],
+                [
+                  650,
+                  970
+                ],
+                [
+                  650,
+                  530
+                ],
+                [
+                  700,
+                  530
+                ]
+              ],
+              &quot;basis&quot;: &quot;同端口、同圆角及净空；可与当前路径比较。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;满足端口、归属与避让后，优先比较弯折数、通道长度和交叉。&quot;,
+          &quot;length&quot;: 688.696,
+          &quot;length_basis&quot;: &quot;实际 SVG 路径（Q 曲线采样）&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc10-review-docs&quot;,
+        &quot;from&quot;: &quot;review&quot;,
+        &quot;to&quot;: &quot;after&quot;,
+        &quot;label&quot;: &quot;6 排序&quot;,
+        &quot;routing&quot;: {
+          &quot;points&quot;: [
+            [
+              875,
+              390
+            ],
+            [
+              960,
+              390
+            ]
+          ],
+          &quot;bends&quot;: 0,
+          &quot;orthogonal_channel_length&quot;: 85,
+          &quot;corners&quot;: &quot;直连&quot;,
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 0,
+              &quot;length&quot;: 85,
+              &quot;basis&quot;: &quot;共线直连达到零弯折和最短距离下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;满足端口、归属与避让后，优先比较弯折数、通道长度和交叉。&quot;,
+          &quot;length&quot;: 85.0,
+          &quot;length_basis&quot;: &quot;实际 SVG 路径（Q 曲线采样）&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc10-docs-publish&quot;,
+        &quot;from&quot;: &quot;after&quot;,
+        &quot;to&quot;: &quot;publish&quot;,
+        &quot;label&quot;: &quot;7 交付&quot;,
+        &quot;routing&quot;: {
+          &quot;points&quot;: [
+            [
+              1145,
+              390
+            ],
+            [
+              1240,
+              390
+            ]
+          ],
+          &quot;bends&quot;: 0,
+          &quot;orthogonal_channel_length&quot;: 95,
+          &quot;corners&quot;: &quot;直连&quot;,
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 0,
+              &quot;length&quot;: 95,
+              &quot;basis&quot;: &quot;共线直连达到零弯折和最短距离下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;满足端口、归属与避让后，优先比较弯折数、通道长度和交叉。&quot;,
+          &quot;length&quot;: 95.0,
+          &quot;length_basis&quot;: &quot;实际 SVG 路径（Q 曲线采样）&quot;
+        }
+      },
+      {
+        &quot;id&quot;: &quot;fc10-publish-output&quot;,
+        &quot;from&quot;: &quot;publish&quot;,
+        &quot;to&quot;: &quot;output&quot;,
+        &quot;label&quot;: &quot;8 发布结果&quot;,
+        &quot;routing&quot;: {
+          &quot;points&quot;: [
+            [
+              1335,
+              445
+            ],
+            [
+              1335,
+              900
+            ]
+          ],
+          &quot;bends&quot;: 0,
+          &quot;orthogonal_channel_length&quot;: 455,
+          &quot;corners&quot;: &quot;直连&quot;,
+          &quot;crossings&quot;: 0,
+          &quot;alternatives&quot;: [
+            {
+              &quot;kind&quot;: &quot;fixed-endpoint-lower-bound&quot;,
+              &quot;bends&quot;: 0,
+              &quot;length&quot;: 455,
+              &quot;basis&quot;: &quot;共线直连达到零弯折和最短距离下界。&quot;
+            }
+          ],
+          &quot;decision&quot;: &quot;满足端口、归属与避让后，优先比较弯折数、通道长度和交叉。&quot;,
+          &quot;length&quot;: 455.0,
+          &quot;length_basis&quot;: &quot;实际 SVG 路径（Q 曲线采样）&quot;
+        }
+      }
+    ],
+    &quot;documents&quot;: {
+      &quot;before&quot;: [
+        &quot;甲&quot;,
+        &quot;乙&quot;,
+        &quot;丙&quot;
+      ],
+      &quot;after&quot;: [
+        &quot;乙&quot;,
+        &quot;甲&quot;,
+        &quot;丙&quot;
+      ],
+      &quot;items&quot;: [
+        {
+          &quot;id&quot;: &quot;甲&quot;,
+          &quot;label&quot;: &quot;甲&quot;,
+          &quot;fill&quot;: &quot;#FFFFFF&quot;
+        },
+        {
+          &quot;id&quot;: &quot;乙&quot;,
+          &quot;label&quot;: &quot;乙&quot;,
+          &quot;fill&quot;: &quot;#EAE5F8&quot;
+        },
+        {
+          &quot;id&quot;: &quot;丙&quot;,
+          &quot;label&quot;: &quot;丙&quot;,
+          &quot;fill&quot;: &quot;#FFFFFF&quot;
+        }
+      ]
+    },
+    &quot;notes&quot;: [
+      &quot;示例为独立工单编排业务，不继承参考图产品、文档或拓扑。&quot;,
+      &quot;人物与输入气泡的尖尾仅表示说话者，尖尾不是流程箭头。&quot;,
+      &quot;路径穿过主体边框不表示汇流。&quot;
+    ],
+    &quot;containers&quot;: [
+      {
+        &quot;id&quot;: &quot;system&quot;,
+        &quot;label&quot;: &quot;工单编排台&quot;,
+        &quot;bounds&quot;: [
+          80,
+          80,
+          1440,
+          720
+        ],
+        &quot;kind&quot;: &quot;visual-boundary&quot;
+      }
+    ],
+    &quot;relationships&quot;: [
+      {
+        &quot;from&quot;: &quot;actor&quot;,
+        &quot;to&quot;: &quot;input&quot;,
+        &quot;kind&quot;: &quot;speaker&quot;,
+        &quot;evidence&quot;: &quot;气泡尖尾指向提交人；非流程箭头&quot;
+      }
+    ]
+  }
+}</metadata>
+<defs><marker id="fc10-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#202020"/></marker></defs>
+<style>#fc10-diagram{font-family:Arial,Microsoft YaHei,Noto Sans CJK SC,sans-serif;font-size:25px;fill:#202020} #fc10-diagram [data-diagram-role="connector"]{fill:none;stroke:#202020;stroke-width:2.5;stroke-linejoin:round} #fc10-diagram [data-edge-label]{font-size:19px;fill:#444444} #fc10-diagram [data-bubble-text]{font-size:22px;font-style:italic} #fc10-diagram [data-note]{font-size:17px;fill:#666666}</style>
+<rect width="1600" height="1200" fill="#FFFFFF"/>
+<g data-feature="system-boundary"><rect x="80" y="80" width="1440" height="720" rx="9" fill="#F6F6F6" stroke="#202020" stroke-width="2"/><text data-feature="system-title" x="1450" y="148" text-anchor="end" font-size="42">工单编排台</text></g>
+<g><path id="fc10-input-intake" data-diagram-role="connector" d="M260 920 L260 640" marker-end="url(#fc10-arrow)"/><path id="fc10-database-intake" data-diagram-role="connector" d="M260 424 L260 540" marker-end="url(#fc10-arrow)"/><path id="fc10-intake-doc" data-diagram-role="connector" d="M355 590 H382 Q397 590 397 575 V495 Q397 480 412 480 H430" marker-end="url(#fc10-arrow)"/><path id="fc10-docs-review" data-diagram-role="connector" d="M615 350 L700 350" marker-end="url(#fc10-arrow)"/><path id="fc10-input-review" data-diagram-role="connector" d="M440 970 H650 Q665 970 665 955 V545 Q665 530 680 530 H700" marker-end="url(#fc10-arrow)"/><path id="fc10-review-docs" data-diagram-role="connector" d="M875 390 L960 390" marker-end="url(#fc10-arrow)"/><path id="fc10-docs-publish" data-diagram-role="connector" d="M1145 390 L1240 390" marker-end="url(#fc10-arrow)"/><path id="fc10-publish-output" data-diagram-role="connector" d="M1335 445 L1335 900" marker-end="url(#fc10-arrow)"/></g>
+<g data-feature="database"><path d="M165 300 C165 267 355 267 355 300 L355 405 C355 430 165 430 165 405 Z" fill="#D8EDDE" stroke="#202020" stroke-width="2"/><path d="M165 300 C165 333 355 333 355 300" fill="none" stroke="#202020" stroke-width="2"/><text x="260" y="369" text-anchor="middle">规则资料库</text></g>
+<g data-feature="intake-card"><rect x="165" y="540" width="190" height="100" rx="8" fill="#F0F3FC" stroke="#202020" stroke-width="2"/><text x="260" y="600" text-anchor="middle">接收工单</text></g>
+<g data-feature="document-before"><rect x="430" y="190" width="185" height="320" rx="8" fill="#FFE3E2" stroke="#202020" stroke-width="2"/><text x="522" y="232" text-anchor="middle" font-size="23"><tspan x="522" dy="0">待分配</tspan><tspan x="522" dy="28">工单</tspan></text><g data-doc-id="甲" transform="translate(470 286)"><path d="M0 0 H76 L100 24 V52 H0 Z" fill="#FFFFFF" stroke="#202020" stroke-width="2"/><path data-fold="true" d="M76 0 V24 H100" fill="none" stroke="#202020" stroke-width="2"/><text x="42" y="35" text-anchor="middle" font-size="19">甲</text></g><g data-doc-id="乙" transform="translate(470 351)"><path d="M0 0 H76 L100 24 V52 H0 Z" fill="#EAE5F8" stroke="#202020" stroke-width="2"/><path data-fold="true" d="M76 0 V24 H100" fill="none" stroke="#202020" stroke-width="2"/><text x="42" y="35" text-anchor="middle" font-size="19">乙</text></g><g data-doc-id="丙" transform="translate(470 416)"><path d="M0 0 H76 L100 24 V52 H0 Z" fill="#FFFFFF" stroke="#202020" stroke-width="2"/><path data-fold="true" d="M76 0 V24 H100" fill="none" stroke="#202020" stroke-width="2"/><text x="42" y="35" text-anchor="middle" font-size="19">丙</text></g></g>
+<g data-feature="emphasis-card"><rect x="700" y="210" width="175" height="390" rx="8" fill="#F0F3FC" stroke="#202020" stroke-width="5"/><text x="787" y="417" text-anchor="middle" font-size="27">调度决策</text></g>
+<g data-feature="document-after"><rect x="960" y="250" width="185" height="320" rx="8" fill="#FFE3E2" stroke="#202020" stroke-width="2"/><text x="1052" y="292" text-anchor="middle" font-size="23"><tspan x="1052" dy="0">处理</tspan><tspan x="1052" dy="28">顺序</tspan></text><g data-doc-id="乙" transform="translate(1000 346)"><path d="M0 0 H76 L100 24 V52 H0 Z" fill="#EAE5F8" stroke="#202020" stroke-width="2"/><path data-fold="true" d="M76 0 V24 H100" fill="none" stroke="#202020" stroke-width="2"/><text x="42" y="35" text-anchor="middle" font-size="19">乙</text></g><g data-doc-id="甲" transform="translate(1000 411)"><path d="M0 0 H76 L100 24 V52 H0 Z" fill="#FFFFFF" stroke="#202020" stroke-width="2"/><path data-fold="true" d="M76 0 V24 H100" fill="none" stroke="#202020" stroke-width="2"/><text x="42" y="35" text-anchor="middle" font-size="19">甲</text></g><g data-doc-id="丙" transform="translate(1000 476)"><path d="M0 0 H76 L100 24 V52 H0 Z" fill="#FFFFFF" stroke="#202020" stroke-width="2"/><path data-fold="true" d="M76 0 V24 H100" fill="none" stroke="#202020" stroke-width="2"/><text x="42" y="35" text-anchor="middle" font-size="19">丙</text></g></g>
+<g data-feature="publish-card"><rect x="1240" y="330" width="190" height="115" rx="8" fill="#F0F3FC" stroke="#202020" stroke-width="2"/><text x="1335" y="398" text-anchor="middle">任务发布</text></g>
+<g data-feature="user-bubble"><path d="M260 920 C335 920 405 936 430 955 Q440 965 440 970 C440 997 355 1020 260 1020 C230 1020 210 1018 195 1015 L172 1035 L178 1008 C119 999 80 983 80 970 C80 942 160 920 260 920 Z" fill="#FFF5DC" stroke="#202020" stroke-width="2"/><text data-bubble-text="true" x="260" y="961" text-anchor="middle"><tspan x="260">请处理这批</tspan><tspan x="260" dy="30">巡检工单</tspan></text></g>
+<g data-feature="actor" fill="none" stroke="#202020" stroke-width="2.5"><circle cx="162" cy="1064" r="10"/><path d="M151 1082 C147 1084 143 1092 143 1097 H181 C181 1092 177 1084 173 1082"/></g><text x="200" y="1095" font-size="22">提交人</text>
+<g data-feature="response-cloud"><path d="M1335 900 C1302 875 1265 878 1245 900 C1214 887 1184 905 1185 926 C1140 930 1138 962 1170 972 C1155 997 1188 1016 1220 1005 C1245 1029 1295 1032 1316 1016 C1346 1033 1392 1027 1407 1007 C1442 1015 1470 997 1460 978 C1493 970 1490 936 1450 930 C1450 902 1410 888 1382 901 C1368 890 1346 891 1335 900 Z" fill="#E9E3FD" stroke="#202020" stroke-width="2"/><text data-bubble-text="true" x="1315" y="955" text-anchor="middle"><tspan x="1315">派工顺序</tspan><tspan x="1315" dy="30">已安排完成</tspan></text></g><text data-feature="response-caption" x="1315" y="1090" text-anchor="middle" font-size="22">处理结果</text>
+<g><text data-edge-label="fc10-input-intake" x="280" y="770" text-anchor="start">1 提交</text><text data-edge-label="fc10-database-intake" x="282" y="470" text-anchor="start">2 规则数据</text><text data-edge-label="fc10-intake-doc" x="400" y="620" text-anchor="middle">3 汇集</text><text data-edge-label="fc10-docs-review" x="657" y="335" text-anchor="middle">4 交审</text><text data-edge-label="fc10-input-review" x="685" y="750" text-anchor="start">5 补充要求</text><text data-edge-label="fc10-review-docs" x="917" y="375" text-anchor="middle">6 排序</text><text data-edge-label="fc10-docs-publish" x="1192" y="375" text-anchor="middle">7 交付</text><text data-edge-label="fc10-publish-output" x="1354" y="705" text-anchor="start">8 发布结果</text><text data-note="true" x="245" y="501" text-anchor="end">序列：[3, 1, 2, …]</text></g>
+</svg>

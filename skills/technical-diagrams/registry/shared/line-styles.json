@@ -1,0 +1,28 @@
+{
+  "default": "orthogonal",
+  "version": "1.0.0",
+  "spec": "references/line-styles-v1.md",
+  "options": {
+    "orthogonal": {
+      "name": "直角折线",
+      "aliases": [
+        "直角",
+        "正交折线"
+      ]
+    },
+    "rounded-orthogonal": {
+      "name": "圆角折线",
+      "aliases": [
+        "圆角",
+        "圆角正交折线"
+      ]
+    },
+    "curved": {
+      "name": "直连曲线",
+      "aliases": [
+        "曲线",
+        "平滑曲线"
+      ]
+    }
+  }
+}

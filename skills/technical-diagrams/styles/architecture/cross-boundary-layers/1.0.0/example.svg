@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1580" viewBox="0 0 2400 1580" role="img" aria-labelledby="ar08-title ar08-desc">
+  <title id="ar08-title">跨区物资协作架构（通用示例）</title>
+  <desc id="ar08-desc">独立构造的物资协作场景：两域、四层、网络边界及带编号的请求和确认。</desc>
+  <metadata>{"sample_kind":"synthetic","profile":"architecture/cross-boundary-layers@1.0.0","number":"AR-08","semantic_version":"1.0.0","line_style":{"id":"orthogonal","version":"1.0.0","source":"default"},"interaction_standard":{"id":"single-direction","version":"1.0.0"},"model":{"layers":["资源层","网络层","调度层","终端层"],"domains":["西域","东域"],"nodes":["区域仓库","东部站点","西部网络","共享通道","西部调度","东部调度","登记终端","接收终端"],"node_owners":{"区域仓库":"西域·资源层","东部站点":"东域·资源层","西部网络":"西域·网络层","共享通道":"东域·网络层","西部调度":"西域·调度层","东部调度":"东域·调度层","登记终端":"西域·终端层","接收终端":"东域·终端层"},"edges":[{"id":"e1","source":"登记终端","target":"西部调度","label":"01 登记","kind":"request"},{"id":"e2","source":"西部调度","target":"西部网络","label":"02 转交","kind":"request"},{"id":"e3","source":"西部网络","target":"共享通道","label":"03 协作","kind":"request"},{"id":"e4","source":"共享通道","target":"东部站点","label":"04 同步","kind":"request"},{"id":"e5","source":"共享通道","target":"东部调度","label":"05 派发","kind":"request"},{"id":"e6","source":"东部调度","target":"共享通道","label":"06 确认","kind":"response"},{"id":"e7","source":"东部调度","target":"接收终端","label":"07 通知","kind":"request"}]}}</metadata>
+  <defs><marker id="ar08-tip" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M0 0 L10 5 L0 10 Z" fill="#3175D2"/></marker></defs>
+  <rect width="2400" height="1580" fill="#FFFFFF"/>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#172832" text-anchor="middle">
+    <text x="1200" y="52" font-size="38" font-weight="700">跨区物资协作架构（通用示例）</text>
+    <text x="1125" y="110" font-size="25">西域</text><text x="1295" y="110" font-size="25">东域</text>
+    <path d="M1210 82 V1510" stroke="#275B9A" stroke-width="5" fill="none"/>
+    <rect x="20" y="150" width="70" height="190" fill="#D8E3F7"/><text x="55" y="215" font-size="26"><tspan x="55" dy="0">资</tspan><tspan x="55" dy="30">源</tspan><tspan x="55" dy="30">层</tspan></text>
+    <rect x="20" y="430" width="70" height="300" fill="#D8E3F7"/><text x="55" y="550" font-size="26"><tspan x="55" dy="0">网</tspan><tspan x="55" dy="30">络</tspan><tspan x="55" dy="30">层</tspan></text>
+    <rect x="20" y="820" width="70" height="220" fill="#D8E3F7"/><text x="55" y="900" font-size="26"><tspan x="55" dy="0">调</tspan><tspan x="55" dy="30">度</tspan><tspan x="55" dy="30">层</tspan></text>
+    <rect x="20" y="1200" width="70" height="250" fill="#D8E3F7"/><text x="55" y="1290" font-size="26"><tspan x="55" dy="0">终</tspan><tspan x="55" dy="30">端</tspan><tspan x="55" dy="30">层</tspan></text>
+    <rect x="120" y="150" width="1030" height="190" fill="#DFF3D7" stroke="#95B8E5" stroke-width="2"/>
+    <rect x="1280" y="150" width="1070" height="190" fill="#DFF3D7" stroke="#95B8E5" stroke-width="2"/>
+    <rect x="390" y="130" width="320" height="52" fill="#D8E3F7"/><rect x="1690" y="130" width="320" height="52" fill="#D8E3F7"/>
+    <text x="550" y="165" font-size="26">西域资源</text><text x="1850" y="165" font-size="26">东域资源</text>
+    <ellipse cx="550" cy="265" rx="170" ry="35" fill="#DFF3D7" stroke="#275B9A" stroke-width="3"/>
+    <ellipse cx="1850" cy="265" rx="170" ry="35" fill="#DFF3D7" stroke="#275B9A" stroke-width="3"/>
+    <text x="550" y="276" font-size="30">区域仓库</text><text x="1850" y="276" font-size="30">东部站点</text>
+    <rect x="120" y="430" width="2230" height="300" fill="none" stroke="#3175D2" stroke-width="4"/>
+    <rect x="200" y="480" width="780" height="200" fill="none" stroke="#3175D2" stroke-width="2" stroke-dasharray="10 8"/>
+    <rect x="1420" y="480" width="780" height="200" fill="none" stroke="#3175D2" stroke-width="2" stroke-dasharray="10 8"/>
+    <rect x="230" y="455" width="250" height="50" fill="#D8E3F7"/><rect x="1460" y="455" width="250" height="50" fill="#D8E3F7"/>
+    <text x="355" y="489" font-size="26">西域协作区</text><text x="1585" y="489" font-size="26">东域协作区</text>
+    <ellipse cx="550" cy="575" rx="170" ry="35" fill="#DFF3D7" stroke="#275B9A" stroke-width="3"/>
+    <ellipse cx="1850" cy="575" rx="170" ry="35" fill="#DFF3D7" stroke="#275B9A" stroke-width="3"/>
+    <text x="550" y="586" font-size="30">西部网络</text><text x="1850" y="586" font-size="30">共享通道</text>
+    <rect x="180" y="820" width="740" height="220" fill="#FFE5D3" stroke="#95B8E5" stroke-width="2"/>
+    <rect x="1480" y="820" width="740" height="220" fill="#FFE5D3" stroke="#95B8E5" stroke-width="2"/>
+    <rect x="210" y="800" width="250" height="50" fill="#D8E3F7"/><rect x="1510" y="800" width="250" height="50" fill="#D8E3F7"/>
+    <text x="335" y="834" font-size="25">西域服务</text><text x="1635" y="834" font-size="25">东域服务</text>
+    <rect x="380" y="900" width="340" height="70" rx="35" fill="#DFF3D7" stroke="#275B9A" stroke-width="3"/>
+    <rect x="1680" y="900" width="340" height="70" rx="35" fill="#DFF3D7" stroke="#275B9A" stroke-width="3"/>
+    <text x="550" y="946" font-size="30">西部调度</text><text x="1850" y="946" font-size="30">东部调度</text>
+    <rect x="180" y="1200" width="740" height="250" fill="#DCDADA" stroke="#95B8E5" stroke-width="2"/>
+    <rect x="1480" y="1200" width="740" height="250" fill="#DCDADA" stroke="#95B8E5" stroke-width="2"/>
+    <rect x="210" y="1180" width="250" height="50" fill="#D8E3F7"/><rect x="1510" y="1180" width="250" height="50" fill="#D8E3F7"/>
+    <text x="335" y="1214" font-size="25">西域入口</text><text x="1635" y="1214" font-size="25">东域入口</text>
+    <rect x="380" y="1320" width="340" height="70" rx="35" fill="#DFF3D7" stroke="#275B9A" stroke-width="3"/>
+    <rect x="1680" y="1320" width="340" height="70" rx="35" fill="#DFF3D7" stroke="#275B9A" stroke-width="3"/>
+    <text x="550" y="1366" font-size="30">登记终端</text><text x="1850" y="1366" font-size="30">接收终端</text>
+    <path id="e1" data-diagram-role="connector" d="M550 1320 V970" fill="none" stroke="#3175D2" stroke-width="3" marker-end="url(#ar08-tip)"/>
+    <path id="e2" data-diagram-role="connector" d="M550 900 V610" fill="none" stroke="#3175D2" stroke-width="3" marker-end="url(#ar08-tip)"/>
+    <path id="e3" data-diagram-role="connector" d="M720 575 H1680" fill="none" stroke="#3175D2" stroke-width="3" marker-end="url(#ar08-tip)"/>
+    <path id="e4" data-diagram-role="connector" d="M1850 540 V300" fill="none" stroke="#3175D2" stroke-width="3" marker-end="url(#ar08-tip)"/>
+    <path id="e5" data-diagram-role="connector" d="M1850 610 V900" fill="none" stroke="#3175D2" stroke-width="3" marker-end="url(#ar08-tip)"/>
+    <path id="e6" data-diagram-role="connector" d="M1920 900 V607" fill="none" stroke="#3175D2" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#ar08-tip)"/>
+    <path id="e7" data-diagram-role="connector" d="M1850 970 V1320" fill="none" stroke="#3175D2" stroke-width="3" marker-end="url(#ar08-tip)"/>
+    <text x="580" y="1115" font-size="22" text-anchor="start">01 登记</text>
+    <text x="580" y="766" font-size="22" text-anchor="start">02 转交</text>
+    <text x="1030" y="555" font-size="22">03 协作</text>
+    <text x="1870" y="385" font-size="22" text-anchor="start">04 同步</text>
+    <text x="1815" y="754" font-size="22" text-anchor="end">05 派发</text>
+    <text x="1940" y="754" font-size="22" text-anchor="start">06 确认</text>
+    <text x="1880" y="1115" font-size="22" text-anchor="start">07 通知</text>
+    <path d="M700 1520 H780" stroke="#3175D2" stroke-width="3"/><text x="800" y="1528" font-size="22" text-anchor="start">请求／通知</text>
+    <path d="M1150 1520 H1230" stroke="#3175D2" stroke-width="3" stroke-dasharray="10 8"/><text x="1250" y="1528" font-size="22" text-anchor="start">独立确认</text>
+    <path d="M1570 1520 H1650" stroke="#275B9A" stroke-width="5"/><text x="1670" y="1528" font-size="22" text-anchor="start">域边界</text>
+  </g>
+</svg>

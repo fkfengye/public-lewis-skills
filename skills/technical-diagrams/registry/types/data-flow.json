@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "data-flow",
+  "name": "数据流图",
+  "aliases": [
+    "数据流图",
+    "数据流",
+    "DFD"
+  ],
+  "semantic_version": "1.0.0",
+  "number_prefix": "DF",
+  "guide": "references/type-guides/data-flow.md",
+  "default": "data-flow/pastel-handdrawn@1.0.0",
+  "style_versions": {
+    "pastel-handdrawn": "1.0.0"
+  },
+  "styles": [
+    {
+      "id": "pastel-handdrawn",
+      "version": "1.0.0",
+      "number": "DF-01",
+      "name": "手绘粉彩数据流",
+      "aliases": [
+        "粉彩手绘数据流",
+        "手绘数据流"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1050" viewBox="0 0 1680 1050" role="img" aria-labelledby="ar05-title ar05-desc">
+<title id="ar05-title">媒体处理平台架构示例</title>
+<desc id="ar05-desc">独立构造的媒体处理示例，展示蓝绿矩形分区与单向消息。</desc>
+<metadata>{"profile":"architecture/blue-green-grid@1.0.0","number":"AR-05","sample_kind":"synthetic","line_style":{"id":"orthogonal","version":"1.0.0"},"interaction_standard":{"id":"single-direction","version":"1.0.0"},"model":{"groups":["外部使用方","接入服务","处理服务","发布服务","媒体资源"],"nodes":["创作端","接入接口","访问控制","调度服务","转码组件","参数配置","运行状态","资源检查","发布接口","访问策略","分发配置","素材库","任务记录","发布资源"],"edges":[{"id":"ar05-e1","from":"创作端","to":"接入接口","kind":"request"},{"id":"ar05-e2","from":"接入接口","to":"调度服务","kind":"request"},{"id":"ar05-e3","from":"调度服务","to":"转码组件","kind":"request"},{"id":"ar05-e4","from":"转码组件","to":"资源检查","kind":"request"},{"id":"ar05-e5","from":"资源检查","to":"发布接口","kind":"request"},{"id":"ar05-e6","from":"接入接口","to":"素材库","kind":"request"},{"id":"ar05-e7","from":"调度服务","to":"任务记录","kind":"request"},{"id":"ar05-e8","from":"任务记录","to":"调度服务","kind":"response"},{"id":"ar05-e9","from":"发布接口","to":"发布资源","kind":"request"}]}}</metadata>
+<defs>
+  <marker id="ar05-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L9 5 L1 9 Z" fill="#334C5B"/></marker>
+  <marker id="ar05-return" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L9 5 L1 9 Z" fill="#2C639B"/></marker>
+</defs>
+<rect width="1680" height="1050" fill="#FFFFFF"/>
+<g font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" fill="#172832">
+  <text x="250" y="64" font-size="36" font-weight="600">媒体处理平台架构</text>
+  <path d="M1110 55 H1160" stroke="#334C5B" stroke-width="2.2"/><text x="1172" y="62" font-size="19">请求 / 处理</text>
+  <path d="M1380 55 H1430" stroke="#2C639B" stroke-width="2.2" stroke-dasharray="7 6"/><text x="1442" y="62" font-size="19">响应</text>
+  <rect x="220" y="110" width="1400" height="870" fill="#D8F3F0" stroke="#279EC1" stroke-width="1.8"/>
+  <text x="920" y="152" font-size="26" font-weight="600" text-anchor="middle">媒体平台</text>
+  <rect x="30" y="195" width="155" height="345" fill="#DCE9F8" stroke="#356A99" stroke-width="1.6" stroke-dasharray="2 4"/>
+  <text x="107.5" y="230" font-size="21" font-weight="600" text-anchor="middle">外部使用方</text>
+  <rect x="250" y="180" width="250" height="400" fill="#DCE9F8" stroke="#279EC1" stroke-width="1.6"/>
+  <text x="375" y="216" font-size="26" font-weight="600" text-anchor="middle">接入服务</text>
+  <rect x="530" y="180" width="450" height="400" fill="#DCE9F8" stroke="#279EC1" stroke-width="1.6"/>
+  <text x="755" y="216" font-size="26" font-weight="600" text-anchor="middle">处理服务</text>
+  <rect x="1010" y="180" width="570" height="400" fill="#D1EFCF" stroke="#279EC1" stroke-width="1.6"/>
+  <text x="1295" y="216" font-size="26" font-weight="600" text-anchor="middle">发布服务</text>
+  <rect x="250" y="620" width="1330" height="320" fill="#D1EFCF" stroke="#279EC1" stroke-width="1.6"/>
+  <text x="275" y="660" font-size="26" font-weight="600">媒体资源</text>
+  <g fill="none" stroke="#334C5B" stroke-width="2.2" marker-end="url(#ar05-arrow)">
+    <path id="ar05-e1" data-diagram-role="connector" d="M160 300 H275"/>
+    <path id="ar05-e2" data-diagram-role="connector" d="M475 300 H555"/>
+    <path id="ar05-e3" data-diagram-role="connector" d="M715 300 H770"/>
+    <path id="ar05-e4" data-diagram-role="connector" d="M945 300 H1040"/>
+    <path id="ar05-e5" data-diagram-role="connector" d="M1250 300 H1310"/>
+    <path id="ar05-e6" data-diagram-role="connector" d="M445 330 V730"/>
+    <path id="ar05-e7" data-diagram-role="connector" d="M610 330 V730"/>
+    <path id="ar05-e9" data-diagram-role="connector" d="M1490 330 V730"/>
+  </g>
+  <path id="ar05-e8" data-diagram-role="connector" d="M660 730 V330" fill="none" stroke="#2C639B" stroke-width="2.2" stroke-dasharray="7 6" marker-end="url(#ar05-return)"/>
+  <g fill="#F7FAFD" stroke="#356A99" stroke-width="1.5" stroke-dasharray="2 4">
+    <rect x="50" y="270" width="110" height="60"/><rect x="275" y="270" width="200" height="60"/><rect x="275" y="425" width="130" height="60"/>
+    <rect x="555" y="270" width="160" height="60"/><rect x="770" y="270" width="175" height="60"/>
+    <rect x="770" y="425" width="175" height="60"/><rect x="770" y="500" width="175" height="50"/>
+    <rect x="1040" y="270" width="210" height="60"/><rect x="1310" y="270" width="220" height="60"/>
+    <rect x="1040" y="425" width="210" height="60"/><rect x="1310" y="425" width="145" height="60"/>
+    <rect x="285" y="730" width="180" height="70"/><rect x="545" y="730" width="180" height="70"/><rect x="1330" y="730" width="180" height="70"/>
+  </g>
+  <g font-size="22" text-anchor="middle">
+    <text x="105" y="308">创作端</text><text x="375" y="308">接入接口</text><text x="340" y="463">访问控制</text>
+    <text x="635" y="308">调度服务</text><text x="857.5" y="308">转码组件</text><text x="857.5" y="463">参数配置</text><text x="857.5" y="533">运行状态</text>
+    <text x="1145" y="308">资源检查</text><text x="1420" y="308">发布接口</text><text x="1145" y="463">访问策略</text><text x="1382.5" y="463">分发配置</text>
+    <text x="375" y="773">素材库</text><text x="635" y="773">任务记录</text><text x="1420" y="773">发布资源</text>
+  </g>
+  <g font-size="19" text-anchor="middle"><text x="210" y="283">①</text><text x="515" y="283">②</text><text x="742" y="283">③</text><text x="992" y="283">④</text><text x="1280" y="283">⑤</text><text x="465" y="602">⑥</text><text x="590" y="602">⑦</text><text x="680" y="602" fill="#2C639B">⑧</text><text x="1510" y="602">⑨</text></g>
+</g>
+</svg>

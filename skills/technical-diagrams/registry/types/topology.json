@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "topology",
+  "name": "拓扑图",
+  "aliases": [
+    "拓扑图",
+    "拓扑"
+  ],
+  "semantic_version": "1.0.0",
+  "number_prefix": "TP",
+  "guide": "references/type-guides/topology.md",
+  "default": "topology/icon-chain@1.0.0",
+  "style_versions": {
+    "icon-chain": "1.0.0",
+    "layered-service-clusters": "1.0.0"
+  },
+  "styles": [
+    {
+      "id": "icon-chain",
+      "version": "1.0.0",
+      "number": "TP-01",
+      "name": "橙红图标链路",
+      "aliases": [
+        "图标链路拓扑",
+        "橙红拓扑"
+      ]
+    },
+    {
+      "id": "layered-service-clusters",
+      "version": "1.0.0",
+      "number": "TP-02",
+      "name": "分层图标集群拓扑",
+      "aliases": [
+        "分布式集群拓扑",
+        "多层图标拓扑"
+      ],
+      "gallery_layout": "wide"
+    }
+  ]
+}

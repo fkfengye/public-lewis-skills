@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>技术图风格目录 · 按编号选择</title>
+<style>
+:root{font-family:"Microsoft YaHei","Segoe UI",sans-serif;color:#17253e;background:#f4f7fb;scroll-behavior:smooth}
+*{box-sizing:border-box}body{margin:0}button{font:inherit}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #2187bb;outline-offset:3px}
+.layout{display:grid;grid-template-columns:258px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;overflow:auto;background:#fff;border-right:1px solid #e1e8f0;padding:28px 16px 36px}
+.brand{display:flex;align-items:center;gap:10px;padding:0 10px 20px;border-bottom:1px solid #edf1f5;color:#163f68;font-size:15px;font-weight:700;letter-spacing:.04em}.brand-mark{display:grid;place-items:center;width:30px;height:30px;border-radius:9px;color:white;background:#287ba4;font-weight:700}.menu summary{display:none}.navigation{padding-top:16px}.nav-group{margin:0 0 12px}.navigation a{display:flex;text-decoration:none;color:#6c7e91;border-radius:7px}.navigation a:hover{background:#f1f6fa;color:#1e658e}.navigation .nav-heading{align-items:center;justify-content:space-between;padding:9px 11px;color:#334b65;font-weight:700;font-size:14px}.nav-heading span{font-size:12px;color:#8d9bad;font-weight:400}.navigation .nav-child{padding:6px 10px 6px 22px;font-size:12px;line-height:1.45}.navigation a.active{background:#eaf3f8;color:#14688d;box-shadow:inset 3px 0 #1884a3}
+.content{min-width:0;padding:38px clamp(22px,4vw,68px) 55px;max-width:1800px;width:100%;margin:auto}header{border-bottom:1px solid #dfe7ef;padding-bottom:23px}.eyebrow{font-size:11px;font-weight:700;letter-spacing:.14em;color:#3282a1;text-transform:uppercase}h1{font-size:28px;letter-spacing:-.02em;margin:9px 0 10px}.intro{max-width:1050px}.intro p,section>p{color:#718198;font-size:13px;line-height:1.8;margin:5px 0}code{font-family:Consolas,"Microsoft YaHei",monospace;overflow-wrap:anywhere}section{margin:38px 0 56px;scroll-margin-top:24px}.section-heading{display:flex;align-items:baseline;gap:12px;margin-bottom:18px}.section-heading h2{font-size:23px;margin:0}.section-heading>span{font-size:13px;color:#8a9aab}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.cards.wide{grid-template-columns:minmax(0,1fr)}article{min-width:0;background:#fff;border:1px solid #e0e8f1;border-radius:13px;padding:21px;display:flex;flex-direction:column;scroll-margin-top:24px;box-shadow:0 2px 8px #1e466006}.card-top{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:37px}.card-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}.number{font-family:Consolas,monospace;font-size:16px;font-weight:700;letter-spacing:.05em;color:#235b8b;background:#edf5fc;border:1px solid #d8e8f8;border-radius:6px;padding:7px 10px}.default{font-size:12px;color:#8999ad}.original-button{border:1px solid #cbe0eb;border-radius:7px;background:#f4fafc;color:#236b8e;font-size:12px;padding:7px 9px;cursor:pointer}.original-button:hover{background:#e4f3f9}
+h3{font-size:18px;margin:17px 0 6px}.card-title{display:flex;align-items:center;gap:12px;min-width:0;flex-wrap:wrap}.card-title h3{margin:0;font-size:17px}.profile{display:block;font-size:12px;color:#8a9cb3}.preview{margin-top:16px;width:100%;height:410px;min-height:0;border:1px solid #eef2f7;border-radius:8px;background:transparent;display:flex;align-items:center;justify-content:center;padding:6px;cursor:zoom-in;overflow:hidden}.preview:hover{border-color:#9bc3d9}.preview svg{display:block;max-width:100%;max-height:100%;width:auto;height:auto}.line-cards .preview{height:180px}.invocation{border-top:1px solid #edf1f5;margin-top:auto;padding-top:16px;display:flex;flex-wrap:wrap;gap:8px 14px;font-size:12px;align-items:baseline}.preview+.invocation{margin-top:18px}.invocation>span{color:#91a0b0}.invocation code{color:#35678f}.invocation .profile{margin-left:auto;color:#8a9cb3;text-align:right}footer{font-size:12px;color:#91a1b0;line-height:1.8}
+dialog{position:fixed;inset:0;width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:radial-gradient(ellipse at 50% 42%,rgba(34,38,46,.88),rgba(6,8,11,.96));color:#eef2f6;overflow:hidden;backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}dialog::backdrop{background:rgba(3,5,8,.45)}.viewer-shell{position:relative;height:100%}.viewer-stage{position:absolute;inset:0;overflow:hidden;overscroll-behavior:contain;cursor:grab;touch-action:none;user-select:none}.viewer-stage.is-dragging{cursor:grabbing}.viewer-stage img{position:absolute;left:50%;top:50%;margin:0;max-width:none;height:auto;background:#fff;transform-origin:center;will-change:transform;box-shadow:0 26px 72px rgba(0,0,0,.68),0 4px 18px rgba(0,0,0,.45);pointer-events:none;user-select:none}.viewer-header{position:absolute;z-index:3;top:0;left:0;right:0;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:18px 20px;pointer-events:none}.viewer-title{max-width:min(58vw,620px);padding:9px 14px;border:1px solid rgba(255,255,255,.08);border-radius:10px;background:rgba(18,21,26,.55);color:#dfe6ee;font-size:12px;font-weight:600;letter-spacing:.01em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;box-shadow:0 8px 24px rgba(0,0,0,.38);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}.viewer-close{pointer-events:auto;display:grid;place-items:center;width:42px;height:42px;border:1px solid rgba(255,255,255,.14);border-radius:12px;background:rgba(24,27,33,.88);color:#e8edf3;cursor:pointer;box-shadow:0 10px 28px rgba(0,0,0,.5);transition:background .18s ease,transform .18s ease,border-color .18s ease}.viewer-close svg{width:20px;height:20px}.viewer-close:hover{background:rgba(52,57,66,.96);border-color:rgba(255,255,255,.28);transform:translateY(-1px)}.viewer-close:focus-visible,.viewer-tools button:focus-visible{outline:2px solid rgba(160,200,255,.8);outline-offset:3px}.viewer-toolbar{position:absolute;z-index:3;left:50%;bottom:26px;transform:translateX(-50%);pointer-events:none}.viewer-tools{display:flex;align-items:center;gap:2px;pointer-events:auto;padding:6px;border:1px solid rgba(255,255,255,.12);border-radius:999px;background:rgba(20,23,28,.9);box-shadow:0 14px 40px rgba(0,0,0,.58),inset 0 1px 0 rgba(255,255,255,.06);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}.viewer-tools button{display:grid;place-items:center;width:38px;height:38px;padding:0;border:0;border-radius:50%;background:transparent;color:#d9e0e8;cursor:pointer;transition:background .16s ease,color .16s ease,transform .16s ease}.viewer-tools button svg{width:19px;height:19px}.viewer-tools button:hover{background:rgba(255,255,255,.13);color:#fff;transform:translateY(-1px)}.viewer-tools button:active{transform:translateY(0) scale(.94)}.tool-divider{width:1px;height:20px;margin:0 5px;background:rgba(255,255,255,.14)}.zoom-level{min-width:52px;text-align:center;font-size:12px;font-variant-numeric:tabular-nums;color:#e4eaf1;letter-spacing:.02em;user-select:none}.viewer-hint{position:absolute;z-index:2;left:50%;bottom:86px;transform:translateX(-50%);padding:6px 13px;border-radius:999px;background:rgba(16,19,24,.6);color:rgba(226,233,241,.66);font-size:11px;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .45s ease}.viewer-hint.is-visible{opacity:1}
+@media(max-width:900px){.layout{display:block}.sidebar{position:relative;height:auto;overflow:visible;padding:16px 20px;border-right:0;border-bottom:1px solid #e1e8f0}.brand{border:0;padding:0}.menu summary{display:block;cursor:pointer;margin-top:14px;color:#24698a;font-size:14px;font-weight:700}.navigation{max-height:50vh;overflow:auto}.content{padding:28px 20px}.preview{height:290px}}
+@media(max-width:650px){.cards{grid-template-columns:1fr}.preview{height:280px}.viewer-header{padding:12px}.viewer-title{max-width:52vw;font-size:11px}.viewer-toolbar{bottom:16px}.viewer-tools button{width:34px;height:34px}.viewer-hint{bottom:72px}h1{font-size:24px}}
+.cards article{position:relative;box-shadow:0 3px 10px rgba(32,65,96,.07),0 12px 28px rgba(32,65,96,.05);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+@media (hover:hover){.cards article:hover{z-index:1;transform:translateY(-3px) scale(1.012);border-color:#bfd3e4;box-shadow:0 10px 25px rgba(32,65,96,.13),0 20px 42px rgba(32,65,96,.08)}}
+@media (prefers-reduced-motion:reduce){.cards article{transition:none}.cards article:hover{transform:none}}
+.viewer-stage:focus-visible{outline:2px solid rgba(255,255,255,.32);outline-offset:-3px}.viewer-stage img{backface-visibility:hidden}@media (prefers-reduced-motion:reduce){.viewer-close,.viewer-tools button,.viewer-hint{transition:none}}
+@media print{.sidebar,dialog{display:none}.layout{display:block}.content{padding:0}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}article{break-inside:avoid}.preview{height:260px}}
+</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">图</span><span>技术图 · 风格目录</span></div>
+    <details class="menu" open><summary>浏览目录</summary><nav class="navigation" aria-label="风格目录">{{NAVIGATION}}</nav></details>
+  </aside>
+  <main class="content">
+    <header><div class="eyebrow">Technical diagrams / Style library</div><h1>通用技术画图 · 风格目录</h1>
+      <div class="intro"><p>按图种浏览，使用风格编号指定样式；点击图例查看大图。</p>
+      <p>{{LEGEND}}。编号固定绑定风格版本；示例仅展示排版，业务内容以实际资料为准。</p></div></header>
+    {{CONTENT}}
+    <footer>图种、视觉风格和线条样式独立选择。线条样式优先沿用原图元数据，缺省为直角折线。</footer>
+  </main>
+</div>
+<dialog id="image-viewer" aria-labelledby="viewer-title">
+  <div class="viewer-shell">
+    <div class="viewer-stage" tabindex="0" aria-label="图片查看区域，滚轮缩放，拖拽平移"><img alt="" draggable="false"></div>
+    <div class="viewer-header"><span id="viewer-title" class="viewer-title">图片预览</span><button class="viewer-close" type="button" aria-label="关闭预览"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="viewer-hint" aria-hidden="true">滚轮缩放 · 拖拽平移 · 双击适应窗口</div>
+    <div class="viewer-toolbar"><div class="viewer-tools" aria-label="图片工具">
+      <button type="button" data-zoom="out" aria-label="缩小" title="缩小"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4L20 20M7.5 10.5h6"/></svg></button>
+      <span class="zoom-level" aria-live="polite">100%</span>
+      <button type="button" data-zoom="in" aria-label="放大" title="放大"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4L20 20M7.5 10.5h6M10.5 7.5v6"/></svg></button>
+      <span class="tool-divider" aria-hidden="true"></span>
+      <button type="button" data-zoom="fit" aria-label="适应窗口" title="适应窗口"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 0-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4"/></svg></button>
+      <button type="button" data-zoom="actual" aria-label="原始尺寸 1:1" title="原始尺寸 1:1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><text x="12" y="15.2" text-anchor="middle" font-size="8" font-family="Arial,sans-serif" fill="currentColor" stroke="none">1:1</text></svg></button>
+      <button type="button" data-zoom="rotate" aria-label="旋转 90 度" title="旋转 90 度"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><polyline points="21 3 21 9 15 9"/></svg></button>
+      <button type="button" data-zoom="download" aria-label="下载图片" title="下载图片"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7.5 10.5L12 15l4.5-4.5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></button>
+    </div></div>
+  </div>
+</dialog>
+<script>
+(() => {
+  // 显示替代项时保留注册表中的历史编号，只从目录界面移除旧卡片。
+  document.querySelectorAll('[data-preview] svg[data-gallery-replaces]').forEach(svg => {
+    const oldCode = svg.getAttribute('data-gallery-replaces');
+    const newCard = svg.closest('article');
+    const oldCard = document.getElementById('style-' + oldCode);
+    if (!newCard || !oldCard || oldCard === newCard) return;
+    const section = oldCard.closest('section');
+    oldCard.remove();
+    document.querySelectorAll('.navigation a').forEach(link => {
+      if (link.getAttribute('href') === '#style-' + oldCode) link.remove();
+    });
+    const remaining = section.querySelectorAll('.cards > article').length;
+    section.querySelector('.section-heading > span').textContent = remaining + ' 种风格';
+    const nav = document.querySelector('.navigation a[href="#' + section.id + '"] span');
+    if (nav) nav.textContent = remaining;
+    if (location.hash === '#style-' + oldCode) location.hash = '#' + newCard.id;
+  });
+  const menu = document.querySelector('.menu');
+  if (matchMedia('(max-width: 900px)').matches) menu.open = false;
+  const links = [...document.querySelectorAll('.navigation a')];
+  const headings = [...document.querySelectorAll('main section')];
+  const activate = id => links.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + id));
+  const updateActive = () => {
+    let current = headings[0];
+    for (const section of headings) if (section.getBoundingClientRect().top <= 90) current = section;
+    if (current) activate(current.id);
+  };
+  window.addEventListener('scroll', updateActive, {passive:true});
+  links.forEach(link => link.addEventListener('click', () => { if (matchMedia('(max-width: 900px)').matches) menu.open = false; }));
+  updateActive();
+
+  const dialog = document.querySelector('#image-viewer');
+  const stage = dialog.querySelector('.viewer-stage');
+  const image = stage.querySelector('img');
+  const title = dialog.querySelector('#viewer-title');
+  const level = dialog.querySelector('.zoom-level');
+  const hint = dialog.querySelector('.viewer-hint');
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const MIN_SCALE = .05, MAX_SCALE = 16, SMOOTHING = 62;
+  const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+  let opener = null, rotation = 0, frame = 0, lastTime = 0, intro = null, hintTimer = 0, naturalW = 0, naturalH = 0, lastDragMoved = false;
+  let current = {scale:1, panX:0, panY:0};
+  let target = {scale:1, panX:0, panY:0};
+  let drag = null;
+
+  // 只改 transform，不改 width：交给合成层，避免每帧重排带来的顿挫。
+  const showLevel = () => { level.textContent = `${Math.round(target.scale * 100)}%`; };
+  const render = () => {
+    image.style.transform = `translate(calc(-50% + ${current.panX}px), calc(-50% + ${current.panY}px)) scale(${current.scale}) rotate(${rotation}deg)`;
+    showLevel();
+  };
+  const stop = () => {
+    if (frame) cancelAnimationFrame(frame);
+    frame = 0; lastTime = 0;
+    if (intro) { intro.cancel(); intro = null; }
+  };
+  const tick = now => {
+    frame = 0;
+    const dt = lastTime ? Math.min(64, now - lastTime) : 16;
+    lastTime = now;
+    const k = 1 - Math.exp(-dt / SMOOTHING);
+    current.scale += (target.scale - current.scale) * k;
+    current.panX += (target.panX - current.panX) * k;
+    current.panY += (target.panY - current.panY) * k;
+    const done = Math.abs(target.scale - current.scale) < target.scale * 1e-4
+      && Math.abs(target.panX - current.panX) < .08 && Math.abs(target.panY - current.panY) < .08;
+    if (done) { current = {...target}; lastTime = 0; }
+    render();
+    if (!done) frame = requestAnimationFrame(tick);
+  };
+  // 连续滚轮只推目标值，同一条 rAF 循环持续逼近，动画不会被打断重启。
+  const settle = () => {
+    if (intro) { intro.cancel(); intro = null; }
+    showLevel();
+    if (reduceMotion.matches) { stop(); current = {...target}; render(); return; }
+    if (!frame) { lastTime = 0; frame = requestAnimationFrame(tick); }
+  };
+  const zoomAt = (factor, x = stage.clientWidth / 2, y = stage.clientHeight / 2) => {
+    const next = clamp(target.scale * factor, MIN_SCALE, MAX_SCALE);
+    const ratio = next / target.scale;
+    const dx = x - stage.clientWidth / 2, dy = y - stage.clientHeight / 2;
+    target = {scale:next, panX:dx - (dx - target.panX) * ratio, panY:dy - (dy - target.panY) * ratio};
+    settle();
+  };
+  const fitState = () => {
+    if (!naturalW || !naturalH) return {scale:1, panX:0, panY:0};
+    const w = rotation % 180 ? naturalH : naturalW;
+    const h = rotation % 180 ? naturalW : naturalH;
+    const top = 70, bottom = 112, side = 56;
+    const scale = clamp(Math.min((stage.clientWidth - side) / w, (stage.clientHeight - top - bottom) / h, 1), MIN_SCALE, MAX_SCALE);
+    return {scale, panX:0, panY:(top - bottom) / 2};
+  };
+  const fit = (immediate = false) => {
+    target = fitState();
+    if (immediate || reduceMotion.matches) { stop(); current = {...target}; render(); }
+    else settle();
+  };
+  const actual = () => { target = {scale:1, panX:0, panY:0}; settle(); };
+  const rotate = () => { rotation = (rotation + 90) % 360; render(); fit(); };
+  const download = () => {
+    if (!image.src) return;
+    const ext = image.src.startsWith('data:image/svg+xml') ? 'svg' : image.src.startsWith('data:image/png') ? 'png' : (image.src.split('.').pop() || 'png').toLowerCase().slice(0, 5);
+    const a = document.createElement('a');
+    a.href = image.src;
+    a.download = (title.textContent || 'image').replace(/[\\/:*?"<>|]/g, '_') + '.' + ext;
+    document.body.appendChild(a); a.click(); a.remove();
+  };
+  const open = (src, label, trigger, origin = null) => {
+    const from = origin ? origin.getBoundingClientRect() : null;
+    opener = trigger; title.textContent = label; image.alt = label; image.removeAttribute('src');
+    rotation = 0; stop(); clearTimeout(hintTimer); hint.classList.remove('is-visible');
+    dialog.showModal(); document.documentElement.style.overflow = 'hidden';
+    image.onload = () => {
+      naturalW = image.naturalWidth; naturalH = image.naturalHeight;
+      image.style.width = naturalW + 'px';
+      fit(true);
+      if (from && from.width && from.height && !reduceMotion.matches) {
+        const rect = image.getBoundingClientRect();
+        const dx = from.left + from.width / 2 - (rect.left + rect.width / 2);
+        const dy = from.top + from.height / 2 - (rect.top + rect.height / 2);
+        const initial = Math.min(from.width / rect.width, from.height / rect.height);
+        const pos = (px, py) => `translate(calc(-50% + ${px}px), calc(-50% + ${py}px))`;
+        const end = pos(current.panX, current.panY);
+        intro = image.animate([
+          {transform:`${pos(current.panX + dx, current.panY + dy)} scale(${current.scale * initial}) rotate(${rotation}deg)`, opacity:.45, offset:0},
+          {transform:`${end} scale(${current.scale * 1.02}) rotate(${rotation}deg)`, opacity:1, offset:.82},
+          {transform:`${end} scale(${current.scale}) rotate(${rotation}deg)`, opacity:1, offset:1}
+        ], {duration:420, easing:'cubic-bezier(.2,.75,.25,1)'});
+        intro.onfinish = () => { intro = null; };
+      }
+      hint.classList.add('is-visible');
+      hintTimer = setTimeout(() => hint.classList.remove('is-visible'), 2600);
+      dialog.querySelector('.viewer-close').focus();
+    };
+    image.src = src;
+  };
+  document.querySelectorAll('[data-preview]').forEach(button => button.addEventListener('click', () => {
+    const svg = button.querySelector('svg');
+    const source = new XMLSerializer().serializeToString(svg);
+    open('data:image/svg+xml;charset=utf-8,' + encodeURIComponent(source), button.getAttribute('aria-label'), button, svg);
+  }));
+  document.querySelectorAll('[data-original]').forEach(button => button.addEventListener('click', () => open(button.dataset.original, button.dataset.title, button)));
+  dialog.querySelector('.viewer-close').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+  const insideImage = (x, y) => { const r = image.getBoundingClientRect(); return x >= r.left && x <= r.right && y >= r.top && y <= r.bottom; };
+  const endDrag = () => { if (drag) lastDragMoved = drag.moved; drag = null; stage.classList.remove('is-dragging'); };
+  stage.addEventListener('pointerdown', event => { if (event.button !== 0) return; drag = {id:event.pointerId, x:event.clientX, y:event.clientY, panX:target.panX, panY:target.panY, moved:false}; stage.setPointerCapture(event.pointerId); stage.classList.add('is-dragging'); event.preventDefault(); });
+  stage.addEventListener('pointermove', event => {
+    if (!drag || event.pointerId !== drag.id) return;
+    const dx = event.clientX - drag.x, dy = event.clientY - drag.y;
+    if (Math.hypot(dx, dy) > 3) drag.moved = true;
+    target.panX = drag.panX + dx; target.panY = drag.panY + dy;
+    current.panX = target.panX; current.panY = target.panY;
+    render();
+  });
+  stage.addEventListener('pointerup', endDrag);
+  stage.addEventListener('pointercancel', endDrag);
+  stage.addEventListener('lostpointercapture', endDrag);
+  stage.addEventListener('click', event => {
+    const moved = lastDragMoved; lastDragMoved = false;
+    if (!moved && !insideImage(event.clientX, event.clientY)) dialog.close();
+  });
+  stage.addEventListener('dblclick', event => {
+    if (!insideImage(event.clientX, event.clientY)) return;
+    const fitted = fitState().scale;
+    target = Math.abs(target.scale - fitted) < .02 ? {scale:1, panX:0, panY:0} : fitState();
+    settle();
+  });
+  // 滚轮直接缩放（触控板捏合产生的 ctrlKey 滚轮同样处理），无需按 Ctrl；Shift + 滚轮水平平移。
+  stage.addEventListener('wheel', event => {
+    event.preventDefault();
+    const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? stage.clientHeight : 1;
+    const dy = event.deltaY * unit, dx = event.deltaX * unit;
+    if (event.shiftKey) {
+      target.panX -= dx || dy;
+      current.panX = target.panX; render(); return;
+    }
+    const rect = stage.getBoundingClientRect();
+    zoomAt(clamp(Math.exp(-dy * .0016), .5, 2), event.clientX - rect.left, event.clientY - rect.top);
+  }, {passive:false});
+  dialog.addEventListener('keydown', event => {
+    if (event.key === '+' || event.key === '=') { zoomAt(1.25); event.preventDefault(); }
+    else if (event.key === '-' || event.key === '_') { zoomAt(.8); event.preventDefault(); }
+    else if (event.key === '0') { actual(); event.preventDefault(); }
+  });
+  dialog.addEventListener('close', () => { stop(); endDrag(); clearTimeout(hintTimer); hint.classList.remove('is-visible'); document.documentElement.style.overflow = ''; image.removeAttribute('src'); if (opener) opener.focus(); });
+  dialog.querySelectorAll('[data-zoom]').forEach(button => button.addEventListener('click', () => {
+    const action = button.dataset.zoom;
+    if (action === 'in') zoomAt(1.25);
+    else if (action === 'out') zoomAt(.8);
+    else if (action === 'fit') fit();
+    else if (action === 'actual') actual();
+    else if (action === 'rotate') rotate();
+    else if (action === 'download') download();
+  }));
+  window.addEventListener('resize', () => { if (dialog.open && naturalW) fit(true); });
+})();
+</script>
+</body>
+</html>

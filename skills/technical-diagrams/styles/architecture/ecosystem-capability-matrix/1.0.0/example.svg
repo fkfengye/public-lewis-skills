@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1450" viewBox="0 0 2000 1450" role="img" aria-labelledby="title desc">
+  <title id="title">社区知识服务 · 蓝粉能力矩阵示例</title>
+  <desc id="desc">独立构造的馆藏协作场景，展示生态参与方、平台能力矩阵与支撑服务。</desc>
+  <metadata>{"sample_kind":"synthetic","profile":"architecture/ecosystem-capability-matrix@1.0.0","number":"AR-07","semantic_version":"1.0.0","line_style":{"id":"orthogonal","version":"1.0.0","source":"default"},"interaction_standard":{"id":"single-direction","version":"1.0.0"},"model":{"nodes":["馆员终端","协作成员","社区终端","读者入口","资源编目","主题策划","内容检索","活动发布","内容维护","馆藏目录","开放服务"],"node_owners":{"馆员终端":"管理入口","协作成员":"管理入口","社区终端":"公众入口","读者入口":"公众入口","资源编目":"知识服务平台","主题策划":"知识服务平台","内容检索":"知识服务平台","活动发布":"知识服务平台","内容维护":"知识服务平台","馆藏目录":"底层支撑","开放服务":"底层支撑"},"edges":[{"id":"e1","source":"馆员终端","target":"资源编目","label":"01 提交"},{"id":"e2","source":"读者入口","target":"内容检索","label":"02 查询"},{"id":"e3","source":"内容检索","target":"内容维护","label":"03 反馈"},{"id":"e4","source":"资源编目","target":"馆藏目录","label":"04 写入"},{"id":"e5","source":"内容维护","target":"开放服务","label":"05 发布"}]}}</metadata>
+  <defs>
+    <linearGradient id="blue-arrow" gradientUnits="userSpaceOnUse" x1="0" x2="0" y1="264" y2="550"><stop stop-color="#8CBDE7"/><stop offset="1" stop-color="#458CD5"/></linearGradient>
+    <linearGradient id="pink-arrow" gradientUnits="userSpaceOnUse" x1="0" x2="0" y1="900" y2="1200"><stop stop-color="#E889AE"/><stop offset="1" stop-color="#CF0050"/></linearGradient>
+    <marker id="blue-tip" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M1 1 L9 5 L1 9 Z" fill="#458CD5"/></marker>
+    <marker id="pink-tip" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M1 1 L9 5 L1 9 Z" fill="#CF0050"/></marker>
+  </defs>
+  <rect width="2000" height="1450" fill="#FFFFFF"/>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#273143" text-anchor="middle">
+    <text x="1000" y="58" font-size="36" font-weight="700">社区知识服务架构（示例）</text>
+    <rect x="90" y="100" width="860" height="240" rx="28" fill="#E7EBF7"/>
+    <rect x="1050" y="100" width="860" height="240" rx="28" fill="#E7EBF7"/>
+    <text x="520" y="155" font-size="28" font-weight="700" fill="#0966BB">管理入口</text>
+    <text x="1480" y="155" font-size="28" font-weight="700" fill="#0966BB">公众入口</text>
+    <rect x="180" y="200" width="260" height="64" rx="16" fill="#FFFFFF"/>
+    <rect x="580" y="200" width="260" height="64" rx="16" fill="#FFFFFF"/>
+    <rect x="1170" y="200" width="260" height="64" rx="16" fill="#FFFFFF"/>
+    <rect x="1470" y="200" width="260" height="64" rx="16" fill="#FFFFFF"/>
+    <text x="310" y="242" font-size="25">馆员终端</text><text x="710" y="242" font-size="25">协作成员</text>
+    <text x="1300" y="242" font-size="25">社区终端</text><text x="1600" y="242" font-size="25">读者入口</text>
+    <rect x="70" y="435" width="1860" height="550" rx="30" fill="#FEF2F6"/>
+    <text x="1000" y="492" font-size="32" font-weight="700" fill="#CF0050">知识服务平台</text>
+    <rect x="120" y="550" width="380" height="350" rx="24" fill="#CF0050"/>
+    <rect x="600" y="550" width="620" height="150" rx="20" fill="#FFFFFF" stroke="#CF0050" stroke-width="3"/>
+    <rect x="1300" y="550" width="600" height="150" rx="20" fill="#FFFFFF" stroke="#CF0050" stroke-width="3"/>
+    <rect x="600" y="760" width="620" height="140" rx="20" fill="#FFFFFF" stroke="#CF0050" stroke-width="3"/>
+    <rect x="1300" y="760" width="600" height="140" rx="20" fill="#FFFFFF" stroke="#CF0050" stroke-width="3"/>
+    <text x="310" y="620" font-size="29" font-weight="700" fill="#FFFFFF">资源编目</text>
+    <rect x="160" y="655" width="300" height="190" rx="16" fill="#FFFFFF"/>
+    <text x="310" y="704" font-size="23" fill="#CF0050">馆藏整理</text><text x="310" y="752" font-size="23">分类与标签</text><text x="310" y="800" font-size="23">资料校验</text>
+    <text x="910" y="603" font-size="27" font-weight="700" fill="#CF0050">主题策划</text><rect x="625" y="625" width="570" height="48" rx="10" fill="#FEF2F6"/><text x="910" y="658" font-size="22">主题选择　│　内容编排</text>
+    <text x="1600" y="603" font-size="27" font-weight="700" fill="#CF0050">内容检索</text><rect x="1325" y="625" width="550" height="48" rx="10" fill="#FEF2F6"/><text x="1600" y="658" font-size="22">关键词查询　│　结果筛选</text>
+    <text x="910" y="810" font-size="27" font-weight="700" fill="#CF0050">活动发布</text><text x="910" y="861" font-size="22">日程整理　│　社区通知</text>
+    <text x="1600" y="810" font-size="27" font-weight="700" fill="#CF0050">内容维护</text><text x="1600" y="861" font-size="22">修订整理　│　公开发布</text>
+    <rect x="90" y="1160" width="820" height="210" rx="28" fill="#FFE9EB" stroke="#CF0050" stroke-width="2"/>
+    <rect x="1090" y="1160" width="820" height="210" rx="28" fill="#FFE9EB" stroke="#CF0050" stroke-width="2"/>
+    <rect x="150" y="1200" width="320" height="100" rx="16" fill="#FFFFFF"/><text x="310" y="1262" font-size="27" font-weight="700" fill="#CF0050">馆藏目录</text>
+    <rect x="1440" y="1200" width="320" height="100" rx="16" fill="#FFFFFF"/><text x="1600" y="1262" font-size="27" font-weight="700" fill="#CF0050">开放服务</text>
+    <text x="720" y="1262" font-size="21" fill="#64748B">索引与分类</text><text x="1260" y="1262" font-size="21" fill="#64748B">社区展示</text>
+    <path id="e1" data-diagram-role="connector" d="M310 264 V550" fill="none" stroke="url(#blue-arrow)" stroke-width="4" marker-end="url(#blue-tip)"/>
+    <path id="e2" data-diagram-role="connector" d="M1600 264 V550" fill="none" stroke="url(#blue-arrow)" stroke-width="4" marker-end="url(#blue-tip)"/>
+    <path id="e3" data-diagram-role="connector" d="M1600 700 V760" fill="none" stroke="#CF0050" stroke-width="3" marker-end="url(#pink-tip)"/>
+    <path id="e4" data-diagram-role="connector" d="M310 900 V1200" fill="none" stroke="url(#pink-arrow)" stroke-width="4" marker-end="url(#pink-tip)"/>
+    <path id="e5" data-diagram-role="connector" d="M1600 900 V1200" fill="none" stroke="url(#pink-arrow)" stroke-width="4" marker-end="url(#pink-tip)"/>
+    <text x="345" y="405" font-size="19" text-anchor="start" fill="#0966BB">01 提交</text><text x="1635" y="405" font-size="19" text-anchor="start" fill="#0966BB">02 查询</text>
+    <text x="1630" y="737" font-size="19" text-anchor="start" fill="#CF0050">03 反馈</text>
+    <text x="345" y="1080" font-size="19" text-anchor="start" fill="#CF0050">04 写入</text><text x="1635" y="1080" font-size="19" text-anchor="start" fill="#CF0050">05 发布</text>
+    <text x="1000" y="1420" font-size="19" fill="#64748B">示例仅展示分组、能力矩阵与方向性连接；具体内容以实际业务模型为准。</text>
+  </g>
+</svg>

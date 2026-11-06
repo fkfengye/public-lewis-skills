@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "er",
+  "name": "ER 图",
+  "aliases": [
+    "ER图",
+    "实体关系图",
+    "实体关系",
+    "表关系图"
+  ],
+  "semantic_version": "1.0.0",
+  "number_prefix": "ER",
+  "guide": "references/type-guides/er.md",
+  "default": "er/soft-tables@1.0.0",
+  "style_versions": {
+    "soft-tables": "1.0.0",
+    "classic-mono": "1.0.0",
+    "domain-ddl": "1.0.0"
+  },
+  "gallery_layout": "wide",
+  "styles": [
+    {
+      "id": "soft-tables",
+      "version": "1.0.0",
+      "number": "ER-01",
+      "name": "浅色表结构",
+      "aliases": [
+        "浅色ER",
+        "浅色表关系",
+        "参考图表结构"
+      ]
+    },
+    {
+      "id": "classic-mono",
+      "version": "1.0.0",
+      "number": "ER-02",
+      "name": "经典黑白 ER",
+      "aliases": [
+        "黑白ER",
+        "黑白表关系",
+        "经典黑白"
+      ]
+    },
+    {
+      "id": "domain-ddl",
+      "version": "1.0.0",
+      "number": "ER-03",
+      "name": "多域 DDL 表结构",
+      "aliases": [
+        "多域ER",
+        "DDL表结构",
+        "复杂ER"
+      ]
+    }
+  ]
+}

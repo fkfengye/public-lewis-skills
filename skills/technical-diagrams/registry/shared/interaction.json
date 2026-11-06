@@ -1,0 +1,6 @@
+{
+  "id": "single-direction",
+  "version": "1.0.0",
+  "spec": "references/interaction-standards/1.0.0.md",
+  "example": "references/interaction-standards/1.0.0.svg"
+}
