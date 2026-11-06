@@ -24,7 +24,7 @@ class HanddrawnFlowchartTests(unittest.TestCase):
         for line in ('orthogonal', 'rounded-orthogonal', 'curved'):
             self.assertEqual(self.catalog.resolve(ROOT, None, number='FC-07', line_style=line)['line_style'], line)
 
-    def test_only_new_card_in_flowchart_with_original(self):
+    def test_only_new_card_in_flowchart_without_original(self):
         page = (ROOT / 'assets/style-gallery.html').read_text(encoding='utf8')
         flow = page.split('<section id="type-flowchart"', 1)[1].split('</section>', 1)[0]
         arch = page.split('<section id="type-architecture"', 1)[1].split('</section>', 1)[0]
@@ -32,10 +32,7 @@ class HanddrawnFlowchartTests(unittest.TestCase):
         card = flow.split('data-style-number="FC-07"', 1)[1].split('</article>', 1)[0]
         self.assertIn('data-style-number="AR-14"', arch)  # 静态 HTML 保留历史内容，载入后按替代标记移除
         self.assertIn('data-gallery-replaces="AR-14"', card)
-        self.assertIn('查看原始样例图', card)
-        refs = json.loads((ROOT / 'assets/reference-examples/index.json').read_text(encoding='utf8'))
-        self.assertEqual(refs[NEW], refs[OLD])
-        self.assertEqual(base64.b64decode(card.split('data:image/png;base64,', 1)[1].split('"', 1)[0]), (ROOT / refs[OLD]).read_bytes())
+        self.assertNotIn('查看原始样例图', card, '公开版本不随附参考原图')
 
 
 if __name__ == '__main__':

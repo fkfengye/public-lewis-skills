@@ -63,7 +63,7 @@ class FoldedNotesTests(unittest.TestCase):
         self.assertIn('图书借阅协作', card)
         self.assertNotIn('查看原始样例图', card)
         refs = json.loads((ROOT / 'assets/reference-examples/index.json').read_text(encoding='utf-8'))
-        self.assertNotIn(KEY, refs)
+        self.assertEqual(refs, {}, '公开版本不随附参考原图')
 
 
 if __name__ == '__main__':

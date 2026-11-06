@@ -62,11 +62,9 @@ class FramedLayeredMatrixTests(unittest.TestCase):
 
     def test_original_available_separately_from_synthetic_preview(self):
         index = json.loads((ROOT / 'assets/reference-examples/index.json').read_text(encoding='utf-8'))
-        original = (ROOT / index[KEY]).read_bytes()
         page = (ROOT / 'assets/style-gallery.html').read_text(encoding='utf-8')
         card = page.split('data-style-number="AR-13"', 1)[1].split('</article>', 1)[0]
-        self.assertIn('查看原始样例图', card)
-        self.assertEqual(base64.b64decode(card.split('data:image/png;base64,', 1)[1].split('"', 1)[0]), original)
+        self.assertNotIn('查看原始样例图', card, '公开版本不随附参考原图')
         self.assertIn('ar13-title', card)
 
 

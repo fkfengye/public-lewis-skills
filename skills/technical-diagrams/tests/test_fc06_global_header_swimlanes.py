@@ -59,10 +59,7 @@ class GlobalHeaderSwimlaneTests(unittest.TestCase):
         card = page.split('data-style-number="FC-06"', 1)[1].split('</article>', 1)[0]
         self.assertIn('资料受理与协作', card)
         self.assertIn('全局深蓝标题泳道', card)
-        self.assertIn('查看原始样例图', card)
-        refs = json.loads((ROOT / 'assets/reference-examples/index.json').read_text(encoding='utf8'))
-        original = base64.b64decode(card.split('data:image/png;base64,', 1)[1].split('"', 1)[0])
-        self.assertEqual(original, (ROOT / refs[KEY]).read_bytes())
+        self.assertNotIn('查看原始样例图', card, '公开版本不随附参考原图')
 
 
 if __name__ == '__main__':

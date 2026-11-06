@@ -60,9 +60,7 @@ class AR04FeatureGalleryTests(unittest.TestCase):
         page = (ROOT / 'assets/style-gallery.html').read_text(encoding='utf-8')
         card = page.split('data-style-number="AR-04"', 1)[1].split('</article>', 1)[0]
         self.assertIn('ar04-atlas', card)
-        self.assertIn('查看原始样例图', card)
-        original = base64.b64decode(card.split('data:image/png;base64,', 1)[1].split('"', 1)[0])
-        self.assertEqual(original, (ROOT / 'assets/reference-examples/ar-04-original.png').read_bytes())
+        self.assertNotIn('查看原始样例图', card, '公开版本不随附参考原图')
 
 
 if __name__ == '__main__':

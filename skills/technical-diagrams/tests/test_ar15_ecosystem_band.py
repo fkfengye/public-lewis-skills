@@ -59,14 +59,11 @@ class AR15EcosystemBandTests(unittest.TestCase):
         self.assertTrue(any(e.get('data-highlight') == 'true' for e in self.svg.iter()))
         self.assertFalse(any(e.tag.rsplit('}', 1)[-1] in ('image', 'script', 'foreignObject') for e in self.svg.iter()))
 
-    def test_gallery_uses_independent_example_and_authorized_original(self):
+    def test_gallery_uses_independent_example_without_original(self):
         page = (ROOT / 'assets/style-gallery.html').read_text(encoding='utf-8')
         card = page.split('data-style-number="AR-15"', 1)[1].split('</article>', 1)[0]
         self.assertIn('区域资源协作网络', card)
-        self.assertIn('查看原始样例图', card)
-        refs = json.loads((ROOT / 'assets/reference-examples/index.json').read_text(encoding='utf-8'))
-        self.assertEqual(base64.b64decode(card.split('data:image/png;base64,', 1)[1].split('"', 1)[0]),
-                         (ROOT / refs[KEY]).read_bytes())
+        self.assertNotIn('查看原始样例图', card, '公开版本不随附参考原图')
 
 
 if __name__ == '__main__':

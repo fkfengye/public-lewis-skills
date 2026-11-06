@@ -80,12 +80,9 @@ class HanddrawnPastelSequenceTests(unittest.TestCase):
 
     def test_original_and_synthetic_preview_are_distinct(self):
         refs = json.loads((ROOT / 'assets/reference-examples/index.json').read_text(encoding='utf-8'))
-        self.assertEqual(refs[KEY], 'assets/reference-examples/sq-05-original.png')
         page = (ROOT / 'assets/style-gallery.html').read_text(encoding='utf-8')
         card = page.split('data-style-number="SQ-05"',1)[1].split('</article>',1)[0]
-        self.assertIn('查看原始样例图', card)
-        embedded = card.split('data:image/png;base64,',1)[1].split('"',1)[0]
-        self.assertEqual(base64.b64decode(embedded), (ROOT / refs[KEY]).read_bytes())
+        self.assertNotIn('查看原始样例图', card, '公开版本不随附参考原图')
         text = SVG.read_text(encoding='utf-8')
         self.assertNotIn('Online Store', text)
         self.assertNotIn('Payment Gateway', text)

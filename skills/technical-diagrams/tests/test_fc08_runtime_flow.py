@@ -46,15 +46,10 @@ class RuntimeFlowTests(unittest.TestCase):
             self.assertIsNotNone(edge.get('marker-end'))
         self.assertFalse(any(e.tag.rsplit('}', 1)[-1] in ('image', 'script', 'foreignObject') for e in svg.iter()))
 
-    def test_gallery_shows_authorized_original(self):
+    def test_gallery_omits_authorized_original(self):
         page = (ROOT / 'assets/style-gallery.html').read_text(encoding='utf-8')
         card = page.split('data-style-number="FC-08"', 1)[1].split('</article>', 1)[0]
-        refs = json.loads((ROOT / 'assets/reference-examples/index.json').read_text(encoding='utf-8'))
-        self.assertEqual(refs[KEY], 'assets/reference-examples/fc-08-original.png')
-        self.assertIn('查看原始样例图', card)
-        original = (ROOT / refs[KEY]).read_bytes()
-        embedded = card.split('data:image/png;base64,', 1)[1].split('"', 1)[0]
-        self.assertEqual(base64.b64decode(embedded), original)
+        self.assertNotIn('查看原始样例图', card, '公开版本不随附参考原图')
 
     def test_reference_details_have_actual_geometry(self):
         svg = ET.parse(ROOT / 'styles/flowchart/handdrawn-runtime-flow/1.0.0/example.svg').getroot()

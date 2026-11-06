@@ -54,16 +54,12 @@ class ComponentFlowTests(unittest.TestCase):
             self.assertEqual(edges[edge['id']].get('d'), expected)
         self.assertFalse(any(e.tag.rsplit('}', 1)[-1] in ('image', 'script', 'foreignObject') for e in svg.iter()))
 
-    def test_gallery_embeds_the_authorized_png(self):
+    def test_gallery_omits_original_in_public_release(self):
         references = json.loads((ROOT / 'assets/reference-examples/index.json').read_text(encoding='utf-8'))
-        self.assertEqual(references[KEY], 'assets/reference-examples/fc-09-original.png')
-        original = (ROOT / references[KEY]).read_bytes()
-        self.assertTrue(original.startswith(b'\x89PNG\r\n\x1a\n'))
+        self.assertEqual(references, {}, '公开版本不随附参考原图')
         page = (ROOT / 'assets/style-gallery.html').read_text(encoding='utf-8')
         card = page.split('data-style-number="FC-09"', 1)[1].split('</article>', 1)[0]
-        self.assertIn('查看原始样例图', card)
-        encoded = card.split('data:image/png;base64,', 1)[1].split('"', 1)[0]
-        self.assertEqual(base64.b64decode(encoded), original)
+        self.assertNotIn('查看原始样例图', card, '公开版本不随附参考原图')
 
     def test_example_styles_do_not_change_other_gallery_cards(self):
         path = ROOT / 'styles/flowchart/thin-line-component-flow/1.0.0/example.svg'

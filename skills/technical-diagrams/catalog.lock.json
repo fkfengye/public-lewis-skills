@@ -922,7 +922,7 @@
     "example": "references/interaction-standards/1.0.0.svg"
   },
   "files": {
-    "SKILL.md": "b1f057694d3d12e460da0056a18359237fff1910daedfb04f247bbe9e8ee5bcb",
+    "SKILL.md": "cf66fe7cf3a28240ceca7fe3f9e18249ca8827e27fd81a5a578f434827e8c3ba",
     "agents/openai.yaml": "fc24ee90982ccaf42b0b2e99ed1a3e2b4d4f9c4eb9851c1c9c7cc8f607118809",
     "references/common/1.0.0.md": "5c4dc08bca97270b400fb29418381bd2978ae1fab14a51c321824cce543a55ba",
     "references/extensions-v1.md": "5fef312b67549fbfd42e460406b8453629972067df3a7d2b85ac5a29ebfd3bb8",

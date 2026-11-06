@@ -8,6 +8,10 @@ import unittest
 
 
 ROOT = Path(__file__).resolve().parents[1]
+# 1x1 PNG，仅用于在临时副本中验证「授权原图」渲染能力；公开仓库不随附任何原图。
+TINY_PNG = base64.b64decode(
+    'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg=='
+)
 
 
 class GalleryRedesignTests(unittest.TestCase):
@@ -28,7 +32,17 @@ class GalleryRedesignTests(unittest.TestCase):
         shutil.copytree(ROOT, self.root, ignore=shutil.ignore_patterns('__pycache__', 'node_modules'))
         self.output = self.root / 'assets' / 'test-gallery.html'
 
-    def test_sidebar_previews_and_authorized_original_are_generated(self):
+    def _register_original(self, key, name='test-original.png'):
+        """在临时副本中登记一张本地原图，用于验证渲染路径。"""
+        target = self.root / 'assets' / 'reference-examples' / name
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(TINY_PNG)
+        index = self.root / 'assets' / 'reference-examples' / 'index.json'
+        index.write_text(json.dumps({key: 'assets/reference-examples/' + name}), encoding='utf-8')
+        return target
+
+    def test_sidebar_previews_and_registered_original_are_generated(self):
+        original = self._register_original('architecture/blue-green-detailed@1.0.0', 'ar-06-original.png')
         self.catalog.gallery(self.root, self.output)
         page = self.output.read_text(encoding='utf-8')
         self.assertIn('aria-label="风格目录"', page)
@@ -43,10 +57,15 @@ class GalleryRedesignTests(unittest.TestCase):
         self.assertIn('查看原始样例图', original_card)
         self.assertIn('data:image/png;base64,', original_card)
         encoded = original_card.split('data:image/png;base64,', 1)[1].split('"', 1)[0]
-        self.assertEqual(base64.b64decode(encoded), (self.root / 'assets/reference-examples/ar-06-original.png').read_bytes())
+        self.assertEqual(base64.b64decode(encoded), original.read_bytes())
         self.assertNotIn('查看原始样例图', other_card)
         self.catalog.gallery(self.root, self.output)
         self.assertEqual(self.output.read_text(encoding='utf-8'), page)
+
+    def test_shipped_index_is_empty(self):
+        index = json.loads((ROOT / 'assets/reference-examples/index.json').read_text(encoding='utf-8'))
+        self.assertEqual(index, {}, '公开版本不随附参考原图')
+        self.assertEqual([p for p in (ROOT / 'assets/reference-examples').iterdir() if p.name != 'index.json'], [])
 
     def test_invalid_original_reference_fails_generation(self):
         index = self.root / 'assets/reference-examples/index.json'
@@ -80,7 +99,6 @@ class GalleryRedesignTests(unittest.TestCase):
         self.assertTrue(preview in card, 'AR-08 卡片应展示完整特征图')
         self.assertFalse(Path(fixed['example_path']).read_text(encoding='utf-8') in card)
         self.assertTrue(fixed['example_path'].replace('\\', '/').endswith('/cross-boundary-layers/1.0.0/example.svg'))
-        self.assertIn('查看原始样例图', card)
         other = page.split('data-style-number="AR-07"', 1)[1].split('</article>', 1)[0]
         other_example = self.catalog.resolve(self.root, None, number='AR-07')['example_path']
         self.assertTrue(Path(other_example).read_text(encoding='utf-8') in other)

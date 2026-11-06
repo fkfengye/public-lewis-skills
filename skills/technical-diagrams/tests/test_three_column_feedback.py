@@ -63,12 +63,9 @@ class ThreeColumnFeedbackTests(unittest.TestCase):
         data = self.catalog.read_catalog(ROOT)
         self.assertIn(KEY, data['style_numbers'].values())
         index = json.loads((ROOT / 'assets/reference-examples/index.json').read_text(encoding='utf-8'))
-        original = (ROOT / index[KEY]).read_bytes()
         page = (ROOT / 'assets/style-gallery.html').read_text(encoding='utf-8')
         card = page.split('data-style-number="AR-09"', 1)[1].split('</article>', 1)[0]
-        self.assertIn('查看原始样例图', card)
-        encoded = card.split('data:image/png;base64,', 1)[1].split('"', 1)[0]
-        self.assertEqual(base64.b64decode(encoded), original)
+        self.assertNotIn('查看原始样例图', card, '公开版本不随附参考原图')
 
 
 if __name__ == '__main__':

@@ -6,8 +6,8 @@
 
 | 编号 | 风格 | 适合 | 资源 |
 | --- | --- | --- | --- |
-| TL-01 | 彩色里程碑卡片 | 单层事件、里程碑 | [分析](../../styles/timeline/color-milestone-cards/1.0.0/reference-analysis.md) · [原图](../../assets/reference-examples/tl-01-original.png) |
-| TL-02 | 多层时期事件时间轴 | 多视角标签、时期括号、轴下区间 | [分析](../../styles/timeline/multilane-era-axis/1.0.0/reference-analysis.md) · [原图](../../assets/reference-examples/tl-02-original.png) |
+| TL-01 | 彩色里程碑卡片 | 单层事件、里程碑 | [分析](../../styles/timeline/color-milestone-cards/1.0.0/reference-analysis.md) |
+| TL-02 | 多层时期事件时间轴 | 多视角标签、时期括号、轴下区间 | [分析](../../styles/timeline/multilane-era-axis/1.0.0/reference-analysis.md) |
 
 ## 使用要点
 

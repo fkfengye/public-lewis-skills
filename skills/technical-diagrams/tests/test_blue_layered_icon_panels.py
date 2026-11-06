@@ -57,14 +57,11 @@ class BlueLayeredIconPanelsTests(unittest.TestCase):
         self.assertTrue(all(edge['source'] == '资源采集' and edge['target'] == '资源整理' for edge in meta['model']['edges']))
         self.assertFalse(any(el.tag.rsplit('}', 1)[-1] in ('image', 'script', 'foreignObject') for el in svg.iter()))
 
-    def test_authorized_original_and_preview(self):
+    def test_preview_without_original(self):
         self.assertIn(KEY, self.catalog.read_catalog(ROOT)['style_numbers'].values())
-        index = json.loads((ROOT / 'assets/reference-examples/index.json').read_text(encoding='utf-8'))
-        original = (ROOT / index[KEY]).read_bytes()
         page = (ROOT / 'assets/style-gallery.html').read_text(encoding='utf-8')
         card = page.split('data-style-number="AR-12"', 1)[1].split('</article>', 1)[0]
-        self.assertIn('查看原始样例图', card)
-        self.assertEqual(base64.b64decode(card.split('data:image/png;base64,', 1)[1].split('"', 1)[0]), original)
+        self.assertNotIn('查看原始样例图', card, '公开版本不随附参考原图')
         self.assertIn('ar12-title', card)
 
 

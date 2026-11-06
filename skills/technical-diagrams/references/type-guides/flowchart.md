@@ -13,9 +13,9 @@
 | FC-05 | 黑白横向协作流程 | 横向参与方协作、黑白文档 | [分析](../../styles/flowchart/monochrome-horizontal-collaboration/1.0.0/reference-analysis.md) · [示例](../../styles/flowchart/monochrome-horizontal-collaboration/1.0.0/example.svg) |
 | FC-06 | 全局深蓝标题泳道 | 跨部门流程、反馈回路 | [分析](../../styles/flowchart/global-header-swimlanes/1.0.0/reference-analysis.md) · [示例](../../styles/flowchart/global-header-swimlanes/1.0.0/example.svg) |
 | FC-07 | 手绘设计讨论流程 | 设计讨论、便签与批注 | [SPEC](../../styles/flowchart/handdrawn-design-board/1.0.0/SPEC.md) · [分析](../../styles/architecture/handdrawn-design-board/1.0.0/reference-analysis.md) |
-| FC-08 | 手绘运行边界流程 | 运行边界、资源池、处理与反馈 | [原图](../../assets/reference-examples/fc-08-original.png) · [SPEC](../../styles/flowchart/handdrawn-runtime-flow/1.0.0/SPEC.md) · [分析](../../styles/flowchart/handdrawn-runtime-flow/1.0.0/reference-analysis.md) · [示例](../../styles/flowchart/handdrawn-runtime-flow/1.0.0/example.svg) |
-| FC-09 | 细线组件交互流程 | 核心组件、外围多路交互和分格面板 | [原图](../../assets/reference-examples/fc-09-original.png) · [SPEC](../../styles/flowchart/thin-line-component-flow/1.0.0/SPEC.md) · [分析](../../styles/flowchart/thin-line-component-flow/1.0.0/reference-analysis.md) · [示例](../../styles/flowchart/thin-line-component-flow/1.0.0/example.svg) |
-| FC-10 | 柔色文档处理流程 | 实线系统边界、折角文件、圆柱与对话云 | [原图](../../assets/reference-examples/fc-10-original.jpg) · [SPEC](../../styles/flowchart/pastel-document-pipeline/1.0.0/SPEC.md) · [分析](../../styles/flowchart/pastel-document-pipeline/1.0.0/reference-analysis.md) · [基础示例](../../styles/flowchart/pastel-document-pipeline/1.0.0/example.svg) · [字体展示](../../styles/flowchart/pastel-document-pipeline/1.0.0/typography-example.svg) |
+| FC-08 | 手绘运行边界流程 | 运行边界、资源池、处理与反馈 | [SPEC](../../styles/flowchart/handdrawn-runtime-flow/1.0.0/SPEC.md) · [分析](../../styles/flowchart/handdrawn-runtime-flow/1.0.0/reference-analysis.md) · [示例](../../styles/flowchart/handdrawn-runtime-flow/1.0.0/example.svg) |
+| FC-09 | 细线组件交互流程 | 核心组件、外围多路交互和分格面板 | [SPEC](../../styles/flowchart/thin-line-component-flow/1.0.0/SPEC.md) · [分析](../../styles/flowchart/thin-line-component-flow/1.0.0/reference-analysis.md) · [示例](../../styles/flowchart/thin-line-component-flow/1.0.0/example.svg) |
+| FC-10 | 柔色文档处理流程 | 实线系统边界、折角文件、圆柱与对话云 | [SPEC](../../styles/flowchart/pastel-document-pipeline/1.0.0/SPEC.md) · [分析](../../styles/flowchart/pastel-document-pipeline/1.0.0/reference-analysis.md) · [基础示例](../../styles/flowchart/pastel-document-pipeline/1.0.0/example.svg) · [字体展示](../../styles/flowchart/pastel-document-pipeline/1.0.0/typography-example.svg) |
 
 ## 泳道选型
 
@@ -33,6 +33,6 @@
 - FC-05：实体节点保留来源中的参与方名称，不凭空扩写为动作；独立实虚线、上下分支与外侧绕行见分析。线型语义由来源确定。
 - FC-06：全图标题带、白色泳道表头和蓝灰节点；按资料确定归属和分支。
 - FC-07：手写字、线内标签留空、便签指向、贴附图标与平行线路均按实际来源确定；注释箭头与业务边分别建模。字体缺失时使用可读后备，不假定英文手写字体涵盖中文。历史 AR-14 仍可解析为旧架构风格。
-- FC-08：以虚线运行边界、柔和椭圆池、堆叠资源、外置工作单元和编号流程组合表现；步骤主标签嵌于连线真实间隙，云图采用深浅蓝错层，优先使用 Virgil 和 Xiaolai 手写字体，离线交付嵌入所需字形及许可。叠片数量与颜色不推断实例关系或业务含义。原图经用户授权随技能和预览分发。
-- FC-09：白底、米色虚线主体、灰色底带、浅蓝列表、叠片、分格和细线多路交互；组件可直接作为节点。原图粗竖条与交叉线语义不明，共享通道、组件归属及箭头端点均按实际模型确定。原图经用户授权随技能和预览分发。
-- FC-10：浅灰实线边界、粉色文档组、绿色圆柱、带尖尾的输入气泡和单层黑边浅紫输出云。新图未指定文字排版时，气泡内斜体文字以文本块居中、块内各行左对齐；标题比普通节点更显著，字号和换行依实际字形测量并留出边界空间。具体比例可参考[字体展示](../../styles/flowchart/pastel-document-pipeline/1.0.0/typography-example.svg)，采用的覆盖须记录在复绘元数据；用户明确指定和已有图的排版元数据优先。已冻结的基础示例和 token 不变。原图字体无法从位图准确识别，中文使用可读后备。文件折角与同一批项目的顺序变化在有来源时保留；节点归属和连线只按实际模型确定。原图经用户授权随技能和预览分发。
+- FC-08：以虚线运行边界、柔和椭圆池、堆叠资源、外置工作单元和编号流程组合表现；步骤主标签嵌于连线真实间隙，云图采用深浅蓝错层，优先使用 Virgil 和 Xiaolai 手写字体，离线交付嵌入所需字形及许可。叠片数量与颜色不推断实例关系或业务含义。
+- FC-09：白底、米色虚线主体、灰色底带、浅蓝列表、叠片、分格和细线多路交互；组件可直接作为节点。原图粗竖条与交叉线语义不明，共享通道、组件归属及箭头端点均按实际模型确定。
+- FC-10：浅灰实线边界、粉色文档组、绿色圆柱、带尖尾的输入气泡和单层黑边浅紫输出云。新图未指定文字排版时，气泡内斜体文字以文本块居中、块内各行左对齐；标题比普通节点更显著，字号和换行依实际字形测量并留出边界空间。具体比例可参考[字体展示](../../styles/flowchart/pastel-document-pipeline/1.0.0/typography-example.svg)，采用的覆盖须记录在复绘元数据；用户明确指定和已有图的排版元数据优先。已冻结的基础示例和 token 不变。原图字体无法从位图准确识别，中文使用可读后备。文件折角与同一批项目的顺序变化在有来源时保留；节点归属和连线只按实际模型确定。

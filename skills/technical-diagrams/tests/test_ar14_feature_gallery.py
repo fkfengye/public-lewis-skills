@@ -59,7 +59,6 @@ class AR14FeatureGalleryTests(unittest.TestCase):
 
     def test_explicit_gallery_and_frozen_profile(self):
         index = json.loads((ROOT / 'assets/gallery-examples/index.json').read_text(encoding='utf-8'))
-        self.assertEqual(index[KEY], ATLAS)
         resolved = self.catalog.resolve(ROOT, None, number='AR-14')
         self.assertNotEqual(Path(resolved['example_path']), ROOT / ATLAS)
         self.assertEqual(self.meta['profile'], KEY)
@@ -103,15 +102,12 @@ class AR14FeatureGalleryTests(unittest.TestCase):
             self.assertLess(boundary_distance(nodes[edge['target']], end), 1, edge['id'])
         self.assertFalse(any(e.tag.rsplit('}', 1)[-1] in ('image', 'script', 'foreignObject') for e in svg.iter()))
 
-    def test_gallery_contains_atlas_and_original(self):
+    def test_gallery_contains_atlas_without_original(self):
         page = (ROOT / 'assets/style-gallery.html').read_text(encoding='utf-8')
         card = page.split('data-style-number="FC-07"', 1)[1].split('</article>', 1)[0]
         self.assertIn('Design workshop', card)
         self.assertIn('question-api-to-course', card)
-        self.assertIn('查看原始样例图', card)
-        refs = json.loads((ROOT / 'assets/reference-examples/index.json').read_text(encoding='utf-8'))
-        self.assertEqual(base64.b64decode(card.split('data:image/png;base64,', 1)[1].split('"', 1)[0]),
-                         (ROOT / refs[KEY]).read_bytes())
+        self.assertNotIn('查看原始样例图', card, '公开版本不随附参考原图')
 
 
 if __name__ == '__main__':

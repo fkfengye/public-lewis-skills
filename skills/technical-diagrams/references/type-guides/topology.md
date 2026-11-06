@@ -6,8 +6,8 @@
 
 | 编号 | 风格 | 视觉要点 | 资源 |
 | --- | --- | --- | --- |
-| TP-01 | 橙红图标链路 | 橙红图标、灰色箭头、浅色斜纹、上下标注 | [分析](../../styles/topology/icon-chain/1.0.0/reference-analysis.md) · [特征图](../../styles/topology/icon-chain/1.0.0/feature-atlas.svg) · [原图](../../assets/reference-examples/tp-01-original.png) |
-| TP-02 | 分层图标集群拓扑 | 入口与网关图标、三列多副本、重复连接、协调回向 | [分析](../../styles/topology/layered-service-clusters/1.0.0/reference-analysis.md) · [特征图](../../styles/topology/layered-service-clusters/1.0.0/feature-atlas.svg) · [原图](../../assets/reference-examples/tp-02-original.png) |
+| TP-01 | 橙红图标链路 | 橙红图标、灰色箭头、浅色斜纹、上下标注 | [分析](../../styles/topology/icon-chain/1.0.0/reference-analysis.md) · [特征图](../../styles/topology/icon-chain/1.0.0/feature-atlas.svg) |
+| TP-02 | 分层图标集群拓扑 | 入口与网关图标、三列多副本、重复连接、协调回向 | [分析](../../styles/topology/layered-service-clusters/1.0.0/reference-analysis.md) · [特征图](../../styles/topology/layered-service-clusters/1.0.0/feature-atlas.svg) |
 
 ## 使用要点
 

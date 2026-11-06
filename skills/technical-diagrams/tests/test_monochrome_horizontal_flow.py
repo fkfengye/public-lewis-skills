@@ -88,7 +88,7 @@ class MonochromeHorizontalFlowTests(unittest.TestCase):
 
     def test_no_original_image_added(self):
         index = json.loads((ROOT / 'assets/reference-examples/index.json').read_text(encoding='utf-8'))
-        self.assertNotIn(KEY, index)
+        self.assertNotIn(KEY, index, '公开版本不随附参考原图')
         page = (ROOT / 'assets/style-gallery.html').read_text(encoding='utf-8')
         card = page.split('data-style-number="FC-05"', 1)[1].split('</article>', 1)[0]
         self.assertIn('fc05-title', card)

@@ -57,15 +57,10 @@ class DocumentPipelineTests(unittest.TestCase):
         self.assertEqual(self.catalog.resolve(ROOT, None, number='FC-09')['key'],
                          'flowchart/thin-line-component-flow@1.0.0')
 
-    def test_gallery_contains_the_authorized_jpeg(self):
-        refs = json.loads((ROOT / 'assets/reference-examples/index.json').read_text(encoding='utf-8'))
-        self.assertEqual(refs[KEY], 'assets/reference-examples/fc-10-original.jpg')
-        raw = (ROOT / refs[KEY]).read_bytes()
-        self.assertTrue(raw.startswith(b'\xff\xd8\xff'))
+    def test_gallery_contains_the_public_example_only(self):
         page = (ROOT / 'assets/style-gallery.html').read_text(encoding='utf-8')
         card = page.split('data-style-number="FC-10"', 1)[1].split('</article>', 1)[0]
-        self.assertIn('查看原始样例图', card)
-        self.assertEqual(base64.b64decode(card.split('data:image/jpeg;base64,', 1)[1].split('"', 1)[0]), raw)
+        self.assertNotIn('查看原始样例图', card, '公开版本不随附参考原图')
         for feature in ('system-boundary', 'document-before', 'document-after', 'database',
                         'emphasis-card', 'user-bubble', 'actor', 'response-cloud'):
             self.assertIn(f'data-feature="{feature}"', card)

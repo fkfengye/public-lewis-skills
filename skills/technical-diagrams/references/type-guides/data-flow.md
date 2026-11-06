@@ -6,7 +6,7 @@
 
 | 编号 | 风格 | 视觉要点 | 资源 |
 | --- | --- | --- | --- |
-| DF-01 | 手绘粉彩数据流 | 粉彩圆形、矩形、偏移色影、手绘标注 | [分析](../../styles/data-flow/pastel-handdrawn/1.0.0/reference-analysis.md) · [原图](../../assets/reference-examples/df-01-original.png) |
+| DF-01 | 手绘粉彩数据流 | 粉彩圆形、矩形、偏移色影、手绘标注 | [分析](../../styles/data-flow/pastel-handdrawn/1.0.0/reference-analysis.md) |
 
 ## 使用要点
 

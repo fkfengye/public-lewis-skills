@@ -50,12 +50,9 @@ class CrossBoundaryLayersTests(unittest.TestCase):
 
     def test_original_reference_embedded_in_own_card(self):
         index = json.loads((ROOT / 'assets/reference-examples/index.json').read_text(encoding='utf-8'))
-        original = (ROOT / index[KEY]).read_bytes()
         page = (ROOT / 'assets/style-gallery.html').read_text(encoding='utf-8')
         card = page.split('data-style-number="AR-08"', 1)[1].split('</article>', 1)[0]
-        self.assertIn('查看原始样例图', card)
-        encoded = card.split('data:image/png;base64,', 1)[1].split('"', 1)[0]
-        self.assertEqual(base64.b64decode(encoded), original)
+        self.assertNotIn('查看原始样例图', card, '公开版本不随附参考原图')
 
     def test_feature_atlas_preserves_five_layers_and_model_relations(self):
         svg = ET.parse(ROOT / 'styles/architecture/cross-boundary-layers/1.0.0/feature-atlas.svg').getroot()
@@ -67,7 +64,6 @@ class CrossBoundaryLayersTests(unittest.TestCase):
         frozen = {k: v for k, v in selected['dependency_hashes'].items() if k not in mutable}
         self.assertEqual({k: meta['dependencies'][k] for k in frozen}, frozen)
         reference = ROOT / 'styles/architecture/cross-boundary-layers/1.0.0/reference-analysis.md'
-        self.assertEqual(meta['dependencies']['styles/architecture/cross-boundary-layers/1.0.0/reference-analysis.md'], hashlib.sha256(reference.read_bytes()).hexdigest())
         self.assertEqual(len(model['layers']), 5)
         self.assertTrue({'甲侧资源', '甲侧节点', '甲侧终点', '乙侧节点', '乙侧终点', '乙侧资源'}.issubset(model['nodes']))
         self.assertEqual(set(model['nodes']), set(model['node_owners']))

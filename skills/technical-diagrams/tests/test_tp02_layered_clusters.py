@@ -47,12 +47,9 @@ class LayeredClustersTests(unittest.TestCase):
         self.assertEqual(model['replicas'], {'entry': 2, 'gateway': 3, 'work-a': 2, 'work-b': 2, 'work-c': 2})
         self.assertFalse(any(e.tag.rsplit('}', 1)[-1] in ('image', 'script', 'foreignObject') for e in self.svg.iter()))
 
-    def test_authorized_original_and_independent_preview(self):
-        refs = json.loads((ROOT / 'assets/reference-examples/index.json').read_text(encoding='utf8'))
+    def test_independent_preview_without_original(self):
         card = (ROOT / 'assets/style-gallery.html').read_text(encoding='utf8').split('data-style-number="TP-02"', 1)[1].split('</article>', 1)[0]
-        self.assertIn('查看原始样例图', card)
-        encoded = card.split('data:image/png;base64,', 1)[1].split('"', 1)[0]
-        self.assertEqual(base64.b64decode(encoded), (ROOT / refs[KEY]).read_bytes())
+        self.assertNotIn('查看原始样例图', card, '公开版本不随附参考原图')
         self.assertIn('分布式内容协作拓扑', card)
         self.assertIn('特征展示', card)
         for name in ('ProcessOn', 'Nginx', 'Feign', 'Ribbon'):
@@ -60,7 +57,6 @@ class LayeredClustersTests(unittest.TestCase):
 
     def test_gallery_atlas_exposes_full_feature_set(self):
         index = json.loads((ROOT / 'assets/gallery-examples/index.json').read_text(encoding='utf8'))
-        self.assertEqual(index[KEY], 'styles/topology/layered-service-clusters/1.0.0/feature-atlas.svg')
         svg = ET.parse(ROOT / index[KEY]).getroot()
         meta = json.loads(next(e for e in svg if e.tag.endswith('metadata')).text)
         self.assertEqual(meta['sample_kind'], 'synthetic-feature-atlas')

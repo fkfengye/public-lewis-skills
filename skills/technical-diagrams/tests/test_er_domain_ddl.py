@@ -94,11 +94,10 @@ class ER03DomainDDLTests(unittest.TestCase):
         for forbidden in ('工单', 'ticket_', '企业工单系统'):
             self.assertNotIn(forbidden, texts)             # 通用示例不复用原图业务数据
 
-    def test_authorized_original_is_registered(self):
+    def test_original_reference_is_not_shipped(self):
         index = read_json('assets/reference-examples/index.json')
-        self.assertEqual(index[KEY], 'assets/reference-examples/er-03-original.png')
-        self.assertTrue((ROOT / index[KEY]).is_file())
-        self.assertTrue((ROOT / 'assets/reference-examples/er-03-original.svg').is_file())
+        self.assertEqual(index, {}, '公开版本不随附参考原图')
+        self.assertFalse((ROOT / 'assets/reference-examples/er-03-original.svg').exists())
 
     def test_edge_labels_carry_cardinality_ratios(self):
         root = ET.parse(STYLE_DIR / 'example.svg').getroot()
